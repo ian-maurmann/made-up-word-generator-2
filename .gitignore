@@ -1,0 +1,45 @@
+# .gitignore
+# ==========
+
+
+# Ignore OS generated files
+# -------------------------
+.DS_Store
+.DS_Store?
+
+
+# Ignore IDE files
+# ------------------
+.idea/
+.vscode/
+
+
+# Ignore composer.phar and vendor folder
+# --------------------------------------
+composer.phar
+vendor/
+
+
+# Ignore symlinks
+# ---------------
+/composer
+/pest
+/phpstan
+/stan
+
+
+# Ignore sensitive info
+# ---------------------
+.env
+.env.php
+env.php
+
+
+# Ignore error log
+# ----------------
+php_errors.log
+
+
+# Ignore all log files
+# --------------------
+*.log
