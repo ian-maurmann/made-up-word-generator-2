@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "689d7482439fde2b5214aaa2471a8f21",
+    "packages": [
+        {
+            "name": "ikm/cli",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ian-maurmann-2/ikm-cli.git",
+                "reference": "efed58c38650a841608c452c35426720fcae3fa8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ian-maurmann-2/ikm-cli/zipball/efed58c38650a841608c452c35426720fcae3fa8",
+                "reference": "efed58c38650a841608c452c35426720fcae3fa8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-readline": "*",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "IKM\\CLI\\": [
+                        "src/",
+                        "src/utilities"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ian Maurmann",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CLI formatting tools",
+            "support": {
+                "issues": "https://github.com/ian-maurmann-2/ikm-cli/issues",
+                "source": "https://github.com/ian-maurmann-2/ikm-cli/tree/0.1.0"
+            },
+            "time": "2024-12-09T06:56:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
