@@ -1,0 +1,18 @@
+{
+    "authors": [
+        {
+            "name": "Ian Maurmann",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ikm/cli": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "IKM\\MadeUpWordGenerator2\\": [
+                "src/"
+            ]
+        }
+    }
+}
