@@ -9,8 +9,35 @@ Made-Up Word Generator 2 (Experimental exploration only, not useful for anything
 
 ### Install
 
-Clone the project.
+Check PHP version is 8.4+
 
-Open the terminal and navigate to the directory the project is in.
+```bash
+php -v
+```
 
-Install Composer. Follow the instruction at: https://getcomposer.org/download/
+Clone
+- Clone the project.
+
+Install Composer
+- Open the terminal and navigate to the directory the project is in.
+- Install Composer. Follow the instruction at: https://getcomposer.org/download/
+
+Nice to have:
+
+- Add a symbolic link to composer.phar
+
+```bash
+ln -s ./composer.phar ./composer
+```
+
+Check Composer is version 2.8.4+:
+
+```bash
+php composer
+```
+
+Install dependencies:
+```bash
+php composer install
+```
+
