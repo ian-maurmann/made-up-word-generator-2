@@ -11,7 +11,10 @@
     "autoload": {
         "psr-4": {
             "IKM\\MadeUpWordGenerator2\\": [
-                "src/"
+                "src/",
+                "src/cli",
+                "src/lang",
+                "src/utilities"
             ]
         }
     }
