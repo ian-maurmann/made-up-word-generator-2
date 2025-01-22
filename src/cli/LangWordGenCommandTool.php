@@ -27,6 +27,7 @@ use IKM\CLI\CommandLineWriter;
  */
 class LangWordGenCommandTool
 {
+    private AlphabetDisplay      $alphabet_display;
     private ArrayUtility         $array_utility;
     private CommandLineFormatter $formatter;
     private string               $version_number;
@@ -35,7 +36,8 @@ class LangWordGenCommandTool
     public function __construct()
     {
         // Set object dependencies
-        $this->array_utility = new ArrayUtility();
+        $this->array_utility    = new ArrayUtility();
+        $this->alphabet_display = new AlphabetDisplay();
 
         // Get CLI tools
         $this->writer    = new CommandLineWriter();
@@ -94,10 +96,27 @@ class LangWordGenCommandTool
 
         // Foo
         // ───
-        $has_list_flag = $positional_parameter_1 === 'foo';
-        if($has_list_flag){
+        $has_foo_flag = $positional_parameter_1 === 'foo';
+        if($has_foo_flag){
             $this->displayFoo();
             return;
+        }
+
+        // Foo
+        // ───
+        $has_show_flag = $positional_parameter_1 === 'show';
+        if($has_show_flag){
+
+            $has_show_sounds_flag = $positional_parameter_2 === 'sounds';
+
+            if($has_show_sounds_flag){
+                $this->displayShowSounds();
+                return;
+            }
+            else{
+                $this->displayShow();
+                return;
+            }
         }
 
         // Version
@@ -141,5 +160,21 @@ class LangWordGenCommandTool
     public function displayFoo()
     {
         $this->writer->writeLine('bar');
+    }
+
+    public function displayShow()
+    {
+        // Formatting
+        $reset = $this->formatter->reset;
+        $bold  = $this->formatter->bold;
+        $cyan  = $this->formatter->fg_bright_cyan;
+
+        $this->writer->writeLine('Options for ' . $bold . $cyan . 'show' . $reset . ':');
+        $this->writer->writeLine(' - show ' . $cyan . 'sounds' . $reset);
+    }
+
+    public function displayShowSounds()
+    {
+        $this->alphabet_display->showSoundAlphabet();
     }
 }

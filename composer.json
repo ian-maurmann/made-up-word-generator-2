@@ -13,6 +13,7 @@
             "IKM\\MadeUpWordGenerator2\\": [
                 "src/",
                 "src/cli",
+                "src/cli-output",
                 "src/lang",
                 "src/utilities"
             ]
