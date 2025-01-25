@@ -45,13 +45,70 @@ class AlphabetDisplay
 
     public function showSoundAlphabet()
     {
+        // Unsorted
+        $this->showUnsortedSounds();
+
+        // Vowels
+        $this->showVowels();
+
+        // Consonants
         $this->showConsonants();
+    }
+
+    public function showVowels(){
+        $this->writer->writeLine('Vowels:');
+
+        $vowel_sounds = $this->sound_alphabet->getVowels();
+
+        $table_style = [
+            'table_text_align' => 'left', // 'left' | 'right' | 'center'
+            'table_border_fg_color' => 'dark-yellow',
+            'table_show_head' => true,
+            'table_head_text_align' => 'center',
+            'table_head_bg_color' => 'dark-blue',
+            'table_head_weight' => 'bold',
+        ];
+
+        $table_columns = [
+            [
+                'attribute' => 'type',
+                'label'     => 'Type',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'name',
+                'label'     => 'Name',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'examples',
+                'label'     => 'Examples',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'description',
+                'label'     => 'Description',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'info_ipa',
+                'label'     => 'IPA',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'quick_transcription',
+                'label'     => 'Quick Transcription',
+                'text_align' => 'center',
+            ],
+        ];
+
+        $this->table_builder->buildTable($vowel_sounds, $table_style, $table_columns);
     }
 
     public function showConsonants(){
         $this->writer->writeLine('Consonants:');
 
-        $sound_alphabet_array = $this->sound_alphabet->getSoundAlphabet();
+        $consonant_sounds = $this->sound_alphabet->getConsonants();
 
         $table_style = [
             'table_text_align' => 'left', // 'left' | 'right' | 'center'
@@ -90,7 +147,56 @@ class AlphabetDisplay
             ],
         ];
 
-        $this->table_builder->buildTable($sound_alphabet_array, $table_style, $table_columns);
+        $this->table_builder->buildTable($consonant_sounds, $table_style, $table_columns);
+    }
 
+    public function showUnsortedSounds(){
+        $this->writer->writeLine('Unsorted:');
+
+        $unsorted_sounds = $this->sound_alphabet->getUnsortedSounds();
+
+        $table_style = [
+            'table_text_align' => 'left', // 'left' | 'right' | 'center'
+            'table_border_fg_color' => 'dark-yellow',
+            'table_show_head' => true,
+            'table_head_text_align' => 'center',
+            'table_head_bg_color' => 'dark-blue',
+            'table_head_weight' => 'bold',
+        ];
+
+        $table_columns = [
+            [
+                'attribute' => 'type',
+                'label'     => 'Type',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'name',
+                'label'     => 'Name',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'examples',
+                'label'     => 'Examples',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'description',
+                'label'     => 'Description',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'info_ipa',
+                'label'     => 'IPA',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'quick_transcription',
+                'label'     => 'Quick Transcription',
+                'text_align' => 'center',
+            ],
+        ];
+
+        $this->table_builder->buildTable($unsorted_sounds, $table_style, $table_columns);
     }
 }

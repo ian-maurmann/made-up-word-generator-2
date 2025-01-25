@@ -25,7 +25,7 @@ use Exception;
  */
 class SoundAlphabet
 {
-    private array $alphabet;
+    private array $sound_alphabet;
 
     public function __construct()
     {
@@ -35,9 +35,82 @@ class SoundAlphabet
 
     public function getSoundAlphabet(): array
     {
-        return $this->alphabet;
+        return $this->sound_alphabet;
     }
 
+    public function getVowels(): array
+    {
+        // Default to empty
+        $vowel_sounds = [];
+
+        // Get sounds
+        $sound_alphabet = $this->sound_alphabet;
+
+        // Populate list of vowel sounds
+        $vowel_sounds = [];
+        foreach($sound_alphabet as $sound_index => $sound){
+            $sound_type = $sound['sound_type'] ?? '';
+            $is_vowel   = $sound_type === 'vowel';
+
+            // Add sound to list of vowel sounds
+            if($is_vowel){
+                $vowel_sounds[] = $sound;
+            }
+        }
+
+        // Return array of vowel sounds, else empty array
+        return $vowel_sounds;
+    }
+
+    public function getConsonants(): array
+    {
+        // Default to empty
+        $consonant_sounds = [];
+
+        // Get sounds
+        $sound_alphabet = $this->sound_alphabet;
+
+        // Populate list of consonant sounds
+        $consonant_sounds = [];
+        foreach($sound_alphabet as $sound_index => $sound){
+            $sound_type = $sound['sound_type'] ?? '';
+            $is_consonant   = $sound_type === 'consonant';
+
+            // Add sound to list of vowel sounds
+            if($is_consonant){
+                $consonant_sounds[] = $sound;
+            }
+        }
+
+        // Return array of consonant sounds, else empty array
+        return $consonant_sounds;
+    }
+
+    public function getUnsortedSounds(): array
+    {
+        // Default to empty
+        $unsorted_sounds = [];
+
+        // Get sounds
+        $sound_alphabet = $this->sound_alphabet;
+
+        // Populate list of unsorted sounds
+        $unsorted_sounds = [];
+        foreach($sound_alphabet as $sound_index => $sound){
+            $sound_type   = $sound['sound_type'] ?? '';
+            $is_vowel     = $sound_type === 'vowel';
+            $is_consonant = $sound_type === 'consonant';
+            $is_unsorted  = !($is_vowel || $is_consonant);
+
+            // Add sound to list of unsorted sounds
+            if($is_unsorted){
+                $unsorted_sounds[] = $sound;
+            }
+        }
+
+        // Return array of unsorted sounds, else empty array
+        return $unsorted_sounds;
+    }
 
     private function buildAlphabet()
     {
@@ -115,24 +188,27 @@ class SoundAlphabet
         ];
 
 
-        // ______
+        // __________________________________
 
 
-
+        // ───────────────────────────────────────────
+        // Vowels:
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'compressioned_vowel',
             'name' =>'compression',
-            'examples' => "' in didn{'}t\n' in can{'}t\ndifference when diff{'}rence\nseveral when sev{'}ral\ntemperature when temp{'}rature",
+            'examples' => "' in didn{fg_bright_cyan}'{previous}t\n' in can{fg_bright_cyan}'{previous}t\ndifference when diff{fg_bright_cyan}'{previous}rence\nseveral when sev{fg_bright_cyan}'{previous}ral\ntemperature when temp{fg_bright_cyan}'{previous}rature",
             'description' => ' ',
             'info_ipa' => '(none or ə̆)',
             'quick_transcription' => 'ꞌ', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'central_vowel',
             'name' =>'Around-around',
-            'examples' => "a in {a}bout\na in Tin{a}\n1st a in {a}head",
+            'examples' => "a in {fg_bright_cyan}a{previous}bout\na in Tin{fg_bright_cyan}a{previous}\n1st a in {fg_bright_cyan}a{previous}head",
             'description' => 'Mid central vowel',
             'info_ipa' => 'ə',
             'quick_transcription' => 'ah',
@@ -141,151 +217,150 @@ class SoundAlphabet
         // Primary Vowels
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'primary_vowel',
             'name' =>'Attack-attack',
-            'examples' => "a in f{a}t\na in h{a}t\na in r{a}t",
+            'examples' => "a in f{fg_bright_cyan}a{previous}t\na in h{fg_bright_cyan}a{previous}t\na in r{fg_bright_cyan}a{previous}t",
             'description' => "Open front unrounded vowel \n/ Low front unrounded vowel",
             'info_ipa' => "a\n(English drifts æ)",
             'quick_transcription' => 'a',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'primary_vowel',
             'name' =>'Easy-easy',
-            'examples' => "ee in m{ee}t\nea in {ea}st\nea and y in {ea}s{y}\nea in b{ea}n\nie in n{ie}ce\n1st e in sc{e}ne\nei in conc{ei}ve",
+            'examples' => "ee in m{fg_bright_cyan}ee{previous}t\nea in {fg_bright_cyan}ea{previous}st\nea and y in {fg_bright_cyan}ea{previous}s{fg_bright_cyan}y{previous}\nea in b{fg_bright_cyan}ea{previous}n\nie in n{fg_bright_cyan}ie{previous}ce\n1st e in sc{fg_bright_cyan}e{previous}ne\nei in conc{fg_bright_cyan}ei{previous}ve",
             'description' => "close front unrounded vowel\n/ high front unrounded vowel",
             'info_ipa' => 'i',
             'quick_transcription' => 'ee',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'primary_vowel',
             'name' =>'Oops-oops',
-            'examples' => "oo in b{oo}t\noo in {oo}ps\nu in t{u}be",
+            'examples' => "oo in b{fg_bright_cyan}oo{previous}t\noo in {fg_bright_cyan}oo{previous}ps\nu in t{fg_bright_cyan}u{previous}be",
             'description' => "close back rounded vowel\n/ high back rounded vowel",
             'info_ipa' => 'u',
             'quick_transcription' => 'oooo',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'August-August',
-            'examples' => "a in {a}ll\no in d{o}ll\no in h{o}t\nou in b{ou}ght\nau in {au}tumn (US & Canada)\no in c{o}t\nau in c{au}ght",
+            'examples' => "a in {fg_bright_cyan}a{previous}ll\no in d{fg_bright_cyan}o{previous}ll\no in h{fg_bright_cyan}o{previous}t\nou in b{fg_bright_cyan}ou{previous}ght\nau in {fg_bright_cyan}au{previous}tumn (US & Canada)\no in c{fg_bright_cyan}o{previous}t\nau in c{fg_bright_cyan}au{previous}ght",
             'description' => "open back unrounded vowel\n/ low back unrounded vowel",
             'info_ipa' => '(For both ɑ & ɔ)',
             'quick_transcription' => 'au',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'Episode-episode',
-            'examples' => "e in b{e}t\nE in {E}d\nea in h{ea}d",
+            'examples' => "e in b{fg_bright_cyan}e{previous}t\nE in {fg_bright_cyan}E{previous}d\nea in h{fg_bright_cyan}ea{previous}d",
             'description' => "Open-mid front unrounded vowel",
             'info_ipa' => 'ɛ',
             'quick_transcription' => 'e',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'If-if',
-            'examples' => "i in b{i}t\ni in h{i}d",
+            'examples' => "i in b{fg_bright_cyan}i{previous}t\ni in h{fg_bright_cyan}i{previous}d",
             'description' => "near-close front unrounded vowel\n/ near-high front unrounded vowel",
             'info_ipa' => 'ɪ',
             'quick_transcription' => 'i',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'Ocean-ocean',
-            'examples' => "oa in b{oa}t\noe in d{oe}\no in {O}mega",
+            'examples' => "oa in b{fg_bright_cyan}oa{previous}t\noe in d{fg_bright_cyan}oe{previous}\no in {fg_bright_cyan}O{previous}mega",
             'description' => "Mid back rounded vowel",
             'info_ipa' => 'o̞',
             'quick_transcription' => 'oh',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'Up-up',
-            'examples' => "u in {u}ndo\nu in {u}nmade\nu in h{u}t\nu in b{u}t",
+            'examples' => "u in {fg_bright_cyan}u{previous}ndo\nu in {fg_bright_cyan}u{previous}nmade\nu in h{fg_bright_cyan}u{previous}t\nu in b{fg_bright_cyan}u{previous}t",
             'description' => "open-mid back unrounded vowel\n/ low-mid back unrounded vowel",
             'info_ipa' => 'ʌ',
             'quick_transcription' => 'u',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'Ew-Ew',
-            'examples' => "oo in g{oo}se when gyeeoos",
+            'examples' => "oo in g{fg_bright_cyan}oo{previous}se when gyeeoos",
             'description' => "Close back unrounded vowel",
             'info_ipa' => 'ɯ',
             'quick_transcription' => 'ew',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'fixed_vowel',
             'name' =>'Oo-hook-oo-book',
-            'examples' => "oo in h{oo}d\noo in b{oo}k",
+            'examples' => "oo in h{fg_bright_cyan}oo{previous}d\noo in b{fg_bright_cyan}oo{previous}k",
             'description' => "Near-close near-back rounded vowel",
             'info_ipa' => '(For both ʊ and ʊ̞)',
             'quick_transcription' => 'oo',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'glide_vowel',
             'name' =>'Ace-ace',
-            'examples' => "a in pl{a}ce\na in l{a}te\na in d{a}ngerous\ney in h{ey}\nay in d{ay}\nai in b{ait}",
+            'examples' => "a in pl{fg_bright_cyan}a{previous}ce\na in l{fg_bright_cyan}a{previous}te\na in d{fg_bright_cyan}a{previous}ngerous\ney in h{fg_bright_cyan}ey{previous}\nay in d{fg_bright_cyan}ay{previous}\nai in b{fg_bright_cyan}ai{previous}t",
             'description' => "",
             'info_ipa' => 'eɪ',
             'quick_transcription' => 'ay',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'glide_vowel',
             'name' =>'Ice-ice',
-            'examples' => "i in h{i}de\ni in b{i}te\ni in l{i}ke",
+            'examples' => "i in h{fg_bright_cyan}i{previous}de\ni in b{fg_bright_cyan}i{previous}te\ni in l{fg_bright_cyan}i{previous}ke",
             'description' => "",
             'info_ipa' => 'aɪ',
             'quick_transcription' => 'igh',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'glide_vowel',
             'name' =>'Oil-oil',
-            'examples' => "oy in b{oy}\noi in {oi}l\noy in l{oy}al",
+            'examples' => "oy in b{fg_bright_cyan}oy{previous}\noi in {fg_bright_cyan}oi{previous}l\noy in l{fg_bright_cyan}oy{previous}al",
             'description' => "",
             'info_ipa' => 'ɔɪ',
             'quick_transcription' => 'oi',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'vowel',
             'type' => 'glide_vowel',
             'name' =>'Out-out',
-            'examples' => "ou in {ou}t\nou in l{ou}t\now in h{ow}\now in n{ow}\now in br{ow}n\now in c{ow}\nou in m{ou}se",
+            'examples' => "ou in {fg_bright_cyan}ou{previous}t\nou in l{fg_bright_cyan}ou{previous}t\now in h{fg_bright_cyan}ow{previous}\now in n{fg_bright_cyan}ow{previous}\now in br{fg_bright_cyan}ow{previous}n\now in c{fg_bright_cyan}ow{previous}\nou in m{fg_bright_cyan}ou{previous}se",
             'description' => "",
             'info_ipa' => 'aʊ',
             'quick_transcription' => 'ou',
         ];
 
+        // ───────────────────────────────────────────
+        // Rhotic Vowels:
 
         $alphabet[] = [
-            'type' => 'breathy_vowel',
-            'name' =>'breathy-Around-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'ə̤',
-            'quick_transcription' => 'aaa',
-        ];
-
-        $alphabet[] = [
-            'type' => 'breathy_vowel',
-            'name' =>'breathy-Episode-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'e̤',
-            'quick_transcription' => 'eꞌhhhꞌ', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-
-        $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ar-ar',
             'examples' => "ar in st{ar}t\nar in c{ar}",
@@ -295,6 +370,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Air-air',
             'examples' => "are in squ{are}\nair in h{air}\nair in ch{air}\nare in d{are}\nare in sh{are}\near in b{ear}\near in sw{ear}\nar in hil{ar}ious\nar in M{ar}y\nar in S{ar}ah\nar in p{ar}ent\nar in r{ar}ely\nere in wh{ere}",
@@ -304,6 +380,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ear-ear',
             'examples' => "ear in {ear}\near in n{ear}",
@@ -313,6 +390,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Er-er',
             'examples' => "er in dinn{er}\ner in ass{er}t\nar in stand{ar}d\nir in m{ir}th\nire in Lincolnsh{ire}\ner in diff{er}ence (uncompressed)\ner in sev{er}al (uncompressed)\ner in temp{er}ature (uncompressed)",
@@ -322,6 +400,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ire-Ire',
             'examples' => "ire in h{ire}",
@@ -331,6 +410,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Or-or',
             'examples' => "or in n{or}th\nor in w{ar}",
@@ -340,6 +420,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Our-our',
             'examples' => "our in {our}\nour in fl{our}",
@@ -349,6 +430,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Tour-oo-ur-detour',
             'examples' => "our in t{our}\nour in det{our}\nure in man{ure}\neur in entrepren{eur}",
@@ -358,6 +440,7 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ur-ur',
             'examples' => '',
@@ -2366,10 +2449,7 @@ class SoundAlphabet
         ];
 
 
-
-
-
-
-        $this->alphabet = $alphabet;
+        $this->sound_alphabet = $alphabet;
     }
+
 }
