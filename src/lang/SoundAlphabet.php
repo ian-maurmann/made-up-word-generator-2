@@ -38,52 +38,45 @@ class SoundAlphabet
         return $this->sound_alphabet;
     }
 
-    public function getVowels(): array
+    public function getSoundByType(string $sound_type): array
     {
         // Default to empty
-        $vowel_sounds = [];
+        $matching_sounds = [];
 
         // Get sounds
         $sound_alphabet = $this->sound_alphabet;
 
         // Populate list of vowel sounds
-        $vowel_sounds = [];
         foreach($sound_alphabet as $sound_index => $sound){
-            $sound_type = $sound['sound_type'] ?? '';
-            $is_vowel   = $sound_type === 'vowel';
+            $current_sound_type = $sound['sound_type'] ?? '';
+            $is_a_match = $current_sound_type === $sound_type;
 
-            // Add sound to list of vowel sounds
-            if($is_vowel){
-                $vowel_sounds[] = $sound;
+            // Add sound to list of matching sounds
+            if($is_a_match){
+                $matching_sounds[] = $sound;
             }
         }
 
-        // Return array of vowel sounds, else empty array
-        return $vowel_sounds;
+        // Return an array of sounds, else empty array
+        return $matching_sounds;
+    }
+
+    public function getVowels(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('vowel');
+    }
+
+    public function getRhoticVowels(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('rhotic_vowel');
     }
 
     public function getConsonants(): array
     {
-        // Default to empty
-        $consonant_sounds = [];
-
-        // Get sounds
-        $sound_alphabet = $this->sound_alphabet;
-
-        // Populate list of consonant sounds
-        $consonant_sounds = [];
-        foreach($sound_alphabet as $sound_index => $sound){
-            $sound_type = $sound['sound_type'] ?? '';
-            $is_consonant   = $sound_type === 'consonant';
-
-            // Add sound to list of vowel sounds
-            if($is_consonant){
-                $consonant_sounds[] = $sound;
-            }
-        }
-
-        // Return array of consonant sounds, else empty array
-        return $consonant_sounds;
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('consonant');
     }
 
     public function getUnsortedSounds(): array
@@ -97,13 +90,21 @@ class SoundAlphabet
         // Populate list of unsorted sounds
         $unsorted_sounds = [];
         foreach($sound_alphabet as $sound_index => $sound){
-            $sound_type   = $sound['sound_type'] ?? '';
-            $is_vowel     = $sound_type === 'vowel';
-            $is_consonant = $sound_type === 'consonant';
-            $is_unsorted  = !($is_vowel || $is_consonant);
+            // Check sound types
+            $sound_type      = $sound['sound_type'] ?? '';
+            $is_vowel        = $sound_type === 'vowel';
+            $is_rhotic_vowel = $sound_type === 'rhotic_vowel';
+            $is_consonant    = $sound_type === 'consonant';
 
-            // Add sound to list of unsorted sounds
-            if($is_unsorted){
+            // Find if is sorted
+            $is_sorted = (
+                   $is_vowel
+                || $is_rhotic_vowel
+                || $is_consonant
+            );
+
+            // Add unsorted sound to list of unsorted sounds
+            if(!$is_sorted){
                 $unsorted_sounds[] = $sound;
             }
         }
@@ -363,7 +364,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ar-ar',
-            'examples' => "ar in st{ar}t\nar in c{ar}",
+            'examples' => "ar in st{fg_bright_cyan}ar{previous}t\nar in c{fg_bright_cyan}ar{previous}",
             'description' => "",
             'info_ipa' => 'ɑ˞',
             'quick_transcription' => 'ar',
@@ -373,7 +374,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Air-air',
-            'examples' => "are in squ{are}\nair in h{air}\nair in ch{air}\nare in d{are}\nare in sh{are}\near in b{ear}\near in sw{ear}\nar in hil{ar}ious\nar in M{ar}y\nar in S{ar}ah\nar in p{ar}ent\nar in r{ar}ely\nere in wh{ere}",
+            'examples' => "are in squ{fg_bright_cyan}are{previous}\nair in h{fg_bright_cyan}air{previous}\nair in ch{fg_bright_cyan}air{previous}\nare in d{fg_bright_cyan}are{previous}\nare in sh{fg_bright_cyan}are{previous}\near in b{fg_bright_cyan}ear{previous}\near in sw{fg_bright_cyan}ear{previous}\nar in hil{fg_bright_cyan}ar{previous}ious\nar in M{fg_bright_cyan}ar{previous}y\nar in S{fg_bright_cyan}ar{previous}ah\nar in p{fg_bright_cyan}ar{previous}ent\nar in r{fg_bright_cyan}ar{previous}ely\nere in wh{fg_bright_cyan}ere{previous}",
             'description' => '"The square vowel"',
             'info_ipa' => 'ɛəɹ',
             'quick_transcription' => 'air',
@@ -383,7 +384,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ear-ear',
-            'examples' => "ear in {ear}\near in n{ear}",
+            'examples' => "ear in {fg_bright_cyan}ear{previous}\near in n{fg_bright_cyan}ear{previous}",
             'description' => "",
             'info_ipa' => 'ɪəʳ',
             'quick_transcription' => 'eer',
@@ -393,7 +394,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Er-er',
-            'examples' => "er in dinn{er}\ner in ass{er}t\nar in stand{ar}d\nir in m{ir}th\nire in Lincolnsh{ire}\ner in diff{er}ence (uncompressed)\ner in sev{er}al (uncompressed)\ner in temp{er}ature (uncompressed)",
+            'examples' => "er in dinn{fg_bright_cyan}er{previous}\ner in ass{fg_bright_cyan}er{previous}t\nar in stand{fg_bright_cyan}ar{previous}d\nir in m{fg_bright_cyan}ir{previous}th\nire in Lincolnsh{fg_bright_cyan}ire{previous}\ner in diff{fg_bright_cyan}er{previous}ence (uncompressed)\ner in sev{fg_bright_cyan}er{previous}al (uncompressed)\ner in temp{fg_bright_cyan}er{previous}ature (uncompressed)",
             'description' => "",
             'info_ipa' => 'ɚ',
             'quick_transcription' => 'er',
@@ -403,7 +404,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Ire-Ire',
-            'examples' => "ire in h{ire}",
+            'examples' => "ire in h{fg_bright_cyan}ire{previous}",
             'description' => "",
             'info_ipa' => 'aɪɚ',
             'quick_transcription' => 'igher',
@@ -413,7 +414,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Or-or',
-            'examples' => "or in n{or}th\nor in w{ar}",
+            'examples' => "or in n{fg_bright_cyan}or{previous}th\nor in w{fg_bright_cyan}ar{previous}",
             'description' => "",
             'info_ipa' => 'ɔ˞',
             'quick_transcription' => 'or',
@@ -423,7 +424,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Our-our',
-            'examples' => "our in {our}\nour in fl{our}",
+            'examples' => "our in {fg_bright_cyan}our{previous}\nour in fl{fg_bright_cyan}our{previous}",
             'description' => "",
             'info_ipa' => 'aʊər',
             'quick_transcription' => 'our',
@@ -433,7 +434,7 @@ class SoundAlphabet
             'sound_type' => 'rhotic_vowel',
             'type' => 'r_colored_vowel',
             'name' =>'Tour-oo-ur-detour',
-            'examples' => "our in t{our}\nour in det{our}\nure in man{ure}\neur in entrepren{eur}",
+            'examples' => "our in t{fg_bright_cyan}our{previous}\nour in det{fg_bright_cyan}our{previous}\nure in man{fg_bright_cyan}ure{previous}\neur in entrepren{fg_bright_cyan}eur{previous}",
             'description' => "(none)",
             'info_ipa' => 'ʊəɹ',
             'quick_transcription' => 'uer',
@@ -448,6 +449,8 @@ class SoundAlphabet
             'info_ipa' => 'ʌr',
             'quick_transcription' => 'ur',
         ];
+
+        // ───────────────────────────────────────────
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
