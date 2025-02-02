@@ -79,6 +79,12 @@ class SoundAlphabet
         return $this->getSoundByType('semi');
     }
 
+    public function getRhoticLiquids(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('rhotic_liquid');
+    }
+
     public function getConsonants(): array
     {
         // Return array of sounds, else return an empty array
@@ -96,18 +102,22 @@ class SoundAlphabet
         // Populate list of unsorted sounds
         $unsorted_sounds = [];
         foreach($sound_alphabet as $sound_index => $sound){
-            // Check sound types
-            $sound_type      = $sound['sound_type'] ?? '';
-            $is_vowel        = $sound_type === 'vowel';
-            $is_rhotic_vowel = $sound_type === 'rhotic_vowel';
-            $is_semi         = $sound_type === 'semi';
-            $is_consonant    = $sound_type === 'consonant';
+            // Get sound type
+            $sound_type = $sound['sound_type'] ?? '';
+
+            // Check sound type
+            $is_vowel         = $sound_type === 'vowel';
+            $is_rhotic_vowel  = $sound_type === 'rhotic_vowel';
+            $is_semi          = $sound_type === 'semi';
+            $is_rhotic_liquid = $sound_type === 'rhotic_liquid';
+            $is_consonant     = $sound_type === 'consonant';
 
             // Find if is sorted
             $is_sorted = (
                    $is_vowel
                 || $is_rhotic_vowel
                 || $is_semi
+                || $is_rhotic_liquid
                 || $is_consonant
             );
 
@@ -504,6 +514,112 @@ class SoundAlphabet
         ];
 
         // ───────────────────────────────────────────
+        // Rhotic Liquids:
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "fixed_consonant\n\nliquid",
+            'name' =>'Roar-roar',
+            'examples' => "r in {fg_bright_cyan}r{previous}abbit\nr in {fg_bright_cyan}r{previous}oar",
+            'description' => "Voiced postalveolar approximant",
+            'info_ipa' => "ɹ\n\n(Also ɾ & ɹ̠)",
+            'quick_transcription' => 'r',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "trill\n\nliquid",
+            'name' =>'Arriba-arriba',
+            'examples' => "(No examples in English)\n\nrr in a{fg_bright_cyan}rr{previous}iba in Spanish",
+            'description' => 'Voiced alveolar trill',
+            'info_ipa' => 'r',
+            'quick_transcription' => 'r′r′r',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "trill\n\nliquid",
+            'name' =>'Rhagfyr-Rhagfyr',
+            'examples' => "(No examples in English)\n\nIn ancient greek, the Rh in {fg_bright_cyan}Rh{previous}o\n\nRh in {fg_bright_cyan}Rh{previous}agfyr\n\t(December in Welsh)",
+            'description' => 'Voiceless alveolar trill',
+            'info_ipa' => 'r̥',
+            'quick_transcription' => 'rh',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "extra_long_fixed_consonant\n\nliquid",
+            'name' =>'Rrrrr-rrrrr',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'rːː',
+            'quick_transcription' => 'rrrrr',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-en-Rer',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ⁿr\n\nAlso for\nⁿɖ͡ʐʐ̩˧",
+            'quick_transcription' => 'nr',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "sub_fixed_consonant\n\nliquid",
+            'name' =>'Roed-roed',
+            'examples' => "(No examples in English)\n\nr in {fg_bright_cyan}r{previous}ød (red in Danish)",
+            'description' => "Voiced uvular approximant",
+            'info_ipa' => 'ʁ̞',
+            'quick_transcription' => 'r(r)',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "sub_fixed_consonant\n\nliquid",
+            'name' =>'Rek-rek',
+            'examples' => "(No examples in English)\n\nr in {fg_bright_cyan}ղ{previous}եկ (rudder in Armenian)",
+            'description' => "Voiced uvular fricative",
+            'info_ipa' => 'ʁ',
+            'quick_transcription' => 'r(rrr)',
+            'phone_family' => 'R',
+        ];
+
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "pharyngealized_approximant\n\nliquid",
+            'name' =>'pharyn-Raaa~',
+            'examples' => "(used in Dutch,\n& some dialects of\nAmerican English)",
+            'description' => 'pharyngealized velar approximant',
+            'info_ipa' => 'ɹˤ',
+            'quick_transcription' => '`r~',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "pharyngealized_approximant\n\nliquid-to-semi",
+            'name' =>'pharyn-Rwaaa~',
+            'examples' => "(an r variant in some\nAmerican English)",
+            'description' => 'pharyngealized labialized postalveolar approximant',
+            'info_ipa' => 'ɹˤw',
+            // 'quick_transcription' => '`rw~',
+            'quick_transcription' => 'rw',
+            'phone_family' => 'R',
+        ];
+
+
+
+        // ───────────────────────────────────────────
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
@@ -627,15 +743,7 @@ class SoundAlphabet
             'phone_family' => 'L',
         ];
 
-        $alphabet[] = [
-            'type' => "fixed_consonant\n\nliquid",
-            'name' =>'Roar-roar',
-            'examples' => "r in {r}abbit\nr in e{r}a\nr in ca{r}\nr in {r}oa{r}",
-            'description' => "Voiced postalveolar approximant",
-            'info_ipa' => "(For ɾ , ɹ , ɹ̠)",
-            'quick_transcription' => 'r',
-            'phone_family' => 'R',
-        ];
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
@@ -763,25 +871,7 @@ class SoundAlphabet
             'quick_transcription' => 'j',
         ];
 
-        $alphabet[] = [
-            'type' => "trill\n\nliquid",
-            'name' =>'Arriba-arriba',
-            'examples' => "(No examples in English)\n\nrr in a{rr}iba in Spanish",
-            'description' => 'Voiced alveolar trill',
-            'info_ipa' => 'r',
-            'quick_transcription' => 'r′r′r',
-            'phone_family' => 'R',
-        ];
 
-        $alphabet[] = [
-            'type' => "trill\n\nliquid",
-            'name' =>'Rhagfyr-Rhagfyr',
-            'examples' => "(No examples in English)\n\nIn ancient greek, the Rh in Rho\n\nRh in {Rh}agfyr\n\t(December in Welsh)",
-            'description' => 'Voiceless alveolar trill',
-            'info_ipa' => 'r̥',
-            'quick_transcription' => 'hr',
-            'phone_family' => 'R',
-        ];
 
         $alphabet[] = [
             'type' => 'trill',
@@ -1171,15 +1261,7 @@ class SoundAlphabet
             'phone_family' => 'V',
         ];
 
-        $alphabet[] = [
-            'type' => "extra_long_fixed_consonant\n\nliquid",
-            'name' =>'Rrrrr-rrrrr',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'rːː',
-            'quick_transcription' => 'rrrrr',
-            'phone_family' => 'R',
-        ];
+
 
         $alphabet[] = [
             'type' => 'extra_long_fixed_consonant',
@@ -1358,15 +1440,7 @@ class SoundAlphabet
             'quick_transcription' => 'nz',
         ];
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-en-Rer',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ⁿɖ͡ʐʐ̩˧',
-            'quick_transcription' => 'nr',
-            'phone_family' => 'R',
-        ];
+
 
         $alphabet[] = [
             'type' => 'prenasalized_consonant',
@@ -1638,25 +1712,7 @@ class SoundAlphabet
             'phone_family' => 'GH',
         ];
 
-        $alphabet[] = [
-            'type' => "sub_fixed_consonant\n\nliquid",
-            'name' =>'Roed-roed',
-            'examples' => "(No examples in English)\n\nr in {r}ød (red in Danish)",
-            'description' => "Voiced uvular approximant",
-            'info_ipa' => 'ʁ̞',
-            'quick_transcription' => 'r(r)',
-            'phone_family' => 'R',
-        ];
 
-        $alphabet[] = [
-            'type' => "sub_fixed_consonant\n\nliquid",
-            'name' =>'Rek-rek',
-            'examples' => "(No examples in English)\n\nr in {ղ}եկ (rudder in Armenian)",
-            'description' => "Voiced uvular fricative",
-            'info_ipa' => 'ʁ',
-            'quick_transcription' => 'r(rrr)',
-            'phone_family' => 'R',
-        ];
 
         //-------
 
@@ -1969,25 +2025,6 @@ class SoundAlphabet
             'quick_transcription' => '`l~',
         ];
 
-        $alphabet[] = [
-            'type' => "pharyngealized_approximant\n\nliquid",
-            'name' =>'pharyn-Raaa~',
-            'examples' => "(used in Dutch,\n& some dialects of\nAmerican English)",
-            'description' => 'pharyngealized velar approximant',
-            'info_ipa' => 'ɹˤ',
-            'quick_transcription' => '`r~',
-            'phone_family' => 'R',
-        ];
-
-        $alphabet[] = [
-            'type' => "pharyngealized_approximant\n\nliquid-to-semi",
-            'name' =>'pharyn-Rwaaa~',
-            'examples' => "(an r variant in some\nAmerican English)",
-            'description' => 'pharyngealized labialized postalveolar approximant',
-            'info_ipa' => 'ɹˤw',
-            'quick_transcription' => '`rw~',
-            'phone_family' => 'R',
-        ];
 
         $alphabet[] = [
             'type' => 'ejective',

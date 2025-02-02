@@ -57,6 +57,9 @@ class AlphabetDisplay
         // Semis
         $this->showSemis();
 
+        // Rhotic Liquids
+        $this->showRhoticLiquids();
+
         // Consonants
         $this->showConsonants();
     }
@@ -209,6 +212,56 @@ class AlphabetDisplay
         ];
 
         $this->table_builder->buildTable($vowel_sounds, $table_style, $table_columns);
+    }
+
+    public function showRhoticLiquids(){
+        $this->writer->writeLine('Rhotic Liquids:');
+
+        $sounds = $this->sound_alphabet->getRhoticLiquids();
+
+        $table_style = [
+            'table_text_align' => 'left', // 'left' | 'right' | 'center'
+            'table_border_fg_color' => 'bright-blue',
+            'table_show_head' => true,
+            'table_head_text_align' => 'center',
+            'table_head_bg_color' => 'dark-blue',
+            'table_head_weight' => 'bold',
+        ];
+
+        $table_columns = [
+            [
+                'attribute' => 'type',
+                'label'     => 'Type',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'name',
+                'label'     => 'Name',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'examples',
+                'label'     => 'Examples',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'description',
+                'label'     => 'Description',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'info_ipa',
+                'label'     => 'IPA',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'quick_transcription',
+                'label'     => 'Quick Transcription',
+                'text_align' => 'center',
+            ],
+        ];
+
+        $this->table_builder->buildTable($sounds, $table_style, $table_columns);
     }
 
     public function showConsonants(){
