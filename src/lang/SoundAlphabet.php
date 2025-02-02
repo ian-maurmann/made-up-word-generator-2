@@ -73,6 +73,12 @@ class SoundAlphabet
         return $this->getSoundByType('rhotic_vowel');
     }
 
+    public function getSemis(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('semi');
+    }
+
     public function getConsonants(): array
     {
         // Return array of sounds, else return an empty array
@@ -94,12 +100,14 @@ class SoundAlphabet
             $sound_type      = $sound['sound_type'] ?? '';
             $is_vowel        = $sound_type === 'vowel';
             $is_rhotic_vowel = $sound_type === 'rhotic_vowel';
+            $is_semi         = $sound_type === 'semi';
             $is_consonant    = $sound_type === 'consonant';
 
             // Find if is sorted
             $is_sorted = (
                    $is_vowel
                 || $is_rhotic_vowel
+                || $is_semi
                 || $is_consonant
             );
 
@@ -451,6 +459,51 @@ class SoundAlphabet
         ];
 
         // ───────────────────────────────────────────
+        // Semis:
+
+        $alphabet[] = [
+            'sound_type' => 'semi',
+            'type' => "fixed_consonant\n\nsemi",
+            'name' =>'Yes-yes',
+            'examples' => "y in {fg_bright_cyan}y{previous}es\ny in {fg_bright_cyan}y{previous}ellow\nstart of u in universe\ny in {fg_bright_cyan}y{previous}ou",
+            'description' => "Voiced palatal approximant",
+            'info_ipa' => 'j',
+            'quick_transcription' => 'y',
+            'phone_family' => 'Y',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'semi',
+            'type' => "sub_fixed_consonant\n\nsemi",
+            'name' =>'Yuè-yuè',
+            'examples' => "(No examples in English)\n\n(A sound between yah and wah)\n\ny in {fg_bright_cyan}y{previous}uè (Moon in Mandarin)\nu in f{fg_bright_cyan}u{previous}l (ugly in Swedish)\nü in d{fg_bright_cyan}ü{previous}a (back in Kurdish)",
+            'description' => "Voiced labial–palatal approximant",
+            'info_ipa' => 'ɥ',
+            'quick_transcription' => 'ieu', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'semi',
+            'type' => "sub_fixed_consonant\n\nsemi",
+            'name' =>'Uisa-uisa',
+            'examples' => "(No examples in English)\n\nu in {fg_bright_cyan}u{previous}isa (doctor in Korean)",
+            'description' => "Voiced velar approximant",
+            'info_ipa' => 'ɰ',
+            'quick_transcription' => '(gwra)',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'semi',
+            'type' => "fixed_consonant\n\nsemi",
+            'name' =>'West-west',
+            'examples' => "w in {fg_bright_cyan}w{previous}affle\nw in {fg_bright_cyan}w{previous}ood\nw in {fg_bright_cyan}w{previous}est\nw in {fg_bright_cyan}w{previous}oman",
+            'description' => "voiced labial-velar approximant",
+            'info_ipa' => "w\n\nAlso for β̞",
+            'quick_transcription' => 'w',
+            'phone_family' => 'W',
+        ];
+
+        // ───────────────────────────────────────────
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
@@ -482,15 +535,7 @@ class SoundAlphabet
             'phone_family' => 'M',
         ];
 
-        $alphabet[] = [
-            'type' => "fixed_consonant\n\nsemi",
-            'name' =>'West-west',
-            'examples' => "w in {w}affle\nw in {w}ood\nw in {w}est\nw in {w}oman",
-            'description' => "voiced labial-velar approximant",
-            'info_ipa' => "w\n\nAlso for β̞",
-            'quick_transcription' => 'w',
-            'phone_family' => 'W',
-        ];
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
@@ -612,15 +657,7 @@ class SoundAlphabet
             'phone_family' => 'ZH',
         ];
 
-        $alphabet[] = [
-            'type' => "fixed_consonant\n\nsemi",
-            'name' =>'Yes-yes',
-            'examples' => "y in {y}es\ny in {y}ellow\nstart of u in universe\ny in {y}ou",
-            'description' => "Voiced palatal approximant",
-            'info_ipa' => 'j',
-            'quick_transcription' => 'y',
-            'phone_family' => 'Y',
-        ];
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
@@ -687,23 +724,7 @@ class SoundAlphabet
             'quick_transcription' => '-ꞌ-', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => "sub_fixed_consonant\n\nsemi",
-            'name' =>'Yuè-yuè',
-            'examples' => "(No examples in English)\n\n(A sound between yah and wah)\n\ny in {y}uè (Moon in Mandarin)\nu in f{u}l (ugly in Swedish)\nü in d{ü}a (back in Kurdish)",
-            'description' => "Voiced labial–palatal approximant",
-            'info_ipa' => 'ɥ',
-            'quick_transcription' => 'ieu', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => "sub_fixed_consonant\n\nsemi",
-            'name' =>'Uisa-uisa',
-            'examples' => "(No examples in English)\n\nu in {u}isa (doctor in Korean)",
-            'description' => "Voiced velar approximant",
-            'info_ipa' => 'ɰ',
-            'quick_transcription' => '(gwra)',
-        ];
 
 
         $alphabet[] = [
