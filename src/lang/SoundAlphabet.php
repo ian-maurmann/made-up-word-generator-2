@@ -85,6 +85,12 @@ class SoundAlphabet
         return $this->getSoundByType('rhotic_liquid');
     }
 
+    public function getLateralLiquids(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('lateral_liquid');
+    }
+
     public function getConsonants(): array
     {
         // Return array of sounds, else return an empty array
@@ -106,11 +112,12 @@ class SoundAlphabet
             $sound_type = $sound['sound_type'] ?? '';
 
             // Check sound type
-            $is_vowel         = $sound_type === 'vowel';
-            $is_rhotic_vowel  = $sound_type === 'rhotic_vowel';
-            $is_semi          = $sound_type === 'semi';
-            $is_rhotic_liquid = $sound_type === 'rhotic_liquid';
-            $is_consonant     = $sound_type === 'consonant';
+            $is_vowel          = $sound_type === 'vowel';
+            $is_rhotic_vowel   = $sound_type === 'rhotic_vowel';
+            $is_semi           = $sound_type === 'semi';
+            $is_rhotic_liquid  = $sound_type === 'rhotic_liquid';
+            $is_lateral_liquid = $sound_type === 'lateral_liquid';
+            $is_consonant      = $sound_type === 'consonant';
 
             // Find if is sorted
             $is_sorted = (
@@ -118,6 +125,7 @@ class SoundAlphabet
                 || $is_rhotic_vowel
                 || $is_semi
                 || $is_rhotic_liquid
+                || $is_lateral_liquid
                 || $is_consonant
             );
 
@@ -617,7 +625,51 @@ class SoundAlphabet
             'phone_family' => 'R',
         ];
 
+        // ───────────────────────────────────────────
+        // Lateral Liquids:
 
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "fixed_consonant\n\nliquid",
+            'name' =>'Level-level',
+            'examples' => "l in {fg_bright_cyan}l{previous}et\nl in {fg_bright_cyan}l{previous}ight\nl in c{fg_bright_cyan}l{previous}ick\nl in go{fg_bright_cyan}l{previous}d\nl in {fg_bright_cyan}l{previous}eve{fg_bright_cyan}l{previous}\nboth l's in ye{fg_bright_cyan}ll{previous}ow\nll in be{fg_bright_cyan}ll{previous}",
+            'description' => "Voiced alveolar lateral approximant",
+            'info_ipa' => "(For both l & ʟ)\n\nl , l̠ , l̪\nlˠ , lˤ , ɫ\nʟ",
+            'quick_transcription' => 'l',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "preaspirated_consonant\n\nliquid",
+            'name' =>'ha-La',
+            'examples' => "(No examples in English)\n\nl in k{fg_bright_cyan}l{previous}appa\n\t(clap in Faroese)",
+            'description' => '',
+            'info_ipa' => 'ʰl',
+            'quick_transcription' => 'h′l',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "breathy_consonant\n\nliquid",
+            'name' =>'Lhasa-Lhasa',
+            'examples' => "(No examples in English)\n\nLh in {fg_bright_cyan}Lh{previous}asa\n\t(city & river in Tibet)",
+            'description' => '',
+            'info_ipa' => "lʰ\n\nl̥ when lʰ",
+            'quick_transcription' => 'lh',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => 'sub_fixed_consonant',
+            'name' =>'Sla-sla',
+            'examples' => "(No examples in English)\n\nsl in {fg_bright_cyan}sl{previous}a\n\t(cow in Moloko)\nł in {fg_bright_cyan}ł{previous}aʼ\n\t(some in Navajo)\ntl in ta{fg_bright_cyan}tl{previous}ete\n\t(small/weak in Norwegian)\nll in tege{fg_bright_cyan}ll{previous}\n\t(kettle in Welsh)",
+            'description' => "Voiceless alveolar lateral fricative\n\n\"Belted L\"",
+            'info_ipa' => "ɬ\n\nl̥ when ɬ\nł when ɬ",
+            'quick_transcription' => 'ssh',
+        ];
 
         // ───────────────────────────────────────────
 
@@ -733,15 +785,7 @@ class SoundAlphabet
             'phone_family' => 'N',
         ];
 
-        $alphabet[] = [
-            'type' => "fixed_consonant\n\nliquid",
-            'name' =>'Level-level',
-            'examples' => "l in {l}et\nl in {l}ight\nl in c{l}ick\nl in go{l}d\nl in {l}eve{l}\nboth l's in ye{ll}ow\nll in be{ll}",
-            'description' => "Voiced alveolar lateral approximant",
-            'info_ipa' => "(For both l & ʟ)",
-            'quick_transcription' => 'l',
-            'phone_family' => 'L',
-        ];
+
 
 
 
@@ -844,14 +888,7 @@ class SoundAlphabet
             'quick_transcription' => 'tlꞌ', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => 'sub_fixed_consonant',
-            'name' =>'Sla-sla',
-            'examples' => "(No examples in English)\n\nsl in {sl}a\n\t(cow in Moloko)\nł in {ł}aʼ\n\t(some in Navajo)\ntl in ta{tl}ete\n\t(small/weak in Norwegian)\nll in tege{ll}\n\t(kettle in Welsh)",
-            'description' => "Voiceless alveolar lateral fricative\n\n\"Belted L\"",
-            'info_ipa' => "ɬ\n\nl̥ when ɬ\nł when ɬ",
-            'quick_transcription' => 'ssh',
-        ];
+
 
         $alphabet[] = [
             'type' => 'sub_fixed_consonant',
@@ -1584,15 +1621,7 @@ class SoundAlphabet
             'quick_transcription' => 'hꞌts', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => "preaspirated_consonant\n\nliquid",
-            'name' =>'ha-La',
-            'examples' => "(No examples in English)\n\nl in k{l}appa\n\t(clap in Faroese)",
-            'description' => '',
-            'info_ipa' => 'ʰl',
-            'quick_transcription' => 'hꞌl', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'L',
-        ];
+
 
         $alphabet[] = [
             'type' => 'preaspirated_consonant',
@@ -1671,15 +1700,7 @@ class SoundAlphabet
             'phone_family' => 'D',
         ];
 
-        $alphabet[] = [
-            'type' => "breathy_consonant\n\nliquid",
-            'name' =>'Lhasa-Lhasa',
-            'examples' => "(No examples in English)\n\nLh in {Lh}asa\n\t(city & river in Tibet)",
-            'description' => '',
-            'info_ipa' => "lʰ\n\nl̥ when lʰ",
-            'quick_transcription' => 'lh',
-            'phone_family' => 'L',
-        ];
+
 
         $alphabet[] = [
             'type' => 'breathy_consonant',
