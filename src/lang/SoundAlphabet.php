@@ -613,14 +613,53 @@ class SoundAlphabet
             'phone_family' => 'R',
         ];
 
+        /*
         $alphabet[] = [
+            // ---- Replaced by R-dark-to-w ----
             'sound_type' => 'rhotic_liquid',
             'type' => "pharyngealized_approximant\n\nliquid-to-semi",
             'name' =>'pharyn-Rwaaa~',
             'examples' => "(an r variant in some\nAmerican English)",
             'description' => 'pharyngealized labialized postalveolar approximant',
             'info_ipa' => 'ɹˤw',
-            // 'quick_transcription' => '`rw~',
+            'quick_transcription' => '`rw~',
+            //'quick_transcription' => 'rw',
+            'phone_family' => 'R',
+        ];
+        */
+
+        /*
+        // ---- Replaced by R-light-to-y ----
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "y_glide_consonant\n\nliquid",
+            'name' =>'Ryeka-ry-ryeka',
+            'examples' => "{р}ека (\"I say\" / \"I tell\"\nin Russian)",
+            'description' => '',
+            'info_ipa' => "rʲ\n\nrj\n\nOld ᶉ",
+            'quick_transcription' => 'rꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'R',
+        ];
+        */
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "liquid-near-semi\n\ny_glide_consonant\n\nliquid",
+            'name' =>'R-light-to-y',
+            'examples' => "р in {fg_bright_cyan}р{previous}ека (\"I say\" / \"I tell\"\nin Russian)",
+            'description' => '',
+            'info_ipa' => "rʲ\n\nrj\n\nOld ᶉ",
+            'quick_transcription' => 'rꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rhotic_liquid',
+            'type' => "liquid-near-semi\n\npharyngealized_approximant\n\nliquid-to-semi\n\nliquid-near-semi",
+            'name' =>'R-dark-to-w',
+            'examples' => "(an r variant in some\nAmerican English)",
+            'description' => 'pharyngealized labialized postalveolar approximant',
+            'info_ipa' => 'ɹw & ɹˤw',
             'quick_transcription' => 'rw',
             'phone_family' => 'R',
         ];
@@ -634,7 +673,7 @@ class SoundAlphabet
             'name' =>'Level-level',
             'examples' => "l in {fg_bright_cyan}l{previous}et\nl in {fg_bright_cyan}l{previous}ight\nl in c{fg_bright_cyan}l{previous}ick\nl in go{fg_bright_cyan}l{previous}d\nl in {fg_bright_cyan}l{previous}eve{fg_bright_cyan}l{previous}\nboth l's in ye{fg_bright_cyan}ll{previous}ow\nll in be{fg_bright_cyan}ll{previous}",
             'description' => "Voiced alveolar lateral approximant",
-            'info_ipa' => "(For both l & ʟ)\n\nl , l̠ , l̪\nlˠ , lˤ , ɫ\nʟ",
+            'info_ipa' => "(For l & ʟ & ʎ)\n\nl , l̠ , l̪\nlˠ , lˤ\nʟ\n\n\nsome\nʎ\nl̠ʲ , ʎ̟ , ȴ\n(when not too light)\n\n\nsome\nɫ\n(when not too dark)",
             'quick_transcription' => 'l',
             'phone_family' => 'L',
         ];
@@ -669,6 +708,54 @@ class SoundAlphabet
             'description' => "Voiceless alveolar lateral fricative\n\n\"Belted L\"",
             'info_ipa' => "ɬ\n\nl̥ when ɬ\nł when ɬ",
             'quick_transcription' => 'ssh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "prestopped_liquid\n\nliquid",
+            'name' =>'L-prestop-gl',
+            'examples' => "(No examples in English)\n\nUsed in Hiw.",
+            'description' => '',
+            'info_ipa' => "ɡʟ / ᶢʟ",
+            'quick_transcription' => 'gl',
+            'phone_family' => 'L',
+        ];
+
+        /*
+        // ---- Replaced by L-light-to-y ----
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "y_glide_consonant\n\nliquid",
+            'name' =>'Ljepuri-ly-ljepuri',
+            'examples' => "ll in mi{ll}ion\nlj in {lj}epuri\n\t(rabbit in Aromanian)",
+            'description' => 'Voiced palatal lateral approximant',
+            'info_ipa' => "lj\n\nʎ\n\nAlt ȴ",
+            'quick_transcription' => 'lꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'L',
+        ];
+        */
+
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "liquid-near-semi",
+            'name' =>'L-light-to-y',
+            'examples' => "",
+            'description' => '',
+            'info_ipa' => "lj\n\n(When light toward y/j)\nʎ\nl̠ʲ , ʎ̟\n\nAlt ȴ",
+            'quick_transcription' => 'l′y',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "liquid-near-semi",
+            'name' =>'L-dark-to-w',
+            'examples' => "",
+            'description' => '',
+            'info_ipa' => "(When dark toward w)\nɫ",
+            'quick_transcription' => 'lw',
+            'phone_family' => 'L',
         ];
 
         // ───────────────────────────────────────────
@@ -1171,25 +1258,7 @@ class SoundAlphabet
             'quick_transcription' => 'gnꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => "y_glide_consonant\n\nliquid",
-            'name' =>'Ljepuri-ly-ljepuri',
-            'examples' => "ll in mi{ll}ion\nlj in {lj}epuri\n\t(rabbit in Aromanian)",
-            'description' => 'Voiced palatal lateral approximant',
-            'info_ipa' => "lj\n\nʎ\n\nAlt ȴ",
-            'quick_transcription' => 'lꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'L',
-        ];
 
-        $alphabet[] = [
-            'type' => "y_glide_consonant\n\nliquid",
-            'name' =>'Ryeka-ry-ryeka',
-            'examples' => "{р}ека (\"I say\" / \"I tell\"\nin Russian)",
-            'description' => '',
-            'info_ipa' => "rʲ\n\nrj\n\nOld ᶉ",
-            'quick_transcription' => 'rꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'R',
-        ];
 
 
 
