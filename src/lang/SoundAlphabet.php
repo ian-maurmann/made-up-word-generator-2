@@ -710,17 +710,6 @@ class SoundAlphabet
             'quick_transcription' => 'ssh',
         ];
 
-        $alphabet[] = [
-            'sound_type' => 'lateral_liquid',
-            'type' => "prestopped_liquid\n\nliquid",
-            'name' =>'L-prestop-gl',
-            'examples' => "(No examples in English)\n\nUsed in Hiw.",
-            'description' => '',
-            'info_ipa' => "ɡʟ / ᶢʟ",
-            'quick_transcription' => 'gl',
-            'phone_family' => 'L',
-        ];
-
         /*
         // ---- Replaced by L-light-to-y ----
         $alphabet[] = [
@@ -750,13 +739,70 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
             'type' => "liquid-near-semi",
+            'name' =>'L-dark-to-y',
+            'examples' => "",
+            'description' => '',
+            'info_ipa' => "jl\n\n(When dark toward y/j)\nʎ\nl̠ʲ , ʎ̟\n\nAlt ȴ",
+            'quick_transcription' => 'y′l',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "liquid-near-semi",
+            'name' =>'L-light-to-w',
+            'examples' => "",
+            'description' => '',
+            'info_ipa' => "(When light toward w)\nɫ",
+            'quick_transcription' => 'lw',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "liquid-near-semi",
             'name' =>'L-dark-to-w',
             'examples' => "",
             'description' => '',
             'info_ipa' => "(When dark toward w)\nɫ",
-            'quick_transcription' => 'lw',
+            'quick_transcription' => 'wl',
             'phone_family' => 'L',
         ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "prestopped_liquid\n\nliquid",
+            'name' =>'L-prestop-gl',
+            'examples' => "(No examples in English)\n\nPrestop liquid used in Hiw.",
+            'description' => '',
+            'info_ipa' => "ɡʟ / ᶢʟ",
+            'quick_transcription' => 'gl',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "prestopped_liquid\n\nliquid",
+            'name' =>'L-prestop-gya-lya',
+            'examples' => "(No examples in English)\n\nPrestop liquid used in Aboriginal languages.",
+            'description' => '',
+            'info_ipa' => "ɟʎ",
+            'quick_transcription' => '(g′ya)la',
+            'phone_family' => 'L',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'type' => "prestopped_liquid\n\nliquid",
+            'name' =>'L-prestop-dl',
+            'examples' => "(No examples in English)\n\nPrestop liquid used in Aboriginal languages.",
+            'description' => '',
+            'info_ipa' => "d̪l̪, ᵈl, ɖɭ",
+            'quick_transcription' => 'dl',
+            'phone_family' => 'L',
+        ];
+
+        // g′ya
 
         // ───────────────────────────────────────────
 
@@ -993,6 +1039,15 @@ class SoundAlphabet
             'description' => "Voiced postalveolar affricate",
             'info_ipa' => "d͡ʒ\n\n(formerly ʤ)",
             'quick_transcription' => 'j',
+        ];
+
+        $alphabet[] = [
+            'type' => 'sub_fixed_consonant',
+            'name' =>'Gjat-gjat',
+            'examples' => "gj in {gj}at (cat in Friulian)\ngy in {gy}ám (guardian in Hungarian)\n2nd g in Gaeil{g}e (Irish in Irish)",
+            'description' => "Voiced palatal plosive",
+            'info_ipa' => 'ɟ',
+            'quick_transcription' => 'g′ya',
         ];
 
 
