@@ -481,6 +481,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'semi',
+            'sound_name' =>'Y-axiophone',
+            'axiophone' => 'Y',
             'type' => "fixed_consonant\n\nsemi",
             'name' =>'Yes-yes',
             'examples' => "y in {fg_bright_cyan}y{previous}es\ny in {fg_bright_cyan}y{previous}ellow\nstart of u in universe\ny in {fg_bright_cyan}y{previous}ou",
@@ -492,6 +494,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'semi',
+            'sound_name' =>'YW1-axiophone',
+            'axiophone' => 'YW1',
             'type' => "sub_fixed_consonant\n\nsemi",
             'name' =>'Yuè-yuè',
             'examples' => "(No examples in English)\n\n(A sound between yah and wah)\n\ny in {fg_bright_cyan}y{previous}uè (Moon in Mandarin)\nu in f{fg_bright_cyan}u{previous}l (ugly in Swedish)\nü in d{fg_bright_cyan}ü{previous}a (back in Kurdish)",
@@ -502,6 +506,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'semi',
+            'sound_name' =>'YW2-axiophone',
+            'axiophone' => 'YW2',
             'type' => "sub_fixed_consonant\n\nsemi",
             'name' =>'Uisa-uisa',
             'examples' => "(No examples in English)\n\nu in {fg_bright_cyan}u{previous}isa (doctor in Korean)",
@@ -512,6 +518,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'semi',
+            'sound_name' =>'W-axiophone',
+            'axiophone' => 'W',
             'type' => "fixed_consonant\n\nsemi",
             'name' =>'West-west',
             'examples' => "w in {fg_bright_cyan}w{previous}affle\nw in {fg_bright_cyan}w{previous}ood\nw in {fg_bright_cyan}w{previous}est\nw in {fg_bright_cyan}w{previous}oman",
@@ -526,6 +534,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-axiophone',
+            'axiophone' => 'R',
             'type' => "fixed_consonant\n\nliquid",
             'name' =>'Roar-roar',
             'examples' => "r in {fg_bright_cyan}r{previous}abbit\nr in {fg_bright_cyan}r{previous}oar",
@@ -537,6 +547,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-trill',
+            'axiophone' => 'R',
             'type' => "trill\n\nliquid",
             'name' =>'Arriba-arriba',
             'examples' => "(No examples in English)\n\nrr in a{fg_bright_cyan}rr{previous}iba in Spanish",
@@ -548,6 +560,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-breathy',
+            'axiophone' => 'R',
             'type' => "trill\n\nliquid",
             'name' =>'Rhagfyr-Rhagfyr',
             'examples' => "(No examples in English)\n\nIn ancient greek, the Rh in {fg_bright_cyan}Rh{previous}o\n\nRh in {fg_bright_cyan}Rh{previous}agfyr\n\t(December in Welsh)",
@@ -559,6 +573,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-extra-long',
+            'axiophone' => 'R',
             'type' => "extra_long_fixed_consonant\n\nliquid",
             'name' =>'Rrrrr-rrrrr',
             'examples' => '',
@@ -570,6 +586,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-pre-nasal-en-Rer',
+            'axiophone' => 'R',
             'type' => 'prenasalized_consonant',
             'name' =>'pre-nasal-en-Rer',
             'examples' => '',
@@ -581,6 +599,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-uvular-approximant',
+            'axiophone' => 'R',
             'type' => "sub_fixed_consonant\n\nliquid",
             'name' =>'Roed-roed',
             'examples' => "(No examples in English)\n\nr in {fg_bright_cyan}r{previous}ød (red in Danish)",
@@ -592,6 +612,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-uvular-fricative',
+            'axiophone' => 'R',
             'type' => "sub_fixed_consonant\n\nliquid",
             'name' =>'Rek-rek',
             'examples' => "(No examples in English)\n\nr in {fg_bright_cyan}ղ{previous}եկ (rudder in Armenian)",
@@ -604,6 +626,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-pharyngealized',
+            'axiophone' => 'R',
             'type' => "pharyngealized_approximant\n\nliquid",
             'name' =>'pharyn-Raaa~',
             'examples' => "(used in Dutch,\n& some dialects of\nAmerican English)",
@@ -644,6 +668,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-light-to-y',
+            'axiophone' => 'R',
             'type' => "liquid-near-semi\n\ny_glide_consonant\n\nliquid",
             'name' =>'R-light-to-y',
             'examples' => "р in {fg_bright_cyan}р{previous}ека (\"I say\" / \"I tell\"\nin Russian)",
@@ -655,6 +681,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'rhotic_liquid',
+            'sound_name' =>'R-dark-to-w',
+            'axiophone' => 'R',
             'type' => "liquid-near-semi\n\npharyngealized_approximant\n\nliquid-to-semi\n\nliquid-near-semi",
             'name' =>'R-dark-to-w',
             'examples' => "(an r variant in some\nAmerican English)",
@@ -669,6 +697,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-axiophone',
+            'axiophone' => 'L',
             'type' => "fixed_consonant\n\nliquid",
             'name' =>'Level-level',
             'examples' => "l in {fg_bright_cyan}l{previous}et\nl in {fg_bright_cyan}l{previous}ight\nl in c{fg_bright_cyan}l{previous}ick\nl in go{fg_bright_cyan}l{previous}d\nl in {fg_bright_cyan}l{previous}eve{fg_bright_cyan}l{previous}\nboth l's in ye{fg_bright_cyan}ll{previous}ow\nll in be{fg_bright_cyan}ll{previous}",
@@ -680,6 +710,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-preaspirated',
+            'axiophone' => 'L',
             'type' => "preaspirated_consonant\n\nliquid",
             'name' =>'ha-La',
             'examples' => "(No examples in English)\n\nl in k{fg_bright_cyan}l{previous}appa\n\t(clap in Faroese)",
@@ -691,6 +723,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-breathy',
+            'axiophone' => 'L',
             'type' => "breathy_consonant\n\nliquid",
             'name' =>'Lhasa-Lhasa',
             'examples' => "(No examples in English)\n\nLh in {fg_bright_cyan}Lh{previous}asa\n\t(city & river in Tibet)",
@@ -700,15 +734,6 @@ class SoundAlphabet
             'phone_family' => 'L',
         ];
 
-        $alphabet[] = [
-            'sound_type' => 'lateral_liquid',
-            'type' => 'sub_fixed_consonant',
-            'name' =>'Sla-sla',
-            'examples' => "(No examples in English)\n\nsl in {fg_bright_cyan}sl{previous}a\n\t(cow in Moloko)\nł in {fg_bright_cyan}ł{previous}aʼ\n\t(some in Navajo)\ntl in ta{fg_bright_cyan}tl{previous}ete\n\t(small/weak in Norwegian)\nll in tege{fg_bright_cyan}ll{previous}\n\t(kettle in Welsh)",
-            'description' => "Voiceless alveolar lateral fricative\n\n\"Belted L\"",
-            'info_ipa' => "ɬ\n\nl̥ when ɬ\nł when ɬ",
-            'quick_transcription' => 'ssh',
-        ];
 
         /*
         // ---- Replaced by L-light-to-y ----
@@ -727,6 +752,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-light-to-y',
+            'axiophone' => 'L',
             'type' => "liquid-near-semi",
             'name' =>'L-light-to-y',
             'examples' => "",
@@ -738,6 +765,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-dark-to-y',
+            'axiophone' => 'L',
             'type' => "liquid-near-semi",
             'name' =>'L-dark-to-y',
             'examples' => "",
@@ -749,6 +778,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-light-to-w',
+            'axiophone' => 'L',
             'type' => "liquid-near-semi",
             'name' =>'L-light-to-w',
             'examples' => "",
@@ -760,6 +791,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-dark-to-w',
+            'axiophone' => 'L',
             'type' => "liquid-near-semi",
             'name' =>'L-dark-to-w',
             'examples' => "",
@@ -771,6 +804,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-prestop-gl',
+            'axiophone' => 'L',
             'type' => "prestopped_liquid\n\nliquid",
             'name' =>'L-prestop-gl',
             'examples' => "(No examples in English)\n\nPrestop liquid used in Hiw.",
@@ -782,8 +817,10 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-prestop-gya-ly',
+            'axiophone' => 'L',
             'type' => "prestopped_liquid\n\nliquid",
-            'name' =>'L-prestop-gya-lya',
+            'name' =>'L-prestop-gya-ly',
             'examples' => "(No examples in English)\n\nPrestop liquid used in Aboriginal languages.",
             'description' => '',
             'info_ipa' => "ɟʎ",
@@ -793,6 +830,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-prestop-dl',
+            'axiophone' => 'L',
             'type' => "prestopped_liquid\n\nliquid",
             'name' =>'L-prestop-dl',
             'examples' => "(No examples in English)\n\nPrestop liquid used in Aboriginal languages.",
@@ -802,7 +841,30 @@ class SoundAlphabet
             'phone_family' => 'L',
         ];
 
-        // g′ya
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-belt',
+            'axiophone' => 'SSH',
+            'type' => 'sub_fixed_consonant',
+            'name' =>'Sla-sla',
+            'examples' => "(No examples in English)\n\nsl in {fg_bright_cyan}sl{previous}a\n\t(cow in Moloko)\nł in {fg_bright_cyan}ł{previous}aʼ\n\t(some in Navajo)\ntl in ta{fg_bright_cyan}tl{previous}ete\n\t(small/weak in Norwegian)\nll in tege{fg_bright_cyan}ll{previous}\n\t(kettle in Welsh)",
+            'description' => "Voiceless alveolar lateral fricative\n\n\"Belted L\"",
+            'info_ipa' => "ɬ\n\nl̥ when ɬ\nł when ɬ",
+            'quick_transcription' => 'ssh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-belt-dark',
+            'axiophone' => 'SSH',
+            'type' => 'sub_fixed_consonant',
+            'name' =>'L-belt-dark',
+            'examples' => "(No examples in English)",
+            'description' => "Voiceless palatal lateral fricative\n\n\"Belted ʎ\"",
+            'info_ipa' => "ʎ̥˔",
+            'quick_transcription' => 'ssaw',
+        ];
+
 
         // ───────────────────────────────────────────
 

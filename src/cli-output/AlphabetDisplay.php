@@ -183,6 +183,16 @@ class AlphabetDisplay
 
         $table_columns = [
             [
+                'attribute' => 'axiophone',
+                'label'     => 'Axiophone',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'sound_name',
+                'label'     => 'Sound Name',
+                'text_align' => 'left',
+            ],
+            [
                 'attribute' => 'type',
                 'label'     => 'Type',
                 'text_align' => 'left',
@@ -233,6 +243,16 @@ class AlphabetDisplay
 
         $table_columns = [
             [
+                'attribute' => 'axiophone',
+                'label'     => 'Axiophone',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'sound_name',
+                'label'     => 'Sound Name',
+                'text_align' => 'left',
+            ],
+            [
                 'attribute' => 'type',
                 'label'     => 'Type',
                 'text_align' => 'left',
@@ -282,6 +302,16 @@ class AlphabetDisplay
         ];
 
         $table_columns = [
+            [
+                'attribute' => 'axiophone',
+                'label'     => 'Axiophone',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'sound_name',
+                'label'     => 'Sound Name',
+                'text_align' => 'left',
+            ],
             [
                 'attribute' => 'type',
                 'label'     => 'Type',
