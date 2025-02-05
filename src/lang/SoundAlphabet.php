@@ -91,6 +91,12 @@ class SoundAlphabet
         return $this->getSoundByType('lateral_liquid');
     }
 
+    public function getNasals(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('nasal');
+    }
+
     public function getConsonants(): array
     {
         // Return array of sounds, else return an empty array
@@ -117,6 +123,7 @@ class SoundAlphabet
             $is_semi           = $sound_type === 'semi';
             $is_rhotic_liquid  = $sound_type === 'rhotic_liquid';
             $is_lateral_liquid = $sound_type === 'lateral_liquid';
+            $is_nasal          = $sound_type === 'nasal';
             $is_consonant      = $sound_type === 'consonant';
 
             // Find if is sorted
@@ -126,6 +133,7 @@ class SoundAlphabet
                 || $is_semi
                 || $is_rhotic_liquid
                 || $is_lateral_liquid
+                || $is_nasal
                 || $is_consonant
             );
 
@@ -855,6 +863,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-belt-light-to-y',
+            'axiophone' => 'SSH',
+            'type' => 'y_glide_consonant',
+            'name' =>'Sla-Y',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => "ɬj\n\nAlt ɕ",
+            'quick_transcription' => 'sshꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
             'sound_name' =>'L-belt-dark',
             'axiophone' => 'SSH',
             'type' => 'sub_fixed_consonant',
@@ -864,6 +884,155 @@ class SoundAlphabet
             'info_ipa' => "ʎ̥˔",
             'quick_transcription' => 'ssaw',
         ];
+
+
+
+
+        // ───────────────────────────────────────────
+        // Nasals
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'M-axio',
+            'axiophone' => 'M',
+            'type' => 'fixed_consonant',
+            'name' =>'Mars-Mars',
+            'examples' => "m in {fg_bright_cyan}m{previous}an\nm in {fg_bright_cyan}m{previous}op\nm in la{fg_bright_cyan}m{previous}p\nm in ru{fg_bright_cyan}m{previous}",
+            'description' => "voiced bilabial nasal",
+            'info_ipa' => 'm',
+            'quick_transcription' => 'm',
+            'phone_family' => 'M',
+        ];
+
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'M-extra-long',
+            'axiophone' => 'M',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Mmmmm-mmmmm',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ɱːː',
+            'quick_transcription' => 'mmmmm',
+            'phone_family' => 'M',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'M-with-h-color',
+            'axiophone' => 'M',
+            'type' => "h_color\n\nnasal",
+            'name' =>'Hma-hma',
+            'examples' => "hm in {fg_bright_cyan}hm{previous}a\n(black in Jalapa Mazatec)",
+            'description' => 'Voiceless bilabial nasal',
+            'info_ipa' => 'm̥',
+            'quick_transcription' => 'hm',
+            'phone_family' => 'M',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'N-axio',
+            'axiophone' => 'N',
+            'type' => 'fixed_consonant',
+            'name' =>'Noble-noble',
+            'examples' => "n in {fg_bright_cyan}n{previous}ope\nn in te{fg_bright_cyan}n{previous}th\nn in mo{fg_bright_cyan}n{previous}th",
+            'description' => "voiced alveolar nasal",
+            'info_ipa' => 'n',
+            'quick_transcription' => 'n',
+            'phone_family' => 'N',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'N-glide-to-liquid-w',
+            'axiophone' => 'N',
+            'type' => 'w_glide_consonant',
+            'name' =>'Noir-noir',
+            'examples' => "n in film {fg_bright_cyan}n{previous}oir",
+            'description' => "",
+            'info_ipa' => "nw",
+            'quick_transcription' => 'nw',
+            'phone_family' => 'N',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'N-glide-to-liquid-y',
+            'axiophone' => 'N',
+            'type' => 'y_glide_consonant',
+            'name' =>'Enye-ny-enye',
+            'examples' => "n in {fg_bright_cyan}n{previous}ew\nñ in espa{fg_bright_cyan}ñ{previous}ol\n\nsometimes the gn in Lasa{fg_bright_cyan}gn{previous}a",
+            'description' => 'Voiced palatal nasal',
+            'info_ipa' => "nj\n\nɲ\n(when drift to nj)",
+            'quick_transcription' => 'nꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'N',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'N-with-h-color',
+            'axiophone' => 'N',
+            'type' => "h_color\n\nnasal",
+            'name' =>'Nhad-nhad',
+            'examples' => "nh in fy {fg_bright_cyan}nh{previous}ad\n(My father in Welsh)",
+            'description' => 'Voiceless alveolar nasal',
+            'info_ipa' => 'n̥',
+            'quick_transcription' => 'hn',
+            'phone_family' => 'N',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'NH-axio',
+            'axiophone' => 'NH',
+            'type' => 'fixed_consonant',
+            'name' =>'Enjuto-enjuto',
+            'examples' => "(No examples in English)\n\nnj in e{fg_bright_cyan}nj{previous}uto\n\t(withered in Spanish)",
+            'description' => "Voiced uvular nasal",
+            'info_ipa' => 'ɴ',
+            'quick_transcription' => 'nh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'NG-axio',
+            'axiophone' => 'NG',
+            'type' => 'nasal_glide_consonant',
+            'name' =>'Ngwee-ngwee',
+            'examples' => "ng in ki{fg_bright_cyan}ng{previous}\nng in si{fg_bright_cyan}ng{previous}\nng in ri{fg_bright_cyan}ng{previous}\nng in {fg_bright_cyan}ng{previous}wee\n\t(penny coin in Zambia)\nn in si{fg_bright_cyan}n{previous}k",
+            'description' => "voiced velar nasal\n\nalso known as agma",
+            'info_ipa' => 'ŋ',
+            'quick_transcription' => 'ng',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'GN-axio',
+            'axiophone' => 'GN',
+            'type' => 'nasal_glide_consonant',
+            'name' =>'Gnaeus-Gnaeus',
+            'examples' => "Gn in {fg_bright_cyan}Gn{previous}aeus\n\t(An old Roman name)\n\nSometimes the gn in Lasa{fg_bright_cyan}gn{previous}a",
+            'description' => "Voiced palatal nasal",
+            'info_ipa' => "gn\n\nɲ\n(when drift to gn)",
+            'quick_transcription' => 'gn',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'GN-glide-to-liquid-y',
+            'axiophone' => 'GN',
+            'type' => 'y_glide_consonant',
+            'name' =>'Magnolia-gny-Magnolia',
+            'examples' => "gn in ma{fg_bright_cyan}gn{previous}olia\n\nsometimes the gn in Lasa{fg_bright_cyan}gn{previous}a",
+            'description' => 'Voiced palatal nasal',
+            'info_ipa' => "gnj\n\nɲ\n(when drift \nto gnj)",
+            'quick_transcription' => 'gnꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+
+
 
 
         // ───────────────────────────────────────────
@@ -888,15 +1057,7 @@ class SoundAlphabet
             'phone_family' => 'B',
         ];
 
-        $alphabet[] = [
-            'type' => 'fixed_consonant',
-            'name' =>'Mars-Mars',
-            'examples' => "m in {m}an\nm in {m}op\nm in la{m}p\nm in ru{m}",
-            'description' => "voiced bilabial nasal",
-            'info_ipa' => 'm',
-            'quick_transcription' => 'm',
-            'phone_family' => 'M',
-        ];
+
 
 
 
@@ -970,15 +1131,7 @@ class SoundAlphabet
             'phone_family' => 'Z',
         ];
 
-        $alphabet[] = [
-            'type' => 'fixed_consonant',
-            'name' =>'Noble-noble',
-            'examples' => "n in {n}ope\nn in te{n}th\nn in mo{n}th",
-            'description' => "voiced alveolar nasal",
-            'info_ipa' => 'n',
-            'quick_transcription' => 'n',
-            'phone_family' => 'N',
-        ];
+
 
 
 
@@ -1053,14 +1206,7 @@ class SoundAlphabet
             'quick_transcription' => 'q',
         ];
 
-        $alphabet[] = [
-            'type' => 'fixed_consonant',
-            'name' =>'Enjuto-enjuto',
-            'examples' => "(No examples in English)\n\nnj in e{nj}uto\n\t(withered in Spanish)",
-            'description' => "Voiced uvular nasal",
-            'info_ipa' => 'ɴ',
-            'quick_transcription' => 'nh',
-        ];
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
@@ -1134,23 +1280,7 @@ class SoundAlphabet
             'phone_family' => 'P',
         ];
 
-        $alphabet[] = [
-            'type' => 'nasal_glide_consonant',
-            'name' =>'Ngwee-ngwee',
-            'examples' => "ng in ki{ng}\nng in si{ng}\nng in ri{ng}\nng in {ng}wee\n\t(penny coin in Zambia)\nn in si{n}k",
-            'description' => "voiced velar nasal\n\nalso known as agma",
-            'info_ipa' => 'ŋ',
-            'quick_transcription' => 'ng',
-        ];
 
-        $alphabet[] = [
-            'type' => 'nasal_glide_consonant',
-            'name' =>'Gnaeus-Gnaeus',
-            'examples' => "Gn in {Gn}aeus\n\t(An old Roman name)\n\nsometimes the gn in Lasa{gn}a",
-            'description' => "Voiced palatal nasal",
-            'info_ipa' => "gn\n\nɲ\n(when drift to gn)",
-            'quick_transcription' => 'gn',
-        ];
 
         $alphabet[] = [
             'type' => 'w_glide_consonant',
@@ -1172,15 +1302,7 @@ class SoundAlphabet
             'phone_family' => 'V',
         ];
 
-        $alphabet[] = [
-            'type' => 'w_glide_consonant',
-            'name' =>'Noir-noir',
-            'examples' => "n in film {n}oir",
-            'description' => "",
-            'info_ipa' => "nw",
-            'quick_transcription' => 'nw',
-            'phone_family' => 'N',
-        ];
+
 
         $alphabet[] = [
             'type' => 'w_glide_consonant',
@@ -1356,24 +1478,7 @@ class SoundAlphabet
             'phone_family' => 'Z',
         ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Enye-ny-enye',
-            'examples' => "n in {n}ew\nñ in espa{ñ}ol\n\nsometimes the gn in Lasa{gn}a",
-            'description' => 'Voiced palatal nasal',
-            'info_ipa' => "nj\n\nɲ\n(when drift to nj)",
-            'quick_transcription' => 'nꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'N',
-        ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Magnolia-gny-Magnolia',
-            'examples' => "gn in magnolia\n\nsometimes the gn in Lasa{gn}a",
-            'description' => 'Voiced palatal nasal',
-            'info_ipa' => "gnj\n\nɲ\n(when drift \nto gnj)",
-            'quick_transcription' => 'gnꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
 
 
@@ -1389,14 +1494,7 @@ class SoundAlphabet
             'quick_transcription' => 'slꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Sla-Y',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => "ɬj\n\nAlt ɕ",
-            'quick_transcription' => 'sshꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
+
 
         $alphabet[] = [
             'type' => 'y_glide_consonant',
@@ -1464,15 +1562,6 @@ class SoundAlphabet
             'quick_transcription' => 'jꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Mmmmm-mmmmm',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ɱːː',
-            'quick_transcription' => 'mmmmm',
-            'phone_family' => 'M',
-        ];
 
         $alphabet[] = [
             'type' => 'extra_long_fixed_consonant',
@@ -1746,25 +1835,7 @@ class SoundAlphabet
 
         // -------------------------
 
-        $alphabet[] = [
-            'type' => "h_color\n\nnasal",
-            'name' =>'Nhad-nhad',
-            'examples' => "nh in fy {nh}ad\n(My father in Welsh)",
-            'description' => 'Voiceless alveolar nasal',
-            'info_ipa' => 'n̥',
-            'quick_transcription' => 'hn',
-            'phone_family' => 'N',
-        ];
 
-        $alphabet[] = [
-            'type' => "h_color\n\nnasal",
-            'name' =>'Hma-hma',
-            'examples' => "hm in {hm}a\n(black in Jalapa Mazatec)",
-            'description' => 'Voiceless bilabial nasal',
-            'info_ipa' => 'm̥',
-            'quick_transcription' => 'hm',
-            'phone_family' => 'M',
-        ];
 
         $alphabet[] = [
             'type' => "h_color\n\nw_glide_consonant\n\nsemi",
