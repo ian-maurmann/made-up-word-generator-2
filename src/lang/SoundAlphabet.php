@@ -151,6 +151,7 @@ class SoundAlphabet
     {
         $alphabet = [];
 
+        /*
         $alphabet[] = [
             'type' => 'fixed_consonant',
             'axiophone' => 'P',
@@ -221,6 +222,7 @@ class SoundAlphabet
             'quick_transcription' => 'pw',
             'phone_family' => 'P',
         ];
+        */
 
 
         // __________________________________
@@ -893,7 +895,7 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
-            'sound_name' =>'M-axio',
+            'sound_name' =>'M-axiophone',
             'axiophone' => 'M',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'fixed_consonant',
@@ -980,7 +982,21 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
-            'sound_name' =>'N-axio',
+            'sound_name' =>'M-end-syllabic',
+            'axiophone' => 'M',
+            'special_categorization' => "{bold}{fg_bright_red}end-syllabic{previous}",
+            'type' => 'end-syllabic_consonant',
+            'name' =>'Sedm-Sedm-mmm',
+            'examples' => "(No examples in English)\n\nm in sed{fg_bright_cyan}m{previous}\n\t(seven in Czech)",
+            'description' => "",
+            'info_ipa' => 'm̩',
+            'quick_transcription' => 'ꞌm', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'M',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'N-axiophone',
             'axiophone' => 'N',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'fixed_consonant',
@@ -1066,7 +1082,21 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
-            'sound_name' =>'NH-axio',
+            'sound_name' =>'N-end-syllabic',
+            'axiophone' => 'N',
+            'special_categorization' => "{bold}{fg_bright_red}end-syllabic{previous}",
+            'type' => 'end-syllabic_consonant',
+            'name' =>'Njutn-Njutn-nnn',
+            'examples' => "(No examples in English)\n\nn in Njut{fg_bright_cyan}n{previous}\n\t(Newton in Serbo-Croatian)",
+            'description' => "",
+            'info_ipa' => 'n̩',
+            'quick_transcription' => 'ꞌn', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'N',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'NH-axiophone',
             'axiophone' => 'NH',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'fixed_consonant',
@@ -1079,7 +1109,7 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
-            'sound_name' =>'NG-axio',
+            'sound_name' =>'NG-axiophone',
             'axiophone' => 'NG',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'nasal_glide_consonant',
@@ -1106,7 +1136,7 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
-            'sound_name' =>'GN-axio',
+            'sound_name' =>'GN-axiophone',
             'axiophone' => 'GN',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'nasal_glide_consonant',
@@ -1130,6 +1160,10 @@ class SoundAlphabet
             'info_ipa' => "gnj\n\nɲ\n(when drift \nto gnj)",
             'quick_transcription' => 'gnꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
+
+
+
+
 
 
 
@@ -2630,25 +2664,7 @@ class SoundAlphabet
             'quick_transcription' => 'ꞌlll', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-        $alphabet[] = [
-            'type' => 'end-syllabic_consonant',
-            'name' =>'Sedm-Sedm-mmm',
-            'examples' => "(No examples in English)\n\nm in sed{m}\n\t(seven in Czech)",
-            'description' => "",
-            'info_ipa' => 'm̩',
-            'quick_transcription' => 'ꞌm', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'M',
-        ];
 
-        $alphabet[] = [
-            'type' => 'end-syllabic_consonant',
-            'name' =>'Njutn-Njutn-nnn',
-            'examples' => "(No examples in English)\n\nn in Njut{n}\n\t(Newton in Serbo-Croatian)",
-            'description' => "",
-            'info_ipa' => 'n̩',
-            'quick_transcription' => 'ꞌn', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'N',
-        ];
 
         $alphabet[] = [
             'type' => 'end-syllabic_consonant',
