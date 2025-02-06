@@ -376,6 +376,11 @@ class AlphabetDisplay
                 'text_align' => 'left',
             ],
             [
+                'attribute' => 'special_categorization',
+                'label' => "Special\nCategorization",
+                'text_align' => 'center',
+            ],
+            [
                 'attribute' => 'type',
                 'label'     => 'Type',
                 'text_align' => 'left',

@@ -895,6 +895,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'M-axio',
             'axiophone' => 'M',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'fixed_consonant',
             'name' =>'Mars-Mars',
             'examples' => "m in {fg_bright_cyan}m{previous}an\nm in {fg_bright_cyan}m{previous}op\nm in la{fg_bright_cyan}m{previous}p\nm in ru{fg_bright_cyan}m{previous}",
@@ -909,6 +910,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'M-extra-long',
             'axiophone' => 'M',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{fg_bright_yellow}extra-long{previous}",
             'type' => 'extra_long_fixed_consonant',
             'name' =>'Mmmmm-mmmmm',
             'examples' => '',
@@ -922,6 +924,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'M-with-h-color',
             'axiophone' => 'M',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{fg_dark_cyan}h-color{previous}",
             'type' => "h_color\n\nnasal",
             'name' =>'Hma-hma',
             'examples' => "hm in {fg_bright_cyan}hm{previous}a\n(black in Jalapa Mazatec)",
@@ -931,10 +934,55 @@ class SoundAlphabet
             'phone_family' => 'M',
         ];
 
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'M-breathy',
+            'axiophone' => 'M',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{fg_bright_cyan}breathy{previous}",
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ma-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'mʰ',
+            'quick_transcription' => 'mh',
+            'phone_family' => 'M',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'M-pharyngealized',
+            'axiophone' => 'M',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{fg_bright_green}pharyngealized{previous}",
+            'type' => 'pharyngealized_nasal',
+            'name' =>'pharyn-Maaa~',
+            'examples' => "(No examples in English)\n\n(used in Chechen, Ubykh,\nMoroccan Darija,\nand Iraqi Arabic)",
+            'description' => '',
+            'info_ipa' => 'mˤ',
+            'quick_transcription' => '`m~',
+            'phone_family' => 'M',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'M-syllabic',
+            'axiophone' => 'M',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{bold}{fg_bright_red}syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}syllabic{previous}",
+            'type' => 'syllabic_consonant',
+            'name' =>'M-m-M',
+            'examples' => "(No examples in English)\n\n(Used in Cantonese & Baoulé)",
+            'description' => "",
+            'info_ipa' => 'm̩',
+            'quick_transcription' => '-m-',
+            'phone_family' => 'M',
+        ];
+
         $alphabet[] = [
             'sound_type' => 'nasal',
             'sound_name' =>'N-axio',
             'axiophone' => 'N',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'fixed_consonant',
             'name' =>'Noble-noble',
             'examples' => "n in {fg_bright_cyan}n{previous}ope\nn in te{fg_bright_cyan}n{previous}th\nn in mo{fg_bright_cyan}n{previous}th",
@@ -948,6 +996,8 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'N-glide-to-liquid-w',
             'axiophone' => 'N',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
+            'special_categorization' => "{fg_dark_cyan}glide-w{previous}",
             'type' => 'w_glide_consonant',
             'name' =>'Noir-noir',
             'examples' => "n in film {fg_bright_cyan}n{previous}oir",
@@ -961,6 +1011,8 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'N-glide-to-liquid-y',
             'axiophone' => 'N',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
+            'special_categorization' => "{fg_dark_cyan}glide-y{previous}",
             'type' => 'y_glide_consonant',
             'name' =>'Enye-ny-enye',
             'examples' => "n in {fg_bright_cyan}n{previous}ew\nñ in espa{fg_bright_cyan}ñ{previous}ol\n\nsometimes the gn in Lasa{fg_bright_cyan}gn{previous}a",
@@ -974,6 +1026,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'N-with-h-color',
             'axiophone' => 'N',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{fg_dark_cyan}h-color{previous}",
             'type' => "h_color\n\nnasal",
             'name' =>'Nhad-nhad',
             'examples' => "nh in fy {fg_bright_cyan}nh{previous}ad\n(My father in Welsh)",
@@ -985,8 +1038,37 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
+            'sound_name' =>'N-pharyngealized',
+            'axiophone' => 'N',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{fg_bright_green}pharyngealized{previous}",
+            'type' => 'pharyngealized_nasal',
+            'name' =>'pharyn-Naaa~',
+            'examples' => "(No examples in English)\n\n(used in Chechen)",
+            'description' => '',
+            'info_ipa' => 'nˤ',
+            'quick_transcription' => '`n~',
+            'phone_family' => 'N',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
+            'sound_name' =>'N-syllabic',
+            'axiophone' => 'N',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{bold}{fg_bright_red}syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}syllabic{previous}",
+            'type' => 'syllabic_consonant',
+            'name' =>'N-n-N',
+            'examples' => "(One-off in English for \"and\")\n\n(used in Cantonese, Yoruba,\n& Baoulé)",
+            'description' => "",
+            'info_ipa' => 'n̩',
+            'quick_transcription' => '-n-',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
             'sound_name' =>'NH-axio',
             'axiophone' => 'NH',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'fixed_consonant',
             'name' =>'Enjuto-enjuto',
             'examples' => "(No examples in English)\n\nnj in e{fg_bright_cyan}nj{previous}uto\n\t(withered in Spanish)",
@@ -999,6 +1081,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'NG-axio',
             'axiophone' => 'NG',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'nasal_glide_consonant',
             'name' =>'Ngwee-ngwee',
             'examples' => "ng in ki{fg_bright_cyan}ng{previous}\nng in si{fg_bright_cyan}ng{previous}\nng in ri{fg_bright_cyan}ng{previous}\nng in {fg_bright_cyan}ng{previous}wee\n\t(penny coin in Zambia)\nn in si{fg_bright_cyan}n{previous}k",
@@ -1009,8 +1092,23 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'nasal',
+            'sound_name' =>'NG-syllabic',
+            'axiophone' => 'NG',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{bold}{fg_bright_red}syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}syllabic{previous}",
+            'type' => 'syllabic_consonant',
+            'name' =>'Ng-ng-Ng',
+            'examples' => "(No examples in English)\n\nng in {fg_bright_cyan}ng{previous}\n\t(five in Cantonese)",
+            'description' => "",
+            'info_ipa' => 'ŋ̍',
+            'quick_transcription' => '-ng-',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'nasal',
             'sound_name' =>'GN-axio',
             'axiophone' => 'GN',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
             'type' => 'nasal_glide_consonant',
             'name' =>'Gnaeus-Gnaeus',
             'examples' => "Gn in {fg_bright_cyan}Gn{previous}aeus\n\t(An old Roman name)\n\nSometimes the gn in Lasa{fg_bright_cyan}gn{previous}a",
@@ -1023,6 +1121,8 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'GN-glide-to-liquid-y',
             'axiophone' => 'GN',
+            'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous}",
+            'special_categorization' => "{fg_dark_cyan}glide-y{previous}",
             'type' => 'y_glide_consonant',
             'name' =>'Magnolia-gny-Magnolia',
             'examples' => "gn in ma{fg_bright_cyan}gn{previous}olia\n\nsometimes the gn in Lasa{fg_bright_cyan}gn{previous}a",
@@ -1030,6 +1130,16 @@ class SoundAlphabet
             'info_ipa' => "gnj\n\nɲ\n(when drift \nto gnj)",
             'quick_transcription' => 'gnꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1927,15 +2037,6 @@ class SoundAlphabet
             'phone_family' => 'B',
         ];
 
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ma-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'mʰ',
-            'quick_transcription' => 'mh',
-            'phone_family' => 'M',
-        ];
 
         $alphabet[] = [
             'type' => 'breathy_consonant',
@@ -2264,25 +2365,7 @@ class SoundAlphabet
             'quick_transcription' => '`dz~',
         ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_nasal',
-            'name' =>'pharyn-Maaa~',
-            'examples' => "(No examples in English)\n\n(used in Chechen, Ubykh,\nMoroccan Darija,\nand Iraqi Arabic)",
-            'description' => '',
-            'info_ipa' => 'mˤ',
-            'quick_transcription' => '`m~',
-            'phone_family' => 'M',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_nasal',
-            'name' =>'pharyn-Naaa~',
-            'examples' => "(No examples in English)\n\n(used in Chechen)",
-            'description' => '',
-            'info_ipa' => 'nˤ',
-            'quick_transcription' => '`n~',
-            'phone_family' => 'N',
-        ];
 
         $alphabet[] = [
             'type' => "pharyngealized_approximant\n\nsemi",
@@ -2577,33 +2660,7 @@ class SoundAlphabet
             'phone_family' => 'K',
         ];
 
-        $alphabet[] = [
-            'type' => 'syllabic_consonant',
-            'name' =>'M-m-M',
-            'examples' => "(No examples in English)\n\n(Used in Cantonese & Baoulé)",
-            'description' => "",
-            'info_ipa' => 'm̩',
-            'quick_transcription' => '-m-',
-            'phone_family' => 'M',
-        ];
 
-        $alphabet[] = [
-            'type' => 'syllabic_consonant',
-            'name' =>'N-n-N',
-            'examples' => "(One-off in English for \"and\")\n\n(used in Cantonese, Yoruba,\n& Baoulé)",
-            'description' => "",
-            'info_ipa' => 'n̩',
-            'quick_transcription' => '-n-',
-        ];
-
-        $alphabet[] = [
-            'type' => 'syllabic_consonant',
-            'name' =>'Ng-ng-Ng',
-            'examples' => "(No examples in English)\n\nng in {ng}\n\t(five in Cantonese)",
-            'description' => "",
-            'info_ipa' => 'ŋ̍',
-            'quick_transcription' => '-ng-',
-        ];
 
         $alphabet[] = [
             'type' => 'syllabic_consonant',
