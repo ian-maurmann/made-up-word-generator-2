@@ -91,6 +91,12 @@ class SoundAlphabet
         return $this->getSoundByType('lateral_liquid');
     }
 
+    public function getRowels(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('rowel');
+    }
+
     public function getNasals(): array
     {
         // Return array of sounds, else return an empty array
@@ -123,6 +129,7 @@ class SoundAlphabet
             $is_semi           = $sound_type === 'semi';
             $is_rhotic_liquid  = $sound_type === 'rhotic_liquid';
             $is_lateral_liquid = $sound_type === 'lateral_liquid';
+            $is_rowel          = $sound_type === 'rowel';
             $is_nasal          = $sound_type === 'nasal';
             $is_consonant      = $sound_type === 'consonant';
 
@@ -133,6 +140,7 @@ class SoundAlphabet
                 || $is_semi
                 || $is_rhotic_liquid
                 || $is_lateral_liquid
+                || $is_rowel
                 || $is_nasal
                 || $is_consonant
             );
@@ -887,8 +895,61 @@ class SoundAlphabet
             'quick_transcription' => 'ssaw',
         ];
 
+        // ───────────────────────────────────────────
+        // Rowels
 
 
+        $alphabet[] = [
+            'sound_type' => 'rowel',
+            'sound_name' =>'R-short-rowel',
+            'axiophone' => 'R',
+            'special_categorization' => "{bold}{bg_dark_cyan} rowel {previous}",
+            'type' => 'rowel',
+            'name' =>'Krk-r-Krk',
+            'examples' => "(No examples in English)\n\nr in k{fg_bright_cyan}r{previous}k\n\t(throat/neck in \n\tCzech & Slovak)",
+            'description' => "\"Syllabic R\"",
+            'info_ipa' => 'r̩',
+            'quick_transcription' => 'ꞌr', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rowel',
+            'sound_name' =>'R-long-rowel',
+            'axiophone' => 'R',
+            'special_categorization' => "{bold}{bg_dark_cyan} rowel {previous}",
+            'type' => 'rowel',
+            'name' =>'Vrba-rrrr-Vrba',
+            'examples' => "(No examples in English)\n\nr in v{fg_bright_cyan}r{previous}ba\n\t(willow in Slovak)",
+            'description' => "",
+            'info_ipa' => 'r̩ː',
+            'quick_transcription' => 'ꞌrrr', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rowel',
+            'sound_name' =>'L-dark-short-rowel',
+            'axiophone' => 'L',
+            'special_categorization' => "{bold}{bg_dark_cyan} rowel {previous}",
+            'type' => 'rowel',
+            'name' =>'Zhlt-L-Zhlt',
+            'examples' => "(No examples in English)\n\nl in zh{fg_bright_cyan}l{previous}t\n\t(eat in Czech)",
+            'description' => "",
+            'info_ipa' => 'ɫ̩',
+            'quick_transcription' => 'ꞌl', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'rowel',
+            'sound_name' =>'L-dark-long-rowel',
+            'axiophone' => 'L',
+            'special_categorization' => "{bold}{bg_dark_cyan} rowel {previous}",
+            'type' => 'rowel',
+            'name' =>'Klb-LLL-Klb',
+            'examples' => "(No examples in English)\n\nl in k{fg_bright_cyan}l{previous}b\n\t(joint in Slovak)",
+            'description' => "",
+            'info_ipa' => 'ɫ̩ː',
+            'quick_transcription' => 'ꞌlll', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
 
         // ───────────────────────────────────────────
         // Nasals
@@ -970,7 +1031,7 @@ class SoundAlphabet
             'sound_name' =>'M-syllabic',
             'axiophone' => 'M',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{bold}{fg_bright_red}syllabic{previous}",
-            'special_categorization' => "{bold}{fg_bright_red}syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} syllabic {previous}",
             'type' => 'syllabic_consonant',
             'name' =>'M-m-M',
             'examples' => "(No examples in English)\n\n(Used in Cantonese & Baoulé)",
@@ -984,7 +1045,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'M-end-syllabic',
             'axiophone' => 'M',
-            'special_categorization' => "{bold}{fg_bright_red}end-syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} end-syllabic {previous}",
             'type' => 'end-syllabic_consonant',
             'name' =>'Sedm-Sedm-mmm',
             'examples' => "(No examples in English)\n\nm in sed{fg_bright_cyan}m{previous}\n\t(seven in Czech)",
@@ -1071,7 +1132,7 @@ class SoundAlphabet
             'sound_name' =>'N-syllabic',
             'axiophone' => 'N',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{bold}{fg_bright_red}syllabic{previous}",
-            'special_categorization' => "{bold}{fg_bright_red}syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} syllabic {previous}",
             'type' => 'syllabic_consonant',
             'name' =>'N-n-N',
             'examples' => "(One-off in English for \"and\")\n\n(used in Cantonese, Yoruba,\n& Baoulé)",
@@ -1084,7 +1145,7 @@ class SoundAlphabet
             'sound_type' => 'nasal',
             'sound_name' =>'N-end-syllabic',
             'axiophone' => 'N',
-            'special_categorization' => "{bold}{fg_bright_red}end-syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} end-syllabic {previous}",
             'type' => 'end-syllabic_consonant',
             'name' =>'Njutn-Njutn-nnn',
             'examples' => "(No examples in English)\n\nn in Njut{fg_bright_cyan}n{previous}\n\t(Newton in Serbo-Croatian)",
@@ -1125,7 +1186,7 @@ class SoundAlphabet
             'sound_name' =>'NG-syllabic',
             'axiophone' => 'NG',
             'categorization' => "{bold}{fg_dark_yellow}consonant{previous},\n{bold}{fg_bright_blue}nasal{previous},\n{bold}{fg_bright_red}syllabic{previous}",
-            'special_categorization' => "{bold}{fg_bright_red}syllabic{previous}",
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} syllabic {previous}",
             'type' => 'syllabic_consonant',
             'name' =>'Ng-ng-Ng',
             'examples' => "(No examples in English)\n\nng in {fg_bright_cyan}ng{previous}\n\t(five in Cantonese)",
@@ -2628,41 +2689,7 @@ class SoundAlphabet
 
         // -------------------------
 
-        $alphabet[] = [
-            'type' => 'rowel',
-            'name' =>'Krk-r-Krk',
-            'examples' => "(No examples in English)\n\nr in k{r}k\n\t(throat/neck in \n\tCzech & Slovak)",
-            'description' => "\"Syllabic R\"",
-            'info_ipa' => 'r̩',
-            'quick_transcription' => 'ꞌr', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => 'rowel',
-            'name' =>'Vrba-rrrr-Vrba',
-            'examples' => "(No examples in English)\n\nr in v{r}ba\n\t(willow in Slovak)",
-            'description' => "",
-            'info_ipa' => 'r̩ː',
-            'quick_transcription' => 'ꞌrrr', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-
-        $alphabet[] = [
-            'type' => 'rowel',
-            'name' =>'Zhlt-L-Zhlt',
-            'examples' => "(No examples in English)\n\nl in zh{l}t\n\t(eat in Czech)",
-            'description' => "",
-            'info_ipa' => 'ɫ̩',
-            'quick_transcription' => 'ꞌl', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-
-        $alphabet[] = [
-            'type' => 'rowel',
-            'name' =>'Klb-LLL-Klb',
-            'examples' => "(No examples in English)\n\nl in k{l}b\n\t(joint in Slovak)",
-            'description' => "",
-            'info_ipa' => 'ɫ̩ː',
-            'quick_transcription' => 'ꞌlll', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
 
 
