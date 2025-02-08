@@ -1222,30 +1222,16 @@ class SoundAlphabet
             'quick_transcription' => 'gnꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // ───────────────────────────────────────────
+        // Consonants
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'P-axiophone',
+            'axiophone' => 'P',
             'type' => 'fixed_consonant',
             'name' =>'Pop-pop',
-            'examples' => "p in {p}ancake\np in {p}icnic\np in {p}rincess\np in {p}ear\np in {p}o{p}\np in s{p}y\np in soa{p}",
+            'examples' => "p in {fg_bright_cyan}p{previous}ancake\np in {fg_bright_cyan}p{previous}icnic\np in {fg_bright_cyan}p{previous}rincess\np in {fg_bright_cyan}p{previous}ear\np in {fg_bright_cyan}p{previous}o{fg_bright_cyan}p{previous}\np in s{fg_bright_cyan}p{previous}y\np in soa{fg_bright_cyan}p{previous}",
             'description' => "Voiceless bilabial plosive",
             'info_ipa' => 'p',
             'quick_transcription' => 'p',
@@ -1253,23 +1239,25 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'B-axiophone',
+            'axiophone' => 'B',
             'type' => 'fixed_consonant',
             'name' =>'Bar-Bar',
-            'examples' => "b in {b}ack\nb in {b}a{b}y\nb in {b}oy\nb in ro{b}ot\nb in la{b}",
+            'examples' => "b in {fg_bright_cyan}b{previous}ack\nb in {fg_bright_cyan}b{previous}a{fg_bright_cyan}b{previous}y\nb in {fg_bright_cyan}b{previous}oy\nb in ro{fg_bright_cyan}b{previous}ot\nb in la{fg_bright_cyan}b{previous}",
             'description' => "Voiced bilabial plosive",
             'info_ipa' => "b\n\nAlso for β",
             'quick_transcription' => 'b',
             'phone_family' => 'B',
         ];
 
-
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'F-axiophone',
+            'axiophone' => 'F',
             'type' => 'fixed_consonant',
             'name' =>'Fox-fox',
-            'examples' => "f in {f}all\nf in {f}ill\nf in {f}un\nf in el{f}",
+            'examples' => "f in {fg_bright_cyan}f{previous}all\nf in {fg_bright_cyan}f{previous}ill\nf in {fg_bright_cyan}f{previous}un\nf in el{fg_bright_cyan}f{previous}",
             'description' => "Voiceless labiodental fricative",
             'info_ipa' => 'f',
             'quick_transcription' => 'f',
@@ -1277,14 +1265,27 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'V-axiophone',
+            'axiophone' => 'V',
             'type' => 'fixed_consonant',
             'name' =>'Valley-valley',
-            'examples' => "v in {v}alve\nv in {v}ery\nv in ne{v}er\nv in oursel{v}es\nv in ha{v}e",
+            'examples' => "v in {fg_bright_cyan}v{previous}alve\nv in {fg_bright_cyan}v{previous}ery\nv in ne{fg_bright_cyan}v{previous}er\nv in oursel{fg_bright_cyan}v{previous}es\nv in ha{fg_bright_cyan}v{previous}e",
             'description' => "Voiced labiodental fricative",
             'info_ipa' => 'v',
             'quick_transcription' => 'v',
             'phone_family' => 'V',
         ];
+
+
+        // ───────────────────────────────────────────
+
+
+
+
+
+
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',

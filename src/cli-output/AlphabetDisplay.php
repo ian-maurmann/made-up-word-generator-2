@@ -70,7 +70,7 @@ class AlphabetDisplay
         $this->showNasals();
 
         // Consonants
-        //$this->showConsonants();
+        $this->showConsonants();
     }
 
     public function showVowels(){
@@ -499,18 +499,38 @@ class AlphabetDisplay
 
         $table_columns = [
             [
-                'attribute' => 'type',
-                'label'     => 'Type',
-                'text_align' => 'left',
-            ],
-            [
                 'attribute' => 'axiophone',
                 'label'     => 'Axiophone',
                 'text_align' => 'center',
             ],
             [
-                'attribute' => 'short_name',
-                'label'     => 'Allophone',
+                'attribute' => 'sound_name',
+                'label'     => 'Sound Name',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'special_categorization',
+                'label' => "Special\nCategorization",
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'type',
+                'label'     => 'Type',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'name',
+                'label'     => 'Name',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'examples',
+                'label'     => 'Examples',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'description',
+                'label'     => 'Description',
                 'text_align' => 'left',
             ],
             [
