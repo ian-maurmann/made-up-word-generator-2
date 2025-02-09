@@ -490,7 +490,7 @@ class AlphabetDisplay
 
         $table_style = [
             'table_text_align' => 'left', // 'left' | 'right' | 'center'
-            'table_border_fg_color' => 'dark-yellow',
+            'table_border_fg_color' => 'bright-yellow',
             'table_show_head' => true,
             'table_head_text_align' => 'center',
             'table_head_bg_color' => 'dark-blue',

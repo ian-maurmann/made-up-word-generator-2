@@ -1277,30 +1277,52 @@ class SoundAlphabet
             'phone_family' => 'V',
         ];
 
-
-        // ───────────────────────────────────────────
-
-
-
-
-
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'TH-axiophone',
+            'axiophone' => 'TH',
             'type' => 'fixed_consonant',
             'name' =>'Thunder-thunder',
-            'examples' => "(For both th's)\n\nð\nth in {th}at\nth in wri{th}e\n\nθ\nth in {th}ud\nth in wi{th}",
+            'examples' => "(For both th's)\n\nð\nth in {fg_bright_cyan}th{previous}at\nth in wri{fg_bright_cyan}th{previous}e\n\nθ\nth in {fg_bright_cyan}th{previous}ud\nth in wi{fg_bright_cyan}th{previous}",
             'description' => "Both:\nVoiceless dental fricative\n&\nVoiced dental fricative\n\n(In English the 2 th's are often \n\"interdental\" \ninstead of dental)",
-            'info_ipa' => "(For both θ and ð)",
+            'info_ipa' => "(For both θ and ð)\n\n( θ͡ð ?)",
             'quick_transcription' => 'th',
             'phone_family' => 'TH',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'TH-voiced',
+            'axiophone' => 'TH',
+            'type' => 'fixed_consonant',
+            'name' =>'TH-voiced',
+            'examples' => "ð\nth in {fg_bright_cyan}th{previous}at\nth in wri{fg_bright_cyan}th{previous}e",
+            'description' => "Voiced dental fricative",
+            'info_ipa' => "ð",
+            'quick_transcription' => 'th',
+            'phone_family' => 'TH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'TH-voiceless',
+            'axiophone' => 'TH',
+            'type' => 'fixed_consonant',
+            'name' =>'TH-voiceless',
+            'examples' => "θ\nth in {fg_bright_cyan}th{previous}ud\nth in wi{fg_bright_cyan}th{previous}",
+            'description' => "Voiceless dental fricative",
+            'info_ipa' => "θ",
+            'quick_transcription' => 'th',
+            'phone_family' => 'TH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'T-axiophone',
+            'axiophone' => 'T',
             'type' => 'fixed_consonant',
             'name' =>'Tap-tap',
-            'examples' => "t in {t}ick\nt in {t}ool\nt in {t}op\nt in {t}ap\nt in {t}oo{t}",
+            'examples' => "t in {fg_bright_cyan}t{previous}ick\nt in {fg_bright_cyan}t{previous}ool\nt in {fg_bright_cyan}t{previous}op\nt in {fg_bright_cyan}t{previous}ap\nt in {fg_bright_cyan}t{previous}oo{fg_bright_cyan}t{previous}",
             'description' => "Voiceless alveolar plosive",
             'info_ipa' => 't',
             'quick_transcription' => 't',
@@ -1308,14 +1330,23 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'D-axiophone',
+            'axiophone' => 'D',
             'type' => 'fixed_consonant',
             'name' =>'Day-day',
-            'examples' => "d in {d}ay\nd in {d}ash\nD in {D}a{d}\ndd in a{dd}",
+            'examples' => "d in {fg_bright_cyan}d{previous}ay\nd in {fg_bright_cyan}d{previous}ash\nD in {fg_bright_cyan}D{previous}a{fg_bright_cyan}d{previous}\ndd in a{fg_bright_cyan}dd{previous}",
             'description' => "Voiced alveolar plosive",
             'info_ipa' => 'd',
             'quick_transcription' => 'd',
             'phone_family' => 'D',
         ];
+
+
+        // ───────────────────────────────────────────
+
+
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',

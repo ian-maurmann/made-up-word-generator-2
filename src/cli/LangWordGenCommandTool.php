@@ -140,7 +140,16 @@ class LangWordGenCommandTool
     }
 
     public function displayInfo() {
+        // Formatting
+        $reset = $this->formatter->reset;
+        $bold  = $this->formatter->bold;
+        $cyan  = $this->formatter->fg_bright_cyan;
+
         $this->writer->writeLine('Made-Up Word Gen 2');
+        $this->writer->br();
+        $this->writer->writeLine('Options:');
+        $this->writer->writeLine(' - ' . $cyan . 'show' . $reset);
+        $this->writer->br();
     }
 
     public function displayVersion()
