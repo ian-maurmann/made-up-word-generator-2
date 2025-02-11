@@ -1279,7 +1279,7 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
-            'sound_name' =>'TH-axiophone',
+            'sound_name' =>'TH-fusion',
             'axiophone' => 'TH',
             'type' => 'fixed_consonant',
             'name' =>'Thunder-thunder',
@@ -1342,16 +1342,13 @@ class SoundAlphabet
             'phone_family' => 'D',
         ];
 
-
-        // ───────────────────────────────────────────
-
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'S-axiophone',
+            'axiophone' => 'S',
             'type' => 'fixed_consonant',
             'name' =>'Sun-sun',
-            'examples' => "s in {s}and\ns in {s}it\ns in {s}un\nss in cla{ss}",
+            'examples' => "s in {fg_bright_cyan}s{previous}and\ns in {fg_bright_cyan}s{previous}it\ns in {fg_bright_cyan}s{previous}un\nss in cla{fg_bright_cyan}ss{previous}",
             'description' => "Voiceless alveolar fricative",
             'info_ipa' => 's',
             'quick_transcription' => 's',
@@ -1359,25 +1356,25 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Z-axiophone',
+            'axiophone' => 'Z',
             'type' => 'fixed_consonant',
             'name' =>'Zoom-zoom',
-            'examples' => "z in {z}oo\nz in {z}ebra",
+            'examples' => "z in {fg_bright_cyan}z{previous}oo\nz in {fg_bright_cyan}z{previous}ebra",
             'description' => "Voiced alveolar fricative",
             'info_ipa' => 'z',
             'quick_transcription' => 'z',
             'phone_family' => 'Z',
         ];
 
-
-
-
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'SH-axiophone',
+            'axiophone' => 'SH',
             'type' => 'fixed_consonant',
             'name' =>'Shy-shy',
-            'examples' => "sh in {sh}ould\nsh in {sh}op\nsh in ba{sh}",
+            'examples' => "sh in {fg_bright_cyan}sh{previous}ould\nsh in {fg_bright_cyan}sh{previous}op\nsh in ba{fg_bright_cyan}sh{previous}",
             'description' => "Voiceless postalveolar fricative",
             'info_ipa' => 'ʃ',
             'quick_transcription' => 'sh',
@@ -1385,14 +1382,25 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'ZH-axiophone',
+            'axiophone' => 'ZH',
             'type' => 'fixed_consonant',
             'name' =>'Genre-genre',
-            'examples' => "s in A{s}ia\ns in mea{s}ure\nJ in Joyeu{s}e\nJ in {J}ean-Luc Picard\ng in lanterne rou{g}e\ns in vi{s}ion\ng in {g}enre",
+            'examples' => "s in A{fg_bright_cyan}s{previous}ia\ns in mea{fg_bright_cyan}s{previous}ure\nJ in {fg_bright_cyan}J{previous}oyeuse\nJ in {fg_bright_cyan}J{previous}ean-Luc Picard\ng in lanterne rou{fg_bright_cyan}g{previous}e\ns in vi{fg_bright_cyan}s{previous}ion\ng in {fg_bright_cyan}g{previous}enre",
             'description' => "Voiced postalveolar fricative",
             'info_ipa' => 'ʒ',
             'quick_transcription' => 'zh',
             'phone_family' => 'ZH',
         ];
+
+
+        // ───────────────────────────────────────────
+
+
+
+
+
 
 
 
