@@ -1394,20 +1394,13 @@ class SoundAlphabet
             'phone_family' => 'ZH',
         ];
 
-
-        // ───────────────────────────────────────────
-
-
-
-
-
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'K-axiophone',
+            'axiophone' => 'K',
             'type' => 'fixed_consonant',
             'name' =>'King-king',
-            'examples' => "k in {k}ing\nc in {c}at\nk in {k}iss\nc in {c}olor\nck in che{ck}\nch in {ch}emistry\nc and ch in {c}lo{ck}",
+            'examples' => "k in {fg_bright_cyan}k{previous}ing\nc in {fg_bright_cyan}c{previous}at\nk in {fg_bright_cyan}k{previous}iss\nc in {fg_bright_cyan}c{previous}olor\nck in che{fg_bright_cyan}ck{previous}\nch in {fg_bright_cyan}ch{previous}emistry\nc and ch in {fg_bright_cyan}c{previous}lo{fg_bright_cyan}ck{previous}",
             'description' => "Voiceless velar plosive",
             'info_ipa' => 'k',
             'quick_transcription' => 'k',
@@ -1415,9 +1408,12 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'G-axiophone',
+            'axiophone' => 'G',
             'type' => 'fixed_consonant',
             'name' =>'Go-go',
-            'examples' => "g in {g}o\ng in {g}ive\ng in {g}a{gg}le",
+            'examples' => "g in {fg_bright_cyan}g{previous}o\ng in {fg_bright_cyan}g{previous}ive\ng in {fg_bright_cyan}g{previous}a{fg_bright_cyan}gg{previous}le",
             'description' => "Voiced velar plosive",
             'info_ipa' => 'g',
             'quick_transcription' => 'g',
@@ -1425,13 +1421,21 @@ class SoundAlphabet
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'H-axiophone',
+            'axiophone' => 'H',
             'type' => 'fixed_consonant',
             'name' =>'Hello-hello',
-            'examples' => "h in {h}appy\nh in {h}op\nh in {h}igh\nwh in {wh}o",
+            'examples' => "h in {fg_bright_cyan}h{previous}appy\nh in {fg_bright_cyan}h{previous}op\nh in {fg_bright_cyan}h{previous}igh\nwh in {fg_bright_cyan}wh{previous}o",
             'description' => "voiceless glottal fricative\n/ voiceless glottal transition \n/ the aspirate",
             'info_ipa' => 'h',
             'quick_transcription' => 'h',
         ];
+
+
+        // ───────────────────────────────────────────
+
+
 
         $alphabet[] = [
             'type' => 'fixed_consonant',
