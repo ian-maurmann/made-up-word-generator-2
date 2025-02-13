@@ -1432,39 +1432,50 @@ class SoundAlphabet
             'quick_transcription' => 'h',
         ];
 
-
-        // ───────────────────────────────────────────
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'KH-axiophone',
+            'axiophone' => 'KH',
             'type' => 'fixed_consonant',
             'name' =>'Loch-loch',
-            'examples' => "ch in lo{ch}\nch in Johann Sebastian Ba{ch}",
+            'examples' => "ch in lo{fg_bright_cyan}ch{previous}\nch in Johann Sebastian Ba{fg_bright_cyan}ch{previous}",
             'description' => "Voiceless velar fricative",
             'info_ipa' => 'x',
             'quick_transcription' => 'kh',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'QH-axiophone',
+            'axiophone' => 'QH',
             'type' => 'fixed_consonant',
             'name' =>'Qatar-Qatar',
-            'examples' => "q in {Q}atar",
+            'examples' => "q in {fg_bright_cyan}Q{previous}atar",
             'description' => "Voiceless uvular plosive",
             'info_ipa' => 'q',
-            'quick_transcription' => 'q',
+            'quick_transcription' => 'qh',
         ];
 
 
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Uh-oh-axiophone',
+            'axiophone' => '-',
             'type' => 'fixed_consonant',
             'name' =>'Uh-oh-uh-oh',
-            'examples' => "- in uh{-}oh",
+            'examples' => "- in uh{fg_bright_cyan}-{previous}oh",
             'description' => "glottal stop\n/ glottal plosive",
             'info_ipa' => 'ʔ',
             'quick_transcription' => '-ꞌ-', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
+
+
+        // ───────────────────────────────────────────
+
+
+
+
 
 
 
