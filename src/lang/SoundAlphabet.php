@@ -1456,8 +1456,6 @@ class SoundAlphabet
             'quick_transcription' => 'qh',
         ];
 
-
-
         $alphabet[] = [
             'sound_type' => 'consonant',
             'sound_name' =>'Uh-oh-axiophone',
@@ -1470,53 +1468,57 @@ class SoundAlphabet
             'quick_transcription' => '-ꞌ-', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-
-        // ───────────────────────────────────────────
-
-
-
-
-
-
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'TL-axiophone',
+            'axiophone' => 'TL',
             'type' => 'sub_fixed_consonant',
             'name' =>'Tla-tla',
-            'examples' => "(No examples in English)\n\ntl in {tl}a\n\t('no' in Cherokee)\ntl in Nahua{tl}\n\t(Nahuatl in Nahuatl)\ntl in {tl}eilóo\n\t(butterfly in Tlingit)",
+            'examples' => "(No examples in English)\n\ntl in {fg_bright_cyan}tl{previous}a\n\t('no' in Cherokee)\ntl in Nahua{fg_bright_cyan}tl{previous}\n\t(Nahuatl in Nahuatl)\ntl in {fg_bright_cyan}tl{previous}eilóo\n\t(butterfly in Tlingit)",
             'description' => "Voiceless alveolar lateral affricate",
             'info_ipa' => 't͡ɬ',
             'quick_transcription' => 'tlꞌ', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
-
-
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'CH-axiophone',
+            'axiophone' => 'CH',
             'type' => 'sub_fixed_consonant',
             'name' =>'Church-church',
-            'examples' => "ch in {ch}arm\nch in ri{ch}\nt in na{t}ure",
+            'examples' => "ch in {fg_bright_cyan}ch{previous}arm\nch in ri{fg_bright_cyan}ch{previous}\nt in na{fg_bright_cyan}t{previous}ure",
             'description' => "Voiceless postalveolar affricate",
             'info_ipa' => 'tʃ',
             'quick_transcription' => 'ch',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'J-axiophone',
+            'axiophone' => 'J',
             'type' => 'sub_fixed_consonant',
             'name' =>'Jello-jello',
-            'examples' => "j in {j}ump\nJ in {J}uly\nj & dge in {j}u{dge}\ng in {g}enie",
+            'examples' => "j in {fg_bright_cyan}j{previous}ump\nJ in {fg_bright_cyan}J{previous}uly\nj & dge in {fg_bright_cyan}j{previous}u{fg_bright_cyan}dge{previous}\ng in {fg_bright_cyan}g{previous}enie",
             'description' => "Voiced postalveolar affricate",
             'info_ipa' => "d͡ʒ\n\n(formerly ʤ)",
             'quick_transcription' => 'j',
         ];
 
         $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'GYHA-axiophone',
+            'axiophone' => 'GYHA',
             'type' => 'sub_fixed_consonant',
             'name' =>'Gjat-gjat',
-            'examples' => "gj in {gj}at (cat in Friulian)\ngy in {gy}ám (guardian in Hungarian)\n2nd g in Gaeil{g}e (Irish in Irish)",
+            'examples' => "gj in {fg_bright_cyan}gj{previous}at (cat in Friulian)\ngy in {fg_bright_cyan}gy{previous}ám (guardian in Hungarian)\n2nd g in Gaeil{fg_bright_cyan}g{previous}e (Irish in Irish)",
             'description' => "Voiced palatal plosive",
             'info_ipa' => 'ɟ',
             'quick_transcription' => 'g′ya',
         ];
+
+        // ───────────────────────────────────────────
+
+
 
 
 
