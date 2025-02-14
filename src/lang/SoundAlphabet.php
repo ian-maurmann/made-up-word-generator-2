@@ -1240,6 +1240,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'P-trill',
+            'axiophone' => 'P',
+            'type' => 'trill',
+            'name' =>'Tpotpowe-tpotpowe',
+            'examples' => "(No examples in English)\n\ntp in {fg_bright_cyan}tp{previous}o{fg_bright_cyan}tp{previous}owe\n\t(chicken in Wariʼ)",
+            'description' => 'Voiceless bilabial trill',
+            'info_ipa' => 'ʙ̥',
+            'quick_transcription' => 'p′p′pr',
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'B-axiophone',
             'axiophone' => 'B',
             'type' => 'fixed_consonant',
@@ -1248,6 +1261,19 @@ class SoundAlphabet
             'description' => "Voiced bilabial plosive",
             'info_ipa' => "b\n\nAlso for β",
             'quick_transcription' => 'b',
+            'phone_family' => 'B',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'B-trill',
+            'axiophone' => 'B',
+            'type' => 'trill',
+            'name' =>'Bbrungɡaɡ-bbrungɡaɡ',
+            'examples' => "(No examples in English)\n\nБ in {fg_bright_cyan}Б{previous}унгаг \"bbrungɡaɡ\"\n\t(dung beetle in Komi-Permyak)",
+            'description' => 'Voiced bilabial trill',
+            'info_ipa' => 'ʙ',
+            'quick_transcription' => 'b′b′br',
             'phone_family' => 'B',
         ];
 
@@ -1522,25 +1548,9 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'trill',
-            'name' =>'Bbrungɡaɡ-bbrungɡaɡ',
-            'examples' => "(No examples in English)\n\nБ in {Б}унгаг \"bbrungɡaɡ\"\n\t(dung beetle in Komi-Permyak)",
-            'description' => 'Voiced bilabial trill',
-            'info_ipa' => 'ʙ',
-            'quick_transcription' => 'b′b′br',
-            'phone_family' => 'B',
-        ];
 
-        $alphabet[] = [
-            'type' => 'trill',
-            'name' =>'Tpotpowe-tpotpowe',
-            'examples' => "(No examples in English)\n\ntp in {tp}o{tp}owe\n\t(chicken in Wariʼ)",
-            'description' => 'Voiceless bilabial trill',
-            'info_ipa' => 'ʙ̥',
-            'quick_transcription' => 'p′p′pr',
-            'phone_family' => 'P',
-        ];
+
+
 
 
 
