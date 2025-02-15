@@ -1305,6 +1305,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'V-extra-long',
+            'axiophone' => 'V',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Vvvvv-vvvvv',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'vːː',
+            'quick_transcription' => 'vvvvv',
+            'phone_family' => 'V',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'TH-fusion',
             'axiophone' => 'TH',
             'type' => 'fixed_consonant',
@@ -1383,6 +1396,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'S-extra-long',
+            'axiophone' => 'S',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Sssss-sssss',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'sːː',
+            'quick_transcription' => 'sssss',
+            'phone_family' => 'S',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'Z-axiophone',
             'axiophone' => 'Z',
             'type' => 'fixed_consonant',
@@ -1391,6 +1417,19 @@ class SoundAlphabet
             'description' => "Voiced alveolar fricative",
             'info_ipa' => 'z',
             'quick_transcription' => 'z',
+            'phone_family' => 'Z',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Z-extra-long',
+            'axiophone' => 'Z',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Zzzzz-zzzzz',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'zːː',
+            'quick_transcription' => 'zzzzz',
             'phone_family' => 'Z',
         ];
 
@@ -1543,15 +1582,6 @@ class SoundAlphabet
         ];
 
         // ───────────────────────────────────────────
-
-
-
-
-
-
-
-
-
 
 
         $alphabet[] = [
@@ -1835,37 +1865,13 @@ class SoundAlphabet
         ];
 
 
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Vvvvv-vvvvv',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'vːː',
-            'quick_transcription' => 'vvvvv',
-            'phone_family' => 'V',
-        ];
 
 
 
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Sssss-sssss',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'sːː',
-            'quick_transcription' => 'sssss',
-            'phone_family' => 'S',
-        ];
 
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Zzzzz-zzzzz',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'zːː',
-            'quick_transcription' => 'zzzzz',
-            'phone_family' => 'Z',
-        ];
+
+
+
 
         $alphabet[] = [
             'type' => 'extra_long_fixed_consonant',
