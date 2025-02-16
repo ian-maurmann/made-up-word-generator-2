@@ -1448,6 +1448,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'SH-extra-long',
+            'axiophone' => 'SH',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Shhhh-shhhh',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ʃːː',
+            'quick_transcription' => 'shhhh',
+            'phone_family' => 'SH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'ZH-axiophone',
             'axiophone' => 'ZH',
             'type' => 'fixed_consonant',
@@ -1456,6 +1469,19 @@ class SoundAlphabet
             'description' => "Voiced postalveolar fricative",
             'info_ipa' => 'ʒ',
             'quick_transcription' => 'zh',
+            'phone_family' => 'ZH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'ZH-extra-long',
+            'axiophone' => 'ZH',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Zhhhh-zhhhh',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ʒːː',
+            'quick_transcription' => 'zhhhh',
             'phone_family' => 'ZH',
         ];
 
@@ -1497,6 +1523,20 @@ class SoundAlphabet
             'quick_transcription' => 'h',
         ];
 
+        /*
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'H-extra-long',
+            'axiophone' => 'H',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Hhhhh-hhhhh',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'hːː',
+            'quick_transcription' => 'hhhhh',
+        ];
+        */
+
         $alphabet[] = [
             'sound_type' => 'consonant',
             'sound_name' =>'KH-axiophone',
@@ -1507,6 +1547,18 @@ class SoundAlphabet
             'description' => "Voiceless velar fricative",
             'info_ipa' => 'x',
             'quick_transcription' => 'kh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'KH-extra-long',
+            'axiophone' => 'KH',
+            'type' => 'extra_long_fixed_consonant',
+            'name' =>'Khhhh-khhhh',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'xːː',
+            'quick_transcription' => 'khhhh',
         ];
 
         $alphabet[] = [
@@ -1580,6 +1632,15 @@ class SoundAlphabet
             'info_ipa' => 'ɟ',
             'quick_transcription' => 'g′ya',
         ];
+
+
+
+
+
+
+
+
+
 
         // ───────────────────────────────────────────
 
@@ -1873,43 +1934,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Shhhh-shhhh',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ʃːː',
-            'quick_transcription' => 'shhhh',
-            'phone_family' => 'SH',
-        ];
 
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Zhhhh-zhhhh',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ʒːː',
-            'quick_transcription' => 'zhhhh',
-            'phone_family' => 'ZH',
-        ];
-
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Khhhh-khhhh',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'xːː',
-            'quick_transcription' => 'khhhh',
-        ];
-
-        $alphabet[] = [
-            'type' => 'extra_long_fixed_consonant',
-            'name' =>'Hhhhh-hhhhh',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'hːː',
-            'quick_transcription' => 'hhhhh',
-        ];
 
         $alphabet[] = [
             'type' => 'extra_long_f_glide_consonant',
