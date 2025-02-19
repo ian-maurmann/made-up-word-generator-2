@@ -1253,6 +1253,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'P-prenasalized-mp',
+            'axiophone' => 'P',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-em-Per',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᵐp',
+            'quick_transcription' => 'mp',
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'B-axiophone',
             'axiophone' => 'B',
             'type' => 'fixed_consonant',
@@ -1279,6 +1292,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'B-prenasalized-mb',
+            'axiophone' => 'B',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-em-Ber',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ᵐb\n\nAlt m͜b\n\nOld m̆b",
+            'quick_transcription' => 'mb',
+            'phone_family' => 'B',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'F-axiophone',
             'axiophone' => 'F',
             'type' => 'fixed_consonant',
@@ -1287,6 +1313,19 @@ class SoundAlphabet
             'description' => "Voiceless labiodental fricative",
             'info_ipa' => 'f',
             'quick_transcription' => 'f',
+            'phone_family' => 'F',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'F-prenasalized-mf',
+            'axiophone' => 'F',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-em-Fer',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᵐf',
+            'quick_transcription' => 'mf',
             'phone_family' => 'F',
         ];
 
@@ -1642,6 +1681,14 @@ class SoundAlphabet
 
 
 
+
+
+
+
+
+
+
+
         // ───────────────────────────────────────────
 
 
@@ -1976,35 +2023,7 @@ class SoundAlphabet
 
         // ------
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-em-Per',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᵐp',
-            'quick_transcription' => 'mp',
-            'phone_family' => 'P',
-        ];
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-em-Ber',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => "ᵐb\n\nAlt m͜b\n\nOld m̆b",
-            'quick_transcription' => 'mb',
-            'phone_family' => 'B',
-        ];
-
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-em-Fer',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᵐf',
-            'quick_transcription' => 'mf',
-            'phone_family' => 'F',
-        ];
 
         $alphabet[] = [
             'type' => 'prenasalized_consonant',
