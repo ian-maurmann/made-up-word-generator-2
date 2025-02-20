@@ -1357,6 +1357,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'V-prenasalized-mv',
+            'axiophone' => 'V',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-em-Ver',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᵐv',
+            'quick_transcription' => 'mv',
+            'phone_family' => 'V',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'TH-fusion',
             'axiophone' => 'TH',
             'type' => 'fixed_consonant',
@@ -1409,6 +1422,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'T-prenasalized-nt',
+            'axiophone' => 'T',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-en-Ter',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ⁿt',
+            'quick_transcription' => 'nt',
+            'phone_family' => 'T',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'D-axiophone',
             'axiophone' => 'D',
             'type' => 'fixed_consonant',
@@ -1418,6 +1444,18 @@ class SoundAlphabet
             'info_ipa' => 'd',
             'quick_transcription' => 'd',
             'phone_family' => 'D',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'D-prenasalized-nd',
+            'axiophone' => 'D',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-en-Der',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ⁿd\n\nAlt n͜d\n\nOld n̆d",
+            'quick_transcription' => 'nd',
         ];
 
         $alphabet[] = [
@@ -1448,6 +1486,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'S-prenasalized-ns',
+            'axiophone' => 'S',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-en-Ser',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ⁿs',
+            'quick_transcription' => 'ns',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'Z-axiophone',
             'axiophone' => 'Z',
             'type' => 'fixed_consonant',
@@ -1470,6 +1520,18 @@ class SoundAlphabet
             'info_ipa' => 'zːː',
             'quick_transcription' => 'zzzzz',
             'phone_family' => 'Z',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Z-prenasalized-nz',
+            'axiophone' => 'Z',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-en-Zer',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ⁿz\n\nⁿd͡zz̩˧",
+            'quick_transcription' => 'nz',
         ];
 
         $alphabet[] = [
@@ -1662,6 +1724,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'J-prenasalized-nj',
+            'axiophone' => 'J',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-en-Jer',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ⁿd͡ʒ\n\nⁿd͡ʑʑ̩˧",
+            'quick_transcription' => 'nj',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'GYHA-axiophone',
             'axiophone' => 'GYHA',
             'type' => 'sub_fixed_consonant',
@@ -1671,6 +1745,20 @@ class SoundAlphabet
             'info_ipa' => 'ɟ',
             'quick_transcription' => 'g′ya',
         ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2025,65 +2113,11 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-em-Ver',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᵐv',
-            'quick_transcription' => 'mv',
-            'phone_family' => 'V',
-        ];
+
 
         // ------
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-en-Ter',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ⁿt',
-            'quick_transcription' => 'nt',
-            'phone_family' => 'T',
-        ];
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-en-Der',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => "ⁿd\n\nAlt n͜d\n\nOld n̆d",
-            'quick_transcription' => 'nd',
-        ];
-
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-en-Ser',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ⁿs',
-            'quick_transcription' => 'ns',
-        ];
-
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-en-Zer',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ⁿd͡zz̩˧',
-            'quick_transcription' => 'nz',
-        ];
-
-
-
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-en-Jer',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ⁿd͡ʑʑ̩˧',
-            'quick_transcription' => 'nj',
-        ];
 
         // ------
 
