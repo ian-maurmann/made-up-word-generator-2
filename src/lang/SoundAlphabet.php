@@ -1435,6 +1435,32 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'T-retroflex',
+            'axiophone' => 'T',
+            'type' => 'fixed_consonant',
+            'name' =>'T-retroflex',
+            'examples' => '',
+            'description' => 'Voiceless retroflex plosive',
+            'info_ipa' => 'ʈ',
+            'quick_transcription' => 'tꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'T',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'T-retroflex-prenasalized-nnt-h',
+            'axiophone' => 'T',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-ennn-T-her',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᶯʈ',
+            'quick_transcription' => 'nnꞌtꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'T',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'D-axiophone',
             'axiophone' => 'D',
             'type' => 'fixed_consonant',
@@ -2176,15 +2202,7 @@ class SoundAlphabet
 
         // ------
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-ennn-T-her',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᶯʈ',
-            'quick_transcription' => 'nnꞌtꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'T',
-        ];
+
 
         // ------
 
