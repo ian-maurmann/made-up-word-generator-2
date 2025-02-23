@@ -1601,6 +1601,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'K-prenasalized-ngk',
+            'axiophone' => 'K',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-eng-Ker',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᵑk',
+            'quick_transcription' => 'ngꞌk', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'G-axiophone',
             'axiophone' => 'G',
             'type' => 'fixed_consonant',
@@ -1609,6 +1621,19 @@ class SoundAlphabet
             'description' => "Voiced velar plosive",
             'info_ipa' => 'g',
             'quick_transcription' => 'g',
+            'phone_family' => 'G',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'G-prenasalized-ngg',
+            'axiophone' => 'G',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-eng-Ger',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ᵑɡ\n\nAlt ŋ͡ɡ\n\nOld ŋ̆ɡ",
+            'quick_transcription' => 'ngꞌg', // <--- Using Latin Capital Letter Saltillo, not quote
             'phone_family' => 'G',
         ];
 
@@ -1757,6 +1782,15 @@ class SoundAlphabet
             'info_ipa' => 'ɟ',
             'quick_transcription' => 'g′ya',
         ];
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2138,24 +2172,7 @@ class SoundAlphabet
 
         // ------
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-eng-Ker',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᵑk',
-            'quick_transcription' => 'ngꞌk', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-eng-Ger',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => "ᵑɡ\n\nAlt ŋ͡ɡ\n\nOld ŋ̆ɡ",
-            'quick_transcription' => 'ngꞌg', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'G',
-        ];
 
         // ------
 
