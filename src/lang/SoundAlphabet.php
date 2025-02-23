@@ -1676,6 +1676,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'QH-prenasalized-nhq',
+            'axiophone' => 'QH',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-nh-Qer',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᶰq',
+            'quick_transcription' => 'nhꞌq', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'Uh-oh-axiophone',
             'axiophone' => '-',
             'type' => 'fixed_consonant',
@@ -2121,14 +2133,7 @@ class SoundAlphabet
 
         // ------
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-nh-Qer',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᶰq',
-            'quick_transcription' => 'nhꞌq', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
+
 
 
         // ------
