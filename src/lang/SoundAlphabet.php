@@ -1588,6 +1588,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'SH-prenasalized-nysh',
+            'axiophone' => 'SH',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-eny-Sher',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᶮc',
+            'quick_transcription' => 'nyꞌsh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'SH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'ZH-axiophone',
             'axiophone' => 'ZH',
             'type' => 'fixed_consonant',
@@ -1652,7 +1665,7 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
-            'sound_name' =>'G-prenasalized-ngg',
+            'sound_name' =>'G-prenasalized-ng-g',
             'axiophone' => 'G',
             'type' => 'prenasalized_consonant',
             'name' =>'pre-nasal-eng-Ger',
@@ -1808,6 +1821,27 @@ class SoundAlphabet
             'info_ipa' => 'ɟ',
             'quick_transcription' => 'g′ya',
         ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'GYHA-prenasalized-ny-gyha',
+            'axiophone' => 'GYHA',
+            'type' => 'prenasalized_consonant',
+            'name' =>'pre-nasal-eny-Gyer',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ᶮɟ',
+            'quick_transcription' => 'n′yug′ya', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2207,25 +2241,7 @@ class SoundAlphabet
         // ------
 
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-eny-Sher',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᶮc',
-            'quick_transcription' => 'nyꞌsh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'SH',
-        ];
 
-        $alphabet[] = [
-            'type' => 'prenasalized_consonant',
-            'name' =>'pre-nasal-eny-Gyer',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ᶮɟ',
-            'quick_transcription' => 'nyꞌgꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'G',
-        ];
 
         // ------
 
