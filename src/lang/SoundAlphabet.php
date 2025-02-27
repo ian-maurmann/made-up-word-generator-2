@@ -547,6 +547,19 @@ class SoundAlphabet
             'phone_family' => 'W',
         ];
 
+        $alphabet[] = [
+            'sound_type' => 'semi',
+            'sound_name' =>'HW-axiophone',
+            'axiophone' => 'HW',
+            'type' => "h_color\n\nw_glide_consonant\n\nsemi",
+            'name' =>'White-white',
+            'examples' => "sometimes the wh in  {fg_bright_cyan}wh{previous}ite",
+            'description' => "",
+            'info_ipa' => "hw\n\nʍ\n\nFrom ʍ to hw\nFrom ʍ to xw",
+            'quick_transcription' => 'hw',
+            'phone_family' => 'W',
+        ];
+
         // ───────────────────────────────────────────
         // Rhotic Liquids:
 
@@ -1822,6 +1835,7 @@ class SoundAlphabet
             'quick_transcription' => 'g′ya',
         ];
 
+        /*
         $alphabet[] = [
             'sound_type' => 'consonant',
             'sound_name' =>'GYHA-prenasalized-ny-gyha',
@@ -1833,6 +1847,7 @@ class SoundAlphabet
             'info_ipa' => 'ᶮɟ',
             'quick_transcription' => 'n′yug′ya', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
+        */
 
 
 
@@ -2249,15 +2264,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => "h_color\n\nw_glide_consonant\n\nsemi",
-            'name' =>'White-white',
-            'examples' => "sometimes the wh in {wh}ite",
-            'description' => "",
-            'info_ipa' => "hw\n\nFrom ʍ to hw",
-            'quick_transcription' => 'hw',
-            'phone_family' => 'W',
-        ];
+
 
         // -------------------------
 
