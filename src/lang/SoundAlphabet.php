@@ -1279,6 +1279,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'P-preaspirated',
+            'axiophone' => 'P',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Pa',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'ʰp',
+            'quick_transcription' => 'hꞌp', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'B-axiophone',
             'axiophone' => 'B',
             'type' => 'fixed_consonant',
@@ -1443,6 +1456,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => 'ⁿt',
             'quick_transcription' => 'nt',
+            'phone_family' => 'T',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'T-preaspirated',
+            'axiophone' => 'T',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Ta',
+            'examples' => "(No examples in English)\n\ntt in ha{fg_bright_cyan}tt{previous}ur\n\t(hat in Faroese)",
+            'description' => '',
+            'info_ipa' => 'ʰt',
+            'quick_transcription' => 'hꞌt', // <--- Using Latin Capital Letter Saltillo, not quote
             'phone_family' => 'T',
         ];
 
@@ -1898,6 +1924,10 @@ class SoundAlphabet
 
 
 
+
+
+
+
         // ───────────────────────────────────────────
 
 
@@ -2268,25 +2298,7 @@ class SoundAlphabet
 
         // -------------------------
 
-        $alphabet[] = [
-            'type' => 'preaspirated_consonant',
-            'name' =>'ha-Pa',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'ʰp',
-            'quick_transcription' => 'hꞌp', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'P',
-        ];
 
-        $alphabet[] = [
-            'type' => 'preaspirated_consonant',
-            'name' =>'ha-Ta',
-            'examples' => "(No examples in English)\n\nkk in ta{kk}a\n\t(thank in Faroese)",
-            'description' => '',
-            'info_ipa' => 'ʰt',
-            'quick_transcription' => 'hꞌt', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'T',
-        ];
 
         $alphabet[] = [
             'type' => 'preaspirated_consonant',
