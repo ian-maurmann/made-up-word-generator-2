@@ -1691,6 +1691,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'K-preaspirated',
+            'axiophone' => 'K',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Ka',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'ʰk',
+            'quick_transcription' => 'hꞌk', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'G-axiophone',
             'axiophone' => 'G',
             'type' => 'fixed_consonant',
@@ -1827,6 +1839,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'CH-preaspirated',
+            'axiophone' => 'CH',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Cha',
+            'examples' => "(No examples in English)\n\nkk in sø{fg_bright_cyan}kk{previous}ja\n\t(to sink in Faroese)",
+            'description' => '',
+            'info_ipa' => 'ʰt͡ʃ',
+            'quick_transcription' => 'hꞌch', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'J-axiophone',
             'axiophone' => 'J',
             'type' => 'sub_fixed_consonant',
@@ -1874,6 +1898,10 @@ class SoundAlphabet
             'quick_transcription' => 'n′yug′ya', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
         */
+
+
+
+
 
 
 
@@ -2310,7 +2338,7 @@ class SoundAlphabet
         ];
 
 
-
+        /*
         $alphabet[] = [
             'type' => 'preaspirated_consonant',
             'name' =>'ha-Ssha',
@@ -2319,24 +2347,10 @@ class SoundAlphabet
             'info_ipa' => 'ʰt͡ɕ',
             'quick_transcription' => 'hꞌssh', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
+        */
 
-        $alphabet[] = [
-            'type' => 'preaspirated_consonant',
-            'name' =>'ha-Cha',
-            'examples' => "(No examples in English)\n\nkk in sø{kk}ja\n\t(to sink in Faroese)",
-            'description' => '',
-            'info_ipa' => 'ʰt͡ʃ',
-            'quick_transcription' => 'hꞌch', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => 'preaspirated_consonant',
-            'name' =>'ha-Ka',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'ʰk',
-            'quick_transcription' => 'hꞌk', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
+
 
         $alphabet[] = [
             'type' => 'breathy_consonant',
