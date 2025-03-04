@@ -1292,6 +1292,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'P-breathy',
+            'axiophone' => 'P',
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Pa-hhh',
+            'examples' => "(No examples in English)\n\n(Old Greek Phi)",
+            'description' => '',
+            'info_ipa' => 'pʰ',
+            'quick_transcription' => 'pꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'B-axiophone',
             'axiophone' => 'B',
             'type' => 'fixed_consonant',
@@ -1326,6 +1339,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => "ᵐb\n\nAlt m͜b\n\nOld m̆b",
             'quick_transcription' => 'mb',
+            'phone_family' => 'B',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'B-breathy',
+            'axiophone' => 'B',
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ba-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'bʰ',
+            'quick_transcription' => 'bh',
             'phone_family' => 'B',
         ];
 
@@ -1474,6 +1500,20 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'T-breathy',
+            'axiophone' => 'T',
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ta-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'tʰ',
+            'quick_transcription' => 'tꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'T',
+        ];
+
+        /*
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'T-retroflex',
             'axiophone' => 'T',
             'type' => 'fixed_consonant',
@@ -1484,7 +1524,9 @@ class SoundAlphabet
             'quick_transcription' => 'tꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
             'phone_family' => 'T',
         ];
+        */
 
+        /*
         $alphabet[] = [
             'sound_type' => 'consonant',
             'sound_name' =>'T-retroflex-prenasalized-nnt-h',
@@ -1497,6 +1539,7 @@ class SoundAlphabet
             'quick_transcription' => 'nnꞌtꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
             'phone_family' => 'T',
         ];
+        */
 
         $alphabet[] = [
             'sound_type' => 'consonant',
@@ -1898,6 +1941,44 @@ class SoundAlphabet
             'quick_transcription' => 'n′yug′ya', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
         */
+
+
+
+
+
+
+
+
+        $alphabet[] = [
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Da-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'dʰ',
+            'quick_transcription' => 'dꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'D',
+        ];
+
+
+
+        $alphabet[] = [
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ja-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'd͡ʒʱ',
+            'quick_transcription' => 'jh',
+        ];
+
+        $alphabet[] = [
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ga-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'gʰ',
+            'quick_transcription' => 'gꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'G',
+        ];
 
 
 
@@ -2352,67 +2433,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Pa-hhh',
-            'examples' => "(No examples in English)\n\n(Old Greek Phi)",
-            'description' => '',
-            'info_ipa' => 'pʰ',
-            'quick_transcription' => 'pꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'P',
-        ];
 
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ba-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'bʰ',
-            'quick_transcription' => 'bh',
-            'phone_family' => 'B',
-        ];
-
-
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ta-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'tʰ',
-            'quick_transcription' => 'tꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'T',
-        ];
-
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Da-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'dʰ',
-            'quick_transcription' => 'dꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'D',
-        ];
-
-
-
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ja-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'd͡ʒʱ',
-            'quick_transcription' => 'jh',
-        ];
-
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ga-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'gʰ',
-            'quick_transcription' => 'gꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'G',
-        ];
 
         //-------
 
