@@ -1872,8 +1872,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
-            'sound_name' =>'Uh-oh-axiophone',
-            'axiophone' => '-',
+            'sound_name' =>'Glottal-axiophone',
+            'axiophone' => 'Glottal',
             'type' => 'fixed_consonant',
             'name' =>'Uh-oh-uh-oh',
             'examples' => "- in uh{fg_bright_cyan}-{previous}oh",
