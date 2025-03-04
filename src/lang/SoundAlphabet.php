@@ -1568,6 +1568,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'D-breathy',
+            'axiophone' => 'D',
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Da-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'dʰ',
+            'quick_transcription' => 'dꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'D',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'S-axiophone',
             'axiophone' => 'S',
             'type' => 'fixed_consonant',
@@ -1772,6 +1785,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'G-breathy',
+            'axiophone' => 'G',
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ga-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'gʰ',
+            'quick_transcription' => 'gꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'G',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'H-axiophone',
             'axiophone' => 'H',
             'type' => 'fixed_consonant',
@@ -1918,6 +1944,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'J-breathy',
+            'axiophone' => 'J',
+            'type' => 'breathy_consonant',
+            'name' =>'breathy-Ja-hhh',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'd͡ʒʱ',
+            'quick_transcription' => 'jh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'GYHA-axiophone',
             'axiophone' => 'GYHA',
             'type' => 'sub_fixed_consonant',
@@ -1949,36 +1987,13 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Da-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'dʰ',
-            'quick_transcription' => 'dꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'D',
-        ];
 
 
 
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ja-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'd͡ʒʱ',
-            'quick_transcription' => 'jh',
-        ];
 
-        $alphabet[] = [
-            'type' => 'breathy_consonant',
-            'name' =>'breathy-Ga-hhh',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'gʰ',
-            'quick_transcription' => 'gꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'G',
-        ];
+
+
+
 
 
 
