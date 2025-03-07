@@ -1980,6 +1980,19 @@ class SoundAlphabet
         ];
         */
 
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'gHhh-axiophone',
+            'axiophone' => 'gHhh',
+            'type' => 'sub_fixed_consonant',
+            'name' =>'Gouda-gouda',
+            'examples' => "(No examples in English)\n\ng in {fg_bright_cyan}g{previous}aan ('to go' in Dutch)\ng in {fg_bright_cyan}g{previous}ouda (Dutch city & cheese)",
+            'description' => "Voiced velar fricative",
+            'info_ipa' => 'ɣ',
+            'quick_transcription' => 'gh(hh)',
+            'phone_family' => 'GH',
+        ];
+
 
 
 
@@ -2452,15 +2465,7 @@ class SoundAlphabet
 
         //-------
 
-        $alphabet[] = [
-            'type' => 'sub_fixed_consonant',
-            'name' =>'Gouda-gouda',
-            'examples' => "(No examples in English)\n\ng in {g}aan ('to go' in Dutch)\ng in {g}ouda (Dutch city & cheese)",
-            'description' => "Voiced velar fricative",
-            'info_ipa' => 'ɣ',
-            'quick_transcription' => 'gh(hh)',
-            'phone_family' => 'GH',
-        ];
+
 
 
 
