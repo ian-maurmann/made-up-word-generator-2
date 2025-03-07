@@ -1872,7 +1872,45 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
-            'sound_name' =>'Epiglottal-axiophone',
+            'sound_name' =>'Pharyngeal-voiceless',
+            'axiophone' => 'Pharyngeal',
+            'type' => 'pharyngeal',
+            'name' =>'H(hhh)ar',
+            'examples' => "(No examples in English)\n\n(used in Avar, Arabic,\nMaltese)\n\n{fg_bright_cyan}ħ{previous}ar (heat in Arabic)",
+            'description' => 'Voiceless pharyngeal fricative',
+            'info_ipa' => 'ħ',
+            'quick_transcription' => 'h(hhh)',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Pharyngeal-voiced',
+            'axiophone' => 'Pharyngeal',
+            'type' => "pharyngeal\n\nsemi",
+            'name' =>'W(rrr)ahyn',
+            'examples' => "(No examples in English)\n\n{fg_bright_cyan}ʕ{previous}ajn (eye in Arabic)",
+            'description' => 'Voiced pharyngeal fricative',
+            'info_ipa' => 'ʕ',
+            'quick_transcription' => 'w(rrr)',
+            'phone_family' => 'W',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Pharyngeal-voiced-trill',
+            'axiophone' => 'Pharyngeal',
+            'type' => 'pharyngeal',
+            'name' =>'G(rrr)akwa',
+            'examples' => "(No examples in English)\n\n(used in Richa dialect Agul,\nIraqi Arabic, Siwa)\n\n{fg_bright_cyan}І{previous}екв (light in Richa)",
+            'description' => 'Voiced epiglottal trill',
+            'info_ipa' => 'ʢ',
+            'quick_transcription' => 'g(rrr)',
+            'phone_family' => 'G',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Epiglottal-voiceless',
             'axiophone' => 'Epiglottal',
             'type' => 'pharyngeal',
             'name' =>'Ya(ah)',
@@ -1880,6 +1918,18 @@ class SoundAlphabet
             'description' => 'voiceless* pharyngeal (epiglottal) plosive',
             'info_ipa' => 'ʡ',
             'quick_transcription' => '(ah)',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Epiglottal-voiceless-trill',
+            'axiophone' => 'Epiglottal',
+            'type' => 'pharyngeal',
+            'name' =>'H(rrr)atsh',
+            'examples' => "(No examples in English)\n\n(used in Agul, Haida)\n\n{fg_bright_cyan}хІ{previous}ач (apple in Richa)",
+            'description' => 'Voiceless epiglottal trill',
+            'info_ipa' => 'ʜ',
+            'quick_transcription' => '(ah)(rrr)',
         ];
 
         $alphabet[] = [
@@ -2004,6 +2054,8 @@ class SoundAlphabet
             'quick_transcription' => 'gh(hh)',
             'phone_family' => 'GH',
         ];
+
+
 
 
 
@@ -2487,43 +2539,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'pharyngeal',
-            'name' =>'H(rrr)atsh',
-            'examples' => "(No examples in English)\n\n(used in Agul, Haida)\n\n{хІ}ач (apple in Richa)",
-            'description' => 'Voiceless epiglottal trill',
-            'info_ipa' => 'ʜ',
-            'quick_transcription' => 'h(rrr)',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngeal',
-            'name' =>'G(rrr)akwa',
-            'examples' => "(No examples in English)\n\n(used in Richa dialect Agul,\nIraqi Arabic, Siwa)\n\n{І}екв (light in Richa)",
-            'description' => 'Voiced epiglottal trill',
-            'info_ipa' => 'ʢ',
-            'quick_transcription' => 'g(rrr)',
-            'phone_family' => 'G',
-        ];
-
-        $alphabet[] = [
-            'type' => 'pharyngeal',
-            'name' =>'H(hhh)ar',
-            'examples' => "(No examples in English)\n\n(used in Avar, Arabic,\nMaltese)\n\n{ħ}ar (heat in Arabic)",
-            'description' => 'Voiceless pharyngeal fricative',
-            'info_ipa' => 'ħ',
-            'quick_transcription' => 'h(hhh)',
-        ];
-
-        $alphabet[] = [
-            'type' => "pharyngeal\n\nsemi",
-            'name' =>'W(rrr)ahyn',
-            'examples' => "(No examples in English)\n\n{ʕ}ajn (eye in Arabic)",
-            'description' => 'Voiced pharyngeal fricative',
-            'info_ipa' => 'ʕ',
-            'quick_transcription' => 'w(rrr)',
-            'phone_family' => 'W',
-        ];
 
 
         //-------
