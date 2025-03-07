@@ -1872,6 +1872,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'Epiglottal-axiophone',
+            'axiophone' => 'Epiglottal',
+            'type' => 'pharyngeal',
+            'name' =>'Ya(ah)',
+            'examples' => "(No examples in English)\n\n(used in Aghul,\nRicha dialect)\n\nйа{fg_bright_cyan}гьІ{previous} (center in Richa)",
+            'description' => 'voiceless* pharyngeal (epiglottal) plosive',
+            'info_ipa' => 'ʡ',
+            'quick_transcription' => '(ah)',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'Glottal-axiophone',
             'axiophone' => 'Glottal',
             'type' => 'fixed_consonant',
@@ -1992,6 +2004,8 @@ class SoundAlphabet
             'quick_transcription' => 'gh(hh)',
             'phone_family' => 'GH',
         ];
+
+
 
 
 
@@ -2471,14 +2485,7 @@ class SoundAlphabet
 
         //-------
 
-        $alphabet[] = [
-            'type' => 'pharyngeal',
-            'name' =>'Ya(ah)',
-            'examples' => "(No examples in English)\n\n(used in Aghul,\nRicha dialect)\n\nйа{гьІ} (center in Richa)",
-            'description' => 'voiceless* pharyngeal (epiglottal) plosive',
-            'info_ipa' => 'ʡ',
-            'quick_transcription' => '(ah)',
-        ];
+
 
         $alphabet[] = [
             'type' => 'pharyngeal',
