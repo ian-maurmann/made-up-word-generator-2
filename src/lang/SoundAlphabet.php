@@ -2542,9 +2542,11 @@ class SoundAlphabet
 
 
 
-        //-------
+        // =============================================
 
+        // <Emphatics>
 
+        /*
         $alphabet[] = [
             'type' => 'pharyngealized_stop',
             'name' =>'pharyn-Paaa~',
@@ -2764,8 +2766,6 @@ class SoundAlphabet
             'quick_transcription' => '`dz~',
         ];
 
-
-
         $alphabet[] = [
             'type' => "pharyngealized_approximant\n\nsemi",
             'name' =>'pharyn-Waaa~',
@@ -2784,6 +2784,10 @@ class SoundAlphabet
             'info_ipa' => 'lˤ',
             'quick_transcription' => '`l~',
         ];
+        */
+
+        // </Emphatics>
+        // =============================================
 
 
         $alphabet[] = [
