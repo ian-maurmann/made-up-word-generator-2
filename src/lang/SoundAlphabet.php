@@ -1396,6 +1396,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'F-ejective',
+            'axiophone' => 'F',
+            'type' => 'ejective',
+            'name' =>'Fe---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'fʼ',
+            'quick_transcription' => 'f---',
+            'phone_family' => 'F',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'V-axiophone',
             'axiophone' => 'V',
             'type' => 'fixed_consonant',
@@ -1469,6 +1482,19 @@ class SoundAlphabet
             'description' => "Voiceless dental fricative",
             'info_ipa' => "θ",
             'quick_transcription' => 'th',
+            'phone_family' => 'TH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'TH-voiceless-ejective',
+            'axiophone' => 'TH',
+            'type' => 'ejective',
+            'name' =>'The---jective',
+            'examples' => '',
+            'description' => 'Dental ejective fricative',
+            'info_ipa' => 'θʼ',
+            'quick_transcription' => 'th---',
             'phone_family' => 'TH',
         ];
 
@@ -1641,6 +1667,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => 'ⁿs',
             'quick_transcription' => 'ns',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'S-ejective',
+            'axiophone' => 'S',
+            'type' => 'ejective',
+            'name' =>'Se---jective',
+            'examples' => '',
+            'description' => 'Alveolar ejective fricative or affricate',
+            'info_ipa' => 'sʼ',
+            'quick_transcription' => 's---',
+            'phone_family' => 'S',
         ];
 
         $alphabet[] = [
@@ -1911,6 +1950,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'QH-ejective',
+            'axiophone' => 'QH',
+            'type' => 'ejective',
+            'name' =>'Qhe---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'qʼ',
+            'quick_transcription' => 'qh---',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'Pharyngeal-voiceless',
             'axiophone' => 'Pharyngeal',
             'type' => 'pharyngeal',
@@ -2120,44 +2171,13 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Qhe---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'qʼ',
-            'quick_transcription' => 'qh---',
-        ];
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Fe---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'fʼ',
-            'quick_transcription' => 'f---',
-            'phone_family' => 'F',
-        ];
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'The---jective',
-            'examples' => '',
-            'description' => 'Dental ejective fricative',
-            'info_ipa' => 'θʼ',
-            'quick_transcription' => 'th---',
-            'phone_family' => 'TH',
-        ];
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Se---jective',
-            'examples' => '',
-            'description' => 'Alveolar ejective fricative or affricate',
-            'info_ipa' => 'sʼ',
-            'quick_transcription' => 's---',
-            'phone_family' => 'S',
-        ];
+
+
+
+
 
         $alphabet[] = [
             'type' => 'ejective',
