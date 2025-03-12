@@ -1761,6 +1761,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'SH-ejective',
+            'axiophone' => 'SH',
+            'type' => 'ejective',
+            'name' =>'She---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ʃʼ',
+            'quick_transcription' => 'sh---',
+            'phone_family' => 'SH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'ZH-axiophone',
             'axiophone' => 'ZH',
             'type' => 'fixed_consonant',
@@ -1926,6 +1939,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'KH-ejective',
+            'axiophone' => 'KH',
+            'type' => 'ejective',
+            'name' =>'Khe---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'xʼ',
+            'quick_transcription' => 'kh---',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'QH-axiophone',
             'axiophone' => 'QH',
             'type' => 'fixed_consonant',
@@ -2044,6 +2069,18 @@ class SoundAlphabet
             'description' => "Voiceless alveolar lateral affricate",
             'info_ipa' => 't͡ɬ',
             'quick_transcription' => 'tlꞌ', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'TL-ejective',
+            'axiophone' => 'TL',
+            'type' => 'ejective',
+            'name' =>'Tle---jective',
+            'examples' => '',
+            'description' => 'Alveolar lateral ejective fricative or affricate',
+            'info_ipa' => 'tɬʼ',
+            'quick_transcription' => 'tl---',
         ];
 
         $alphabet[] = [
@@ -2179,15 +2216,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'She---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ʃʼ',
-            'quick_transcription' => 'sh---',
-            'phone_family' => 'SH',
-        ];
+
 
         $alphabet[] = [
             'type' => 'ejective',
@@ -2198,23 +2227,9 @@ class SoundAlphabet
             'quick_transcription' => 'ssh---',
         ];
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Tle---jective',
-            'examples' => '',
-            'description' => 'Alveolar lateral ejective fricative or affricate',
-            'info_ipa' => 'tɬʼ',
-            'quick_transcription' => 'tl---',
-        ];
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Khe---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'xʼ',
-            'quick_transcription' => 'kh---',
-        ];
+
+
 
         $alphabet[] = [
             'type' => 'ejective',
