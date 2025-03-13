@@ -886,6 +886,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
+            'sound_name' =>'L-belt-ejective',
+            'axiophone' => 'SSH',
+            'type' => 'ejective',
+            'name' =>'Sshe---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'ɬʼ',
+            'quick_transcription' => 'ssh---',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'lateral_liquid',
             'sound_name' =>'L-belt-light-to-y',
             'axiophone' => 'SSH',
             'type' => 'y_glide_consonant',
@@ -2218,14 +2230,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Sshe---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'ɬʼ',
-            'quick_transcription' => 'ssh---',
-        ];
+
 
 
 
