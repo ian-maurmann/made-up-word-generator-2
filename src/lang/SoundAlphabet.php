@@ -1862,6 +1862,20 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'K-end-syllabic',
+            'axiophone' => 'K',
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} end-syllabic {previous}",
+            'type' => 'end-syllabic_consonant',
+            'name' =>'Mostc-Mostc-cck',
+            'examples' => "(No examples in English)\n\nc in most{fg_bright_cyan}ć{previous}\n\t(bridge in non-\n\tstandard Croatian)",
+            'description' => "",
+            'info_ipa' => 'k̩',
+            'quick_transcription' => 'ꞌck', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'K',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'G-axiophone',
             'axiophone' => 'G',
             'type' => 'fixed_consonant',
@@ -2236,23 +2250,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Tse---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 't͡sʼ',
-            'quick_transcription' => 'ts---',
-        ];
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Tthe---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 't̪θʼ',
-            'quick_transcription' => 'tꞌth---', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
 
 
@@ -2332,6 +2330,24 @@ class SoundAlphabet
 
         // ───────────────────────────────────────────
 
+
+        $alphabet[] = [
+            'type' => 'ejective',
+            'name' =>'Tse---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 't͡sʼ',
+            'quick_transcription' => 'ts---',
+        ];
+
+        $alphabet[] = [
+            'type' => 'ejective',
+            'name' =>'Tthe---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 't̪θʼ',
+            'quick_transcription' => 'tꞌth---', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
 
         $alphabet[] = [
             'type' => 'w_glide_consonant',
@@ -2990,7 +3006,6 @@ class SoundAlphabet
 
 
 
-
         $alphabet[] = [
             'type' => 'bilabial_click',
             'name' =>'Pppp-Smack',
@@ -3063,21 +3078,14 @@ class SoundAlphabet
             'quick_transcription' => '-tchick!-',
         ];
 
+
         // -------------------------
 
 
 
 
 
-        $alphabet[] = [
-            'type' => 'end-syllabic_consonant',
-            'name' =>'Mostc-Mostc-cck',
-            'examples' => "(No examples in English)\n\nc in most{ć}\n\t(bridge in non-\n\tstandard Croatian)",
-            'description' => "",
-            'info_ipa' => 'k̩',
-            'quick_transcription' => 'ꞌck', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'K',
-        ];
+
 
 
 
