@@ -1786,6 +1786,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'SH-syllabic',
+            'axiophone' => 'SH',
+            'special_categorization' => "{bold}{fg_bright_red}{bg_bright_yellow} syllabic {previous}",
+            'type' => 'syllabic_consonant',
+            'name' =>'Sh-sh-Sh',
+            'examples' => "(No examples in English,\nalthough Shhhh! comes close.)\n\n(One-off in Hungarian for \"and\")",
+            'description' => "",
+            'info_ipa' => 'ʃ̩',
+            'quick_transcription' => '-sh-',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'ZH-axiophone',
             'axiophone' => 'ZH',
             'type' => 'fixed_consonant',
@@ -3089,14 +3102,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'syllabic_consonant',
-            'name' =>'Sh-sh-Sh',
-            'examples' => "(No examples in English,\nalthough Shhhh! comes close.)\n\n(One-off in Hungarian for \"and\")",
-            'description' => "",
-            'info_ipa' => 'ʃ̩',
-            'quick_transcription' => '-sh-',
-        ];
+
 
 
         $alphabet[] = [
