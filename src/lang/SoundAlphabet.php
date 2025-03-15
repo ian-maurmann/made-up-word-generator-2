@@ -109,6 +109,12 @@ class SoundAlphabet
         return $this->getSoundByType('consonant');
     }
 
+    public function getGlideConsonants(): array
+    {
+        // Return array of sounds, else return an empty array
+        return $this->getSoundByType('glide_consonant');
+    }
+
     public function getUnsortedSounds(): array
     {
         // Default to empty
@@ -2232,6 +2238,35 @@ class SoundAlphabet
             'quick_transcription' => 'gh(hh)',
             'phone_family' => 'GH',
         ];
+
+        // ───────────────────────────────────────────
+        // Glide Consonants
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'T-TH-ejective',
+            'axiophone' => 'T-TH',
+            'type' => 'ejective',
+            'name' =>'Tthe---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 't̪θʼ',
+            'quick_transcription' => 'tꞌth---', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'TS-ejective',
+            'axiophone' => 'TS',
+            'type' => 'ejective',
+            'name' =>'Tse---jective',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 't͡sʼ',
+            'quick_transcription' => 'ts---',
+        ];
+
+
 
 
 

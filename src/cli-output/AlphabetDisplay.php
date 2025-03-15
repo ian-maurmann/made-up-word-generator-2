@@ -71,6 +71,9 @@ class AlphabetDisplay
 
         // Consonants
         $this->showConsonants();
+
+        // Glide Consonants
+        $this->showGlideConsonants();
     }
 
     public function showVowels(){
@@ -546,6 +549,71 @@ class AlphabetDisplay
         ];
 
         $this->table_builder->buildTable($consonant_sounds, $table_style, $table_columns);
+    }
+
+    public function showGlideConsonants(){
+        $this->writer->writeLine('Glide Consonants:');
+
+        $glide_consonant_sounds = $this->sound_alphabet->getGlideConsonants();
+
+        $table_style = [
+            'table_text_align' => 'left', // 'left' | 'right' | 'center'
+            'table_border_fg_color' => 'bright-yellow',
+            'table_show_head' => true,
+            'table_head_text_align' => 'center',
+            'table_head_bg_color' => 'dark-blue',
+            'table_head_weight' => 'bold',
+        ];
+
+        $table_columns = [
+            [
+                'attribute' => 'axiophone',
+                'label'     => 'Axiophone',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'sound_name',
+                'label'     => 'Sound Name',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'special_categorization',
+                'label' => "Special\nCategorization",
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'type',
+                'label'     => 'Type',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'name',
+                'label'     => 'Name',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'examples',
+                'label'     => 'Examples',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'description',
+                'label'     => 'Description',
+                'text_align' => 'left',
+            ],
+            [
+                'attribute' => 'info_ipa',
+                'label'     => 'IPA',
+                'text_align' => 'center',
+            ],
+            [
+                'attribute' => 'quick_transcription',
+                'label'     => 'Quick Transcription',
+                'text_align' => 'center',
+            ],
+        ];
+
+        $this->table_builder->buildTable($glide_consonant_sounds, $table_style, $table_columns);
     }
 
     public function showUnsortedSounds(){
