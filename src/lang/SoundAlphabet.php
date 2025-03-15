@@ -2242,6 +2242,52 @@ class SoundAlphabet
         // ───────────────────────────────────────────
         // Glide Consonants
 
+        // ----------------------------------
+        // <W-Glides>
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'P-W-glide',
+            'axiophone' => 'P+W',
+            'type' => 'w_glide_consonant',
+            'name' =>'Poirot-Poirot',
+            'examples' => "p in Hercule {fg_bright_cyan}P{previous}oirot",
+            'description' => "",
+            'info_ipa' => "pw",
+            'quick_transcription' => 'pw',
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'V-W-glide',
+            'axiophone' => 'V+W',
+            'type' => 'w_glide_consonant',
+            'name' =>'Voila-voila',
+            'examples' => "v in {fg_bright_cyan}v{previous}oila",
+            'description' => "",
+            'info_ipa' => "vw",
+            'quick_transcription' => 'vw',
+            'phone_family' => 'V',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'K-W-glide',
+            'axiophone' => 'K+W',
+            'type' => 'w_glide_consonant',
+            'name' =>'Quick-quick',
+            'examples' => "qu in {fg_bright_cyan}qu{previous}een\nqu in {fg_bright_cyan}qu{previous}ick",
+            'description' => "",
+            'info_ipa' => "kw",
+            'quick_transcription' => 'qu',
+            'phone_family' => 'K',
+        ];
+
+        // </W-Glides>
+        // ----------------------------------
+        // <TH-Glides>
+
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'T-TH-ejective',
@@ -2253,6 +2299,10 @@ class SoundAlphabet
             'info_ipa' => 't̪θʼ',
             'quick_transcription' => 'tꞌth---', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
+
+        // </TH-Glides>
+        // ----------------------------------
+        // <S-Glides>
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
@@ -2266,6 +2316,8 @@ class SoundAlphabet
             'quick_transcription' => 'ts---',
         ];
 
+        // </S-Glides>
+        // ----------------------------------
 
 
 
@@ -2379,55 +2431,9 @@ class SoundAlphabet
         // ───────────────────────────────────────────
 
 
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Tse---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 't͡sʼ',
-            'quick_transcription' => 'ts---',
-        ];
-
-        $alphabet[] = [
-            'type' => 'ejective',
-            'name' =>'Tthe---jective',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 't̪θʼ',
-            'quick_transcription' => 'tꞌth---', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-
-        $alphabet[] = [
-            'type' => 'w_glide_consonant',
-            'name' =>'Poirot-Poirot',
-            'examples' => "p in Hercule {P}oirot",
-            'description' => "",
-            'info_ipa' => "pw",
-            'quick_transcription' => 'pw',
-            'phone_family' => 'P',
-        ];
-
-        $alphabet[] = [
-            'type' => 'w_glide_consonant',
-            'name' =>'Voila-voila',
-            'examples' => "v in {v}oila",
-            'description' => "",
-            'info_ipa' => "vw",
-            'quick_transcription' => 'vw',
-            'phone_family' => 'V',
-        ];
 
 
 
-        $alphabet[] = [
-            'type' => 'w_glide_consonant',
-            'name' =>'Quick-quick',
-            'examples' => "qu in {qu}een\nqu in {qu}ick",
-            'description' => "",
-            'info_ipa' => "kw",
-            'quick_transcription' => 'qu',
-            'phone_family' => 'K',
-        ];
 
         $alphabet[] = [
             'type' => 'w_glide_consonant',
