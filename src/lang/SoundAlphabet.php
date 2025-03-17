@@ -2319,6 +2319,30 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
+            'sound_name' =>'PS-glide',
+            'axiophone' => 'PS',
+            'type' => 's_glide_consonant',
+            'name' =>'Psi-Psi',
+            'examples' => "Ps in {fg_bright_cyan}Ps{previous}i",
+            'description' => "",
+            'info_ipa' => "ps",
+            'quick_transcription' => 'ps',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'TS-glide',
+            'axiophone' => 'TS',
+            'type' => 's_glide_consonant',
+            'name' =>'Tsar-tsar',
+            'examples' => "ts in {fg_bright_cyan}ts{previous}ar\n\n(ts in cats when said fast)\n(ts in outset when said fast)",
+            'description' => "",
+            'info_ipa' => "ts",
+            'quick_transcription' => 'ts',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
             'sound_name' =>'TS-ejective',
             'axiophone' => 'TS',
             'type' => 'ejective',
@@ -2327,6 +2351,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => 't͡sʼ',
             'quick_transcription' => 'ts---',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'KS-glide',
+            'axiophone' => 'KS',
+            'type' => 's_glide_consonant',
+            'name' =>'Exit-exit',
+            'examples' => "x in e{fg_bright_cyan}x{previous}cellent\nx in a{fg_bright_cyan}x{previous}e\nx in code{fg_bright_cyan}x{previous}",
+            'description' => "",
+            'info_ipa' => "ks",
+            'quick_transcription' => 'x',
+            'phone_family' => 'KS',
         ];
 
         // </S-Glides>
@@ -2450,33 +2487,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 's_glide_consonant',
-            'name' =>'Psi-Psi',
-            'examples' => "Ps in {Ps}i",
-            'description' => "",
-            'info_ipa' => "ps",
-            'quick_transcription' => 'ps',
-        ];
 
-        $alphabet[] = [
-            'type' => 's_glide_consonant',
-            'name' =>'Tsar-tsar',
-            'examples' => "ts in {ts}ar\n\n(ts in cats when said fast)\n(ts in outset when said fast)",
-            'description' => "",
-            'info_ipa' => "ts",
-            'quick_transcription' => 'ts',
-        ];
-
-        $alphabet[] = [
-            'type' => 's_glide_consonant',
-            'name' =>'Exit-exit',
-            'examples' => "x in e{x}cellent\nx in a{x}e\nx in code{x}",
-            'description' => "",
-            'info_ipa' => "ks",
-            'quick_transcription' => 'x',
-            'phone_family' => 'KS',
-        ];
 
         $alphabet[] = [
             'type' => 'z_glide_consonant',
