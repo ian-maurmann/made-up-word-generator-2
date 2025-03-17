@@ -2284,6 +2284,19 @@ class SoundAlphabet
             'phone_family' => 'K',
         ];
 
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'G-W-glide',
+            'axiophone' => 'G+W',
+            'type' => 'w_glide_consonant',
+            'name' =>'Gwen-Gwen',
+            'examples' => "gu in Uru{fg_bright_cyan}gu{previous}ay\nGu in {fg_bright_cyan}Gu{previous}inevere\nGw in {fg_bright_cyan}Gw{previous}en\nGw in {fg_bright_cyan}Gw{previous}ynne\nGu in {fg_bright_cyan}Gu{previous}adalupe",
+            'description' => "",
+            'info_ipa' => "gw",
+            'quick_transcription' => 'gw',
+            'phone_family' => 'G',
+        ];
+
         // </W-Glides>
         // ----------------------------------
         // <TH-Glides>
@@ -2435,15 +2448,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'w_glide_consonant',
-            'name' =>'Gwen-Gwen',
-            'examples' => "gu in Uru{gu}ay\nGu in {Gu}inevere\nGw in {Gw}en\nGw in {Gw}ynne\nGu in {Gu}adalupe",
-            'description' => "",
-            'info_ipa' => "gw",
-            'quick_transcription' => 'gw',
-            'phone_family' => 'G',
-        ];
+
 
         $alphabet[] = [
             'type' => 's_glide_consonant',
