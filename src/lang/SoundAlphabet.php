@@ -2368,6 +2368,32 @@ class SoundAlphabet
 
         // </S-Glides>
         // ----------------------------------
+        // <Z-Glides>
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'D-Z-glide',
+            'axiophone' => 'D-Z',
+            'type' => 'z_glide_consonant',
+            'name' =>'Dzwon-dzwon',
+            'examples' => "(No examples in English)\n\n(similar to ds in dads)\n\ndz in {fg_bright_cyan}d{previous}won (bell in Polish)",
+            'description' => "Voiced alveolar affricate",
+            'info_ipa' => "d͡z",
+            'quick_transcription' => 'dz',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'R-Z-glide',
+            'axiophone' => 'R-Z',
+            'type' => "z_glide_consonant",
+            'name' =>'Rzim-Rzim',
+            'examples' => "{fg_bright_cyan}Ř{previous}ím (Rome in Czech)",
+            'description' => 'voiced alveolar fricative',
+            'info_ipa' => "r̝\n\nř",
+            'quick_transcription' => 'rz',
+            'phone_family' => 'R',
+        ];
 
 
 
@@ -2489,24 +2515,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'z_glide_consonant',
-            'name' =>'Dzwon-dzwon',
-            'examples' => "(No examples in English)\n\n(similar to ds in dads)\n\ndz in {dz}won (bell in Polish)",
-            'description' => "Voiced alveolar affricate",
-            'info_ipa' => "d͡z",
-            'quick_transcription' => 'dz',
-        ];
 
-        $alphabet[] = [
-            'type' => "z_glide_consonant",
-            'name' =>'Rzim-Rzim',
-            'examples' => "{Ř}ím (Rome in Czech)",
-            'description' => 'voiced alveolar fricative',
-            'info_ipa' => "r̝\n\nř",
-            'quick_transcription' => 'rz',
-            'phone_family' => 'R',
-        ];
 
         $alphabet[] = [
             'type' => "zh_glide_consonant",
