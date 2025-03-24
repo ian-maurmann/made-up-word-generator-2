@@ -2395,6 +2395,62 @@ class SoundAlphabet
             'phone_family' => 'R',
         ];
 
+        // </Z-Glides>
+        // ----------------------------------
+        // <ZH-Glides>
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'Y-ZH-glide',
+            'axiophone' => 'Y-ZH',
+            'type' => 'zh_glide_consonant',
+            'name' =>'Jord-jord',
+            'examples' => "(No examples in English)\n\n(Y + Genre-genre)\n\nj in {fg_bright_cyan}j{previous}ord\n(soil in Swedish)",
+            'description' => "Voiced palatal fricative",
+            'info_ipa' => "ʝ",
+            'quick_transcription' => 'yzh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'R-ZH-glide',
+            'axiophone' => 'R-ZH',
+            'type' => "zh_glide_consonant",
+            'name' =>'Rezh',
+            'examples' => "(R + Genre-genre)\n\n(reg in regime when said fast)\n\nRz in {fg_bright_cyan}Rz{previous}ym (Rome in Polish)",
+            'description' => "Voiced retroflex fricative",
+            'info_ipa' => "r͡ʒ\n\nAlt ʐ",
+            'quick_transcription' => 'rezh',
+            'phone_family' => 'R',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'L-ZH-glide',
+            'axiophone' => 'L-ZH',
+            'type' => "zh_glide_consonant",
+            'name' =>'Lezh',
+            'examples' => "(L + Genre-genre)\n\n(Sometimes the leas in pleasure\nwhen said fast)",
+            'description' => "Voiced alveolar lateral fricatives\n\n(sometimes referred to as Lezh)",
+            'info_ipa' => "l͡ʒ\n\nAlt ɮ",
+            'quick_transcription' => 'lezh',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'D-L-ZH-glide',
+            'axiophone' => 'D-L-ZH',
+            'type' => 'zh_glide_consonant',
+            'name' =>'Delezh',
+            'examples' => "(No examples in English)\n\n(D + L + Genre-genre)",
+            'description' => "",
+            'info_ipa' => "dl͡ʒ\n\nAlt dɮ",
+            'quick_transcription' => 'delezh',
+        ];
+
+
+
+
 
 
 
@@ -2517,42 +2573,6 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => "zh_glide_consonant",
-            'name' =>'Rezh',
-            'examples' => "(R + Genre-genre)\n\n(reg in regime when said fast)\n\nRz in {Rz}ym (Rome in Polish)",
-            'description' => "Voiced retroflex fricative",
-            'info_ipa' => "r͡ʒ\n\nAlt ʐ",
-            'quick_transcription' => 'rezh',
-            'phone_family' => 'R',
-        ];
-
-        $alphabet[] = [
-            'type' => "zh_glide_consonant",
-            'name' =>'Lezh',
-            'examples' => "(L + Genre-genre)\n\n(Sometimes the leas in pleasure\nwhen said fast)",
-            'description' => "Voiced alveolar lateral fricatives\n\n(sometimes referred to as Lezh)",
-            'info_ipa' => "l͡ʒ\n\nAlt ɮ",
-            'quick_transcription' => 'lezh',
-        ];
-
-        $alphabet[] = [
-            'type' => 'zh_glide_consonant',
-            'name' =>'Delezh',
-            'examples' => "(No examples in English)\n\n(D + L + Genre-genre)",
-            'description' => "",
-            'info_ipa' => "dl͡ʒ\n\nAlt dɮ",
-            'quick_transcription' => 'delezh',
-        ];
-
-        $alphabet[] = [
-            'type' => 'zh_glide_consonant',
-            'name' =>'Jord-jord',
-            'examples' => "(No examples in English)\n\n(Y + Genre-genre)\n\nj in {j}ord\n(soil in Swedish)",
-            'description' => "Voiced palatal fricative",
-            'info_ipa' => "ʝ",
-            'quick_transcription' => 'yzh',
-        ];
 
         $alphabet[] = [
             'type' => 'y_glide_consonant',
