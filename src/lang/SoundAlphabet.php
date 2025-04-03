@@ -2242,6 +2242,50 @@ class SoundAlphabet
         // ───────────────────────────────────────────
         // Glide Consonants
 
+
+        // ----------------------------------
+        // <Y-Glides>
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'P-Y-glide',
+            'axiophone' => 'P+Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Pewter-py-pewter',
+            'examples' => "p in {fg_bright_cyan}p{previous}ew\np in {fg_bright_cyan}p{previous}ewter\np in com{fg_bright_cyan}p{previous}uter",
+            'description' => '',
+            'info_ipa' => 'pj',
+            'quick_transcription' => 'pꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'B-Y-glide',
+            'axiophone' => 'B+Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Beautiful-by-beautiful',
+            'examples' => "b in {fg_bright_cyan}b{previous}eautiful\n\nbe in {fg_bright_cyan}be{previous}o\n(alive in Gaelic)",
+            'description' => '',
+            'info_ipa' => 'bj',
+            'quick_transcription' => 'bꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'B',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'F-Y-glide',
+            'axiophone' => 'F+Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Future-fy-future',
+            'examples' => "f in {fg_bright_cyan}f{previous}uture\nf in {fg_bright_cyan}f{previous}ury",
+            'description' => '',
+            'info_ipa' => 'fj',
+            'quick_transcription' => 'fꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'F',
+        ];
+
+        // </Y-Glides>
         // ----------------------------------
         // <W-Glides>
 
@@ -2574,35 +2618,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Pewter-py-pewter',
-            'examples' => "p in {p}ew\np in {p}ewter\np in com{p}uter",
-            'description' => '',
-            'info_ipa' => 'pj',
-            'quick_transcription' => 'pꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'P',
-        ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Future-fy-future',
-            'examples' => "f in {f}uture\nf in {f}ury",
-            'description' => '',
-            'info_ipa' => 'fj',
-            'quick_transcription' => 'fꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'F',
-        ];
-
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Beautiful-by-beautiful',
-            'examples' => "b in {b}eautiful\n\nbe in {be}o\n(alive in Gaelic)",
-            'description' => '',
-            'info_ipa' => 'bj',
-            'quick_transcription' => 'bꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'B',
-        ];
 
         $alphabet[] = [
             'type' => 'y_glide_consonant',
