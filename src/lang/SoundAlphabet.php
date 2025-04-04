@@ -2249,7 +2249,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'P-Y-glide',
-            'axiophone' => 'P+Y',
+            'axiophone' => 'P-Y',
             'type' => 'y_glide_consonant',
             'name' =>'Pewter-py-pewter',
             'examples' => "p in {fg_bright_cyan}p{previous}ew\np in {fg_bright_cyan}p{previous}ewter\np in com{fg_bright_cyan}p{previous}uter",
@@ -2262,7 +2262,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'B-Y-glide',
-            'axiophone' => 'B+Y',
+            'axiophone' => 'B-Y',
             'type' => 'y_glide_consonant',
             'name' =>'Beautiful-by-beautiful',
             'examples' => "b in {fg_bright_cyan}b{previous}eautiful\n\nbe in {fg_bright_cyan}be{previous}o\n(alive in Gaelic)",
@@ -2275,7 +2275,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'F-Y-glide',
-            'axiophone' => 'F+Y',
+            'axiophone' => 'F-Y',
             'type' => 'y_glide_consonant',
             'name' =>'Future-fy-future',
             'examples' => "f in {fg_bright_cyan}f{previous}uture\nf in {fg_bright_cyan}f{previous}ury",
@@ -2285,6 +2285,45 @@ class SoundAlphabet
             'phone_family' => 'F',
         ];
 
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'T-Y-glide',
+            'axiophone' => 'T-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Tuesday-ty-Tuesday',
+            'examples' => "T in {fg_bright_cyan}T{previous}uesday",
+            'description' => '',
+            'info_ipa' => 'tj',
+            'quick_transcription' => 'tꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'T',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'D-Y-glide',
+            'axiophone' => 'D-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Dew-dy-dew',
+            'examples' => "d in {fg_bright_cyan}d{previous}ew\nd in en{fg_bright_cyan}d{previous}uring",
+            'description' => '',
+            'info_ipa' => 'dj',
+            'quick_transcription' => 'dꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'D',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'S-Y-glide',
+            'axiophone' => 'S-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Syoo-sy-syoo',
+            'examples' => "s in tis{fg_bright_cyan}s{previous}ue\ns in mon{fg_bright_cyan}s{previous}ieur",
+            'description' => '',
+            'info_ipa' => 'sj',
+            'quick_transcription' => 'sꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'S',
+        ];
+
         // </Y-Glides>
         // ----------------------------------
         // <W-Glides>
@@ -2292,7 +2331,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'P-W-glide',
-            'axiophone' => 'P+W',
+            'axiophone' => 'P-W',
             'type' => 'w_glide_consonant',
             'name' =>'Poirot-Poirot',
             'examples' => "p in Hercule {fg_bright_cyan}P{previous}oirot",
@@ -2305,7 +2344,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'V-W-glide',
-            'axiophone' => 'V+W',
+            'axiophone' => 'V-W',
             'type' => 'w_glide_consonant',
             'name' =>'Voila-voila',
             'examples' => "v in {fg_bright_cyan}v{previous}oila",
@@ -2318,7 +2357,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'K-W-glide',
-            'axiophone' => 'K+W',
+            'axiophone' => 'K-W',
             'type' => 'w_glide_consonant',
             'name' =>'Quick-quick',
             'examples' => "qu in {fg_bright_cyan}qu{previous}een\nqu in {fg_bright_cyan}qu{previous}ick",
@@ -2331,7 +2370,7 @@ class SoundAlphabet
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
             'sound_name' =>'G-W-glide',
-            'axiophone' => 'G+W',
+            'axiophone' => 'G-W',
             'type' => 'w_glide_consonant',
             'name' =>'Gwen-Gwen',
             'examples' => "gu in Uru{fg_bright_cyan}gu{previous}ay\nGu in {fg_bright_cyan}Gu{previous}inevere\nGw in {fg_bright_cyan}Gw{previous}en\nGw in {fg_bright_cyan}Gw{previous}ynne\nGu in {fg_bright_cyan}Gu{previous}adalupe",
@@ -2620,35 +2659,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Tuesday-ty-Tuesday',
-            'examples' => "T in {T}uesday",
-            'description' => '',
-            'info_ipa' => 'tj',
-            'quick_transcription' => 'tꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'T',
-        ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Dew-dy-dew',
-            'examples' => "d in {d}ew\nd in en{d}uring",
-            'description' => '',
-            'info_ipa' => 'dj',
-            'quick_transcription' => 'dꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'D',
-        ];
-
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Syoo-sy-syoo',
-            'examples' => "s in tis{s}ue\ns in mon{s}ieur",
-            'description' => '',
-            'info_ipa' => 'sj',
-            'quick_transcription' => 'sꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'S',
-        ];
 
         $alphabet[] = [
             'type' => 'y_glide_consonant',
