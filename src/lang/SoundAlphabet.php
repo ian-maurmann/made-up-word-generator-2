@@ -2324,6 +2324,44 @@ class SoundAlphabet
             'phone_family' => 'S',
         ];
 
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'Z-Y-glide',
+            'axiophone' => 'Z-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Zeus-zy-Zeus',
+            'examples' => "Z in {fg_bright_cyan}Z{previous}eus\ns in re{fg_bright_cyan}s{previous}ume",
+            'description' => '',
+            'info_ipa' => 'zj',
+            'quick_transcription' => 'zꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'Z',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'SH-Y-glide',
+            'axiophone' => 'SH-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Shoe-shy-shoe',
+            'examples' => "(Not common in English,\nSometimes the sh in {fg_bright_cyan}sh{previous}oe)",
+            'description' => '',
+            'info_ipa' => "ʃy\n\nAlt ç",
+            'quick_transcription' => 'shꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'SH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'SL-Y-glide',
+            'axiophone' => 'SL-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Slew-sly-slew',
+            'examples' => "Uncommon in modern English\n\nsl in (older) {fg_bright_cyan}sl{previous}ew",
+            'description' => '',
+            'info_ipa' => 'slj',
+            'quick_transcription' => 'slꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
         // </Y-Glides>
         // ----------------------------------
         // <W-Glides>
@@ -2661,15 +2699,6 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Zeus-zy-Zeus',
-            'examples' => "Z in {Z}eus\ns in re{s}ume",
-            'description' => '',
-            'info_ipa' => 'zj',
-            'quick_transcription' => 'zꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'Z',
-        ];
 
 
 
@@ -2678,26 +2707,12 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Slew-sly-slew',
-            'examples' => "Uncommon in modern English\n\n{sl} in (older) {sl}ew",
-            'description' => '',
-            'info_ipa' => 'slj',
-            'quick_transcription' => 'slꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Shoe-shy-shoe',
-            'examples' => "(Not common in English,\nSometimes the {sh} in {sh}oe)",
-            'description' => '',
-            'info_ipa' => "ʃy\n\nAlt ç",
-            'quick_transcription' => 'shꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'SH',
-        ];
+
+
+
 
         $alphabet[] = [
             'type' => 'y_glide_consonant',
