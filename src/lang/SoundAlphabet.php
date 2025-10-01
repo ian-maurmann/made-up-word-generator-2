@@ -2343,11 +2343,49 @@ class SoundAlphabet
             'axiophone' => 'SH-Y',
             'type' => 'y_glide_consonant',
             'name' =>'Shoe-shy-shoe',
-            'examples' => "(Not common in English,\nSometimes the sh in {fg_bright_cyan}sh{previous}oe)",
+            'examples' => "(Not common in English)\n\nSometimes the sh in {fg_bright_cyan}sh{previous}oe",
             'description' => '',
             'info_ipa' => "ʃy\n\nAlt ç",
             'quick_transcription' => 'shꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
             'phone_family' => 'SH',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'ZH-Y-glide',
+            'axiophone' => 'ZH-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Azure-zhy-azure',
+            'examples' => "s in fu{fg_bright_cyan}s{previous}ion\nz in A{fg_bright_cyan}z{previous}ure",
+            'description' => 'Voiceless alveolo-palatal fricative',
+            'info_ipa' => "ʒj\n\nAlt ʑ",
+            'quick_transcription' => 'zhꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'K-Y-glide',
+            'axiophone' => 'K-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Cue-ky-cue',
+            'examples' => 'c in {fg_bright_cyan}c{previous}ube',
+            'description' => '',
+            'info_ipa' => 'kj',
+            'quick_transcription' => 'kꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'K',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'G-Y-glide',
+            'axiophone' => 'G-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Gue-gy-gue',
+            'examples' => "g in {fg_bright_cyan}g{previous}ue\ng in fi{fg_bright_cyan}g{previous}ure\ng in an{fg_bright_cyan}g{previous}ular",
+            'description' => '',
+            'info_ipa' => "gj\n\nAlt ɟ",
+            'quick_transcription' => 'gꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'G',
         ];
 
         $alphabet[] = [
@@ -2714,34 +2752,11 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Azure-zhy-azure',
-            'examples' => "s in fu{s}ion\nz in A{z}ure",
-            'description' => 'Voiceless alveolo-palatal fricative',
-            'info_ipa' => "ʒj\n\nAlt ʑ",
-            'quick_transcription' => 'zhꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Cue-ky-cue',
-            'examples' => 'c in {c}ube',
-            'description' => '',
-            'info_ipa' => 'kj',
-            'quick_transcription' => 'kꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'K',
-        ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Gue-gy-gue',
-            'examples' => "g in {g}ue\ng in fi{g}ure\ng in an{g}ular",
-            'description' => '',
-            'info_ipa' => "gj\n\nAlt ɟ",
-            'quick_transcription' => 'gꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-            'phone_family' => 'G',
-        ];
+
+
+
 
         $alphabet[] = [
             'type' => 'y_glide_consonant',
