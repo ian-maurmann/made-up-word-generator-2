@@ -2390,6 +2390,42 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
+            'sound_name' =>'KH-Y-glide',
+            'axiophone' => 'KH-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Loch-Y',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => "xy\n\nAlt j̊",
+            'quick_transcription' => 'khꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'H-Y-glide',
+            'axiophone' => 'H-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Human-hy-Human',
+            'examples' => "h in {fg_bright_cyan}h{previous}ue\nh in {fg_bright_cyan}h{previous}uman",
+            'description' => '',
+            'info_ipa' => 'hj',
+            'quick_transcription' => 'hꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'J-Y-glide',
+            'axiophone' => 'J-Y',
+            'type' => 'y_glide_consonant',
+            'name' =>'Jump-jy-jump',
+            'examples' => "j in {fg_bright_cyan}j{previous}ump\n",
+            'description' => '',
+            'info_ipa' => 'd͡ʒj',
+            'quick_transcription' => 'jꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
             'sound_name' =>'SL-Y-glide',
             'axiophone' => 'SL-Y',
             'type' => 'y_glide_consonant',
@@ -2758,32 +2794,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Loch-Y',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => "xy\n\nAlt j̊",
-            'quick_transcription' => 'khꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Human-hy-Human',
-            'examples' => "h in {h}ue\nh in {h}uman",
-            'description' => '',
-            'info_ipa' => 'hj',
-            'quick_transcription' => 'hꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-
-        $alphabet[] = [
-            'type' => 'y_glide_consonant',
-            'name' =>'Jump-jy-jump',
-            'examples' => "j in {j}ump\n",
-            'description' => '',
-            'info_ipa' => 'd͡ʒj',
-            'quick_transcription' => 'jꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
 
 
