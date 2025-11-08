@@ -2643,6 +2643,30 @@ class SoundAlphabet
             'quick_transcription' => 'delezh',
         ];
 
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'P-F-glide',
+            'axiophone' => 'P-F',
+            'type' => 'f_glide_consonant',
+            'name' =>'Pf-pf',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'pʰf',
+            'quick_transcription' => 'pf',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'P-F-extra-long',
+            'axiophone' => 'P-F',
+            'type' => 'extra_long_f_glide_consonant',
+            'name' =>'Pffff-pffff',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'pʰfːː',
+            'quick_transcription' => 'pffff',
+        ];
+
 
 
 
@@ -2807,14 +2831,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'extra_long_f_glide_consonant',
-            'name' =>'Pffff-pffff',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'pʰfːː',
-            'quick_transcription' => 'pffff',
-        ];
+
 
         $alphabet[] = [
             'type' => 'extra_long_s_glide_consonant',
