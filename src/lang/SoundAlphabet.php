@@ -2520,8 +2520,20 @@ class SoundAlphabet
             'name' =>'Psi-Psi',
             'examples' => "Ps in {fg_bright_cyan}Ps{previous}i",
             'description' => "",
-            'info_ipa' => "ps",
+            'info_ipa' => "ps\n\np͡s",
             'quick_transcription' => 'ps',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'PS-extra-long',
+            'axiophone' => 'PS',
+            'type' => 'extra_long_s_glide_consonant',
+            'name' =>'Pssss-pssss',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 'p͡sːː',
+            'quick_transcription' => 'pssss',
         ];
 
         $alphabet[] = [
@@ -2532,7 +2544,7 @@ class SoundAlphabet
             'name' =>'Tsar-tsar',
             'examples' => "ts in {fg_bright_cyan}ts{previous}ar\n\n(ts in cats when said fast)\n(ts in outset when said fast)",
             'description' => "",
-            'info_ipa' => "ts",
+            'info_ipa' => "ts\n\nt͡s",
             'quick_transcription' => 'ts',
         ];
 
@@ -2550,15 +2562,39 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
+            'sound_name' =>'TS-extra-long',
+            'axiophone' => 'TS',
+            'type' => 'extra_long_s_glide_consonant',
+            'name' =>'Tssss-tssss',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => 't͡sːː',
+            'quick_transcription' => 'tssss',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
             'sound_name' =>'KS-glide',
             'axiophone' => 'KS',
             'type' => 's_glide_consonant',
             'name' =>'Exit-exit',
             'examples' => "x in e{fg_bright_cyan}x{previous}cellent\nx in a{fg_bright_cyan}x{previous}e\nx in code{fg_bright_cyan}x{previous}",
             'description' => "",
-            'info_ipa' => "ks",
+            'info_ipa' => "ks\n\nk͡s",
             'quick_transcription' => 'x',
             'phone_family' => 'KS',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
+            'sound_name' =>'KS-extra-long',
+            'axiophone' => 'KS',
+            'type' => 'extra_long_s_glide_consonant',
+            'name' =>'Kssss-kssss',
+            'examples' => '',
+            'description' => '',
+            'info_ipa' => "ksːː\n\nk͡sːː",
+            'quick_transcription' => 'kssss',
         ];
 
         // </S-Glides>
@@ -2645,8 +2681,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
-            'sound_name' =>'P-F-glide',
-            'axiophone' => 'P-F',
+            'sound_name' =>'PF-glide',
+            'axiophone' => 'PF',
             'type' => 'f_glide_consonant',
             'name' =>'Pf-pf',
             'examples' => '',
@@ -2657,8 +2693,8 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
-            'sound_name' =>'P-F-extra-long',
-            'axiophone' => 'P-F',
+            'sound_name' =>'PF-extra-long',
+            'axiophone' => 'PF',
             'type' => 'extra_long_f_glide_consonant',
             'name' =>'Pffff-pffff',
             'examples' => '',
@@ -2666,6 +2702,12 @@ class SoundAlphabet
             'info_ipa' => 'pʰfːː',
             'quick_transcription' => 'pffff',
         ];
+
+
+
+
+
+
 
 
 
@@ -2833,32 +2875,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'extra_long_s_glide_consonant',
-            'name' =>'Pssss-pssss',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'p͡sːː',
-            'quick_transcription' => 'pssss',
-        ];
 
-        $alphabet[] = [
-            'type' => 'extra_long_s_glide_consonant',
-            'name' =>'Tssss-tssss',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 't͡sːː',
-            'quick_transcription' => 'tssss',
-        ];
-
-        $alphabet[] = [
-            'type' => 'extra_long_s_glide_consonant',
-            'name' =>'Kssss-kssss',
-            'examples' => '',
-            'description' => '',
-            'info_ipa' => 'k͡sːː',
-            'quick_transcription' => 'kssss',
-        ];
 
         // -------------------------
 
