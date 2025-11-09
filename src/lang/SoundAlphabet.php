@@ -904,18 +904,6 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'lateral_liquid',
-            'sound_name' =>'L-belt-light-to-y',
-            'axiophone' => 'SSH',
-            'type' => 'y_glide_consonant',
-            'name' =>'Sla-Y',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => "ɬj\n\nAlt ɕ",
-            'quick_transcription' => 'sshꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-
-        $alphabet[] = [
-            'sound_type' => 'lateral_liquid',
             'sound_name' =>'L-belt-dark',
             'axiophone' => 'SSH',
             'type' => 'sub_fixed_consonant',
@@ -925,6 +913,9 @@ class SoundAlphabet
             'info_ipa' => "ʎ̥˔",
             'quick_transcription' => 'ssaw',
         ];
+
+
+
 
         // ───────────────────────────────────────────
         // Rowels
@@ -2130,6 +2121,54 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'Cee-Curl',
+            'axiophone' => 'SSHya',
+            'type' => 'y_glide_consonant',
+            'name' =>'Sla-Y',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => "ɕ\n\nor\n\nɬj",
+            'quick_transcription' => 'sshꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Cee-Curl-preaspirated',
+            'axiophone' => 'SSHya',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Ssha',
+            'examples' => "(No examples in English)",
+            'description' => '',
+            'info_ipa' => 'ʰɕ',
+            'quick_transcription' => 'hꞌsshꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Tee-Cee-Curl-preaspirated',
+            'axiophone' => 'SSHya',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Tssha',
+            'examples' => "(No examples in English)\n\n(used in Sami languages)",
+            'description' => '',
+            'info_ipa' => 'ʰt͡ɕ',
+            'quick_transcription' => 'hꞌtsshꞌy', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Zee-Curl',
+            'axiophone' => 'ZZH',
+            'type' => 'consonant',
+            'name' =>'Zzh-zzh',
+            'examples' => "(No examples in English)\n\nž in {fg_bright_cyan}ž{previous}ivot (life in Czech)\nź in {fg_bright_cyan}ź{previous}rebię (foal in Polish)\nj in ka{fg_bright_cyan}j{previous}i (fire in Japanese)\n",
+            'description' => '',
+            'info_ipa' => 'ʑ',
+            'quick_transcription' => 'zzh', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'CH-axiophone',
             'axiophone' => 'CH',
             'type' => 'sub_fixed_consonant',
@@ -2929,16 +2968,7 @@ class SoundAlphabet
         ];
 
 
-        /*
-        $alphabet[] = [
-            'type' => 'preaspirated_consonant',
-            'name' =>'ha-Ssha',
-            'examples' => "(No examples in English)\n\n(used in Sami languages)",
-            'description' => '',
-            'info_ipa' => 'ʰt͡ɕ',
-            'quick_transcription' => 'hꞌssh', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
-        */
+
 
 
 
