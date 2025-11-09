@@ -2613,6 +2613,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'glide_consonant',
+            'sound_name' =>'TS-preaspirated',
+            'axiophone' => 'TS',
+            'type' => 'preaspirated_consonant',
+            'name' =>'ha-Tsa',
+            'examples' => '(No examples in English)',
+            'description' => '',
+            'info_ipa' => 'ʰt͡s',
+            'quick_transcription' => 'hꞌts', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'glide_consonant',
             'sound_name' =>'KS-glide',
             'axiophone' => 'KS',
             'type' => 's_glide_consonant',
@@ -2958,14 +2970,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'preaspirated_consonant',
-            'name' =>'ha-Tsa',
-            'examples' => '(No examples in English)',
-            'description' => '',
-            'info_ipa' => 'ʰt͡s',
-            'quick_transcription' => 'hꞌts', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
+
 
 
 
