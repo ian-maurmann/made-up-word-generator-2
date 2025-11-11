@@ -1935,7 +1935,6 @@ class SoundAlphabet
             'quick_transcription' => 'h',
         ];
 
-        /*
         $alphabet[] = [
             'sound_type' => 'consonant',
             'sound_name' =>'H-extra-long',
@@ -1947,7 +1946,6 @@ class SoundAlphabet
             'info_ipa' => 'hːː',
             'quick_transcription' => 'hhhhh',
         ];
-        */
 
         $alphabet[] = [
             'sound_type' => 'consonant',
