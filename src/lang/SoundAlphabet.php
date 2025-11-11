@@ -1327,6 +1327,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'P-pharyngealized',
+            'axiophone' => 'P',
+            'type' => 'pharyngealized_stop',
+            'name' =>'pharyn-Paaa~',
+            'examples' => "(No examples in English)\n\n(used in Kurmanji, Chechen,\nand Ubykh)",
+            'description' => 'pharyngealized voiceless bilabial stop',
+            'info_ipa' => 'pˤ',
+            'quick_transcription' => '`p~',
+            'phone_family' => 'P',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'B-axiophone',
             'axiophone' => 'B',
             'type' => 'fixed_consonant',
@@ -1374,6 +1387,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => 'bʰ',
             'quick_transcription' => 'bh',
+            'phone_family' => 'B',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'B-pharyngealized',
+            'axiophone' => 'B',
+            'type' => 'pharyngealized_stop',
+            'name' =>'pharyn-Baaa~',
+            'examples' => "(No examples in English)\n\n(used in Chechen, Ubykh, Siwa, \nShihhi Arabic and Iraqi Arabic, \nallophonic in Adyghe\nand Kabardian)",
+            'description' => 'pharyngealized voiced bilabial stop',
+            'info_ipa' => 'bˤ',
+            'quick_transcription' => '`b~',
             'phone_family' => 'B',
         ];
 
@@ -1601,6 +1627,19 @@ class SoundAlphabet
             'phone_family' => 'T',
         ];
         */
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'T-pharyngealized',
+            'axiophone' => 'T',
+            'type' => 'pharyngealized_stop',
+            'name' =>'Teth~',
+            'examples' => "(No examples in English)\n\n(used in Chechen, Berber,\nArabic, Kurmanji, Mizrahi,\nand Classical Hebrew)\n\nTeth is letter of\nthe Semitic abjads,\nbecoming Tet in Hebrew",
+            'description' => 'pharyngealized voiceless alveolar stop',
+            'info_ipa' => 'tˤ',
+            'quick_transcription' => '`t~',
+            'phone_family' => 'T',
+        ];
 
         $alphabet[] = [
             'sound_type' => 'consonant',
@@ -2249,7 +2288,6 @@ class SoundAlphabet
             'quick_transcription' => 'g′ya',
         ];
 
-        /*
         $alphabet[] = [
             'sound_type' => 'consonant',
             'sound_name' =>'GYHA-prenasalized-ny-gyha',
@@ -2261,7 +2299,6 @@ class SoundAlphabet
             'info_ipa' => 'ᶮɟ',
             'quick_transcription' => 'n′yug′ya', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
-        */
 
         $alphabet[] = [
             'sound_type' => 'consonant',
@@ -2996,35 +3033,9 @@ class SoundAlphabet
         // <Emphatics>
 
         /*
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'pharyn-Paaa~',
-            'examples' => "(No examples in English)\n\n(used in Kurmanji, Chechen,\nand Ubykh)",
-            'description' => 'pharyngealized voiceless bilabial stop',
-            'info_ipa' => 'pˤ',
-            'quick_transcription' => '`p~',
-            'phone_family' => 'P',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'pharyn-Baaa~',
-            'examples' => "(No examples in English)\n\n(used in Chechen, Ubykh, Siwa, \nShihhi Arabic and Iraqi Arabic, \nallophonic in Adyghe\nand Kabardian)",
-            'description' => 'pharyngealized voiced bilabial stop',
-            'info_ipa' => 'bˤ',
-            'quick_transcription' => '`b~',
-            'phone_family' => 'B',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'Teth~',
-            'examples' => "(No examples in English)\n\n(used in Chechen, Berber,\nArabic, Kurmanji, Mizrahi,\nand Classical Hebrew)\n\nTeth is letter of\nthe Semitic abjads,\nbecoming Tet in Hebrew",
-            'description' => 'pharyngealized voiceless alveolar stop',
-            'info_ipa' => 'tˤ',
-            'quick_transcription' => '`t~',
-            'phone_family' => 'T',
-        ];
+
 
         $alphabet[] = [
             'type' => 'pharyngealized_stop',
