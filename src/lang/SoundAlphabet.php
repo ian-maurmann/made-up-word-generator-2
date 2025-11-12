@@ -1681,6 +1681,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'D-pharyngealized',
+            'axiophone' => 'D',
+            'type' => 'pharyngealized_stop',
+            'name' =>'Dhad~',
+            'examples' => "(No examples in English)\n\n(used in Chechen,\nTamazight and Arabic)",
+            'description' => 'pharyngealized voiced alveolar stop',
+            'info_ipa' => 'dˤ',
+            'quick_transcription' => '`dh~',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'S-axiophone',
             'axiophone' => 'S',
             'type' => 'fixed_consonant',
@@ -1925,6 +1937,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'K-pharyngealized',
+            'axiophone' => 'K',
+            'type' => 'pharyngealized_stop',
+            'name' =>'Koph~',
+            'examples' => "(No examples in English)\n\n(used in Kurmanji)",
+            'description' => 'pharyngealized voiceless velar plosive',
+            'info_ipa' => 'kˤ',
+            'quick_transcription' => '`k~',
+            'phone_family' => 'K',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'G-axiophone',
             'axiophone' => 'G',
             'type' => 'fixed_consonant',
@@ -1959,6 +1984,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => 'gʰ',
             'quick_transcription' => 'gꞌh', // <--- Using Latin Capital Letter Saltillo, not quote
+            'phone_family' => 'G',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'G-pharyngealized',
+            'axiophone' => 'G',
+            'type' => 'pharyngealized_stop',
+            'name' =>'Goph~',
+            'examples' => "(No examples in English)\n\nBoth:\n\n[gˤ] Uncommon\n\n[ɢˤ] (in Tsakhur)",
+            'description' => "gˤ\npharyngealized voiced velar plosive\n\nɢˤ\npharyngealized voiced uvular stop",
+            'info_ipa' => 'gˤ & ɢˤ',
+            'quick_transcription' => '`g~',
             'phone_family' => 'G',
         ];
 
@@ -3037,34 +3075,11 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'Dhad~',
-            'examples' => "(No examples in English)\n\n(used in Chechen,\nTamazight and Arabic)",
-            'description' => 'pharyngealized voiced alveolar stop',
-            'info_ipa' => 'dˤ',
-            'quick_transcription' => '`dh~',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'Koph~',
-            'examples' => "(No examples in English)\n\n(used in Kurmanji)",
-            'description' => 'pharyngealized voiceless velar plosive',
-            'info_ipa' => 'kˤ',
-            'quick_transcription' => '`k~',
-            'phone_family' => 'K',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'Goph~',
-            'examples' => "(No examples in English)\n\nBoth:\n\n[gˤ] Uncommon\n\n[ɢˤ] (in Tsakhur)",
-            'description' => "gˤ\npharyngealized voiced velar plosive\n\nɢˤ\npharyngealized voiced uvular stop",
-            'info_ipa' => 'gˤ & ɢˤ',
-            'quick_transcription' => '`g~',
-            'phone_family' => 'G',
-        ];
+
+
+
 
         $alphabet[] = [
             'type' => 'pharyngealized_stop',
