@@ -2098,6 +2098,18 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'QH-pharyngealized',
+            'axiophone' => 'QH',
+            'type' => 'pharyngealized_stop',
+            'name' =>'Qoph~',
+            'examples' => "(No examples in English)\n\n(used in Ubykh,\nTsakhur, and Archi)\n\nQoph is a letter of \nthe Semitic abjads, \nincluding Phoenician qop,\nHebrew qup, Aramaic qop,\nSyriac qop, & Arabic qaf ",
+            'description' => 'pharyngealized voiceless uvular stop',
+            'info_ipa' => 'qˤ',
+            'quick_transcription' => '`qh~',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'Pharyngeal-voiceless',
             'axiophone' => 'Pharyngeal',
             'type' => 'pharyngeal',
@@ -3081,14 +3093,7 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'Qoph~',
-            'examples' => "(No examples in English)\n\n(used in Ubykh,\nTsakhur, and Archi)\n\nQoph is a letter of \nthe Semitic abjads, \nincluding Phoenician qop,\nHebrew qup, Aramaic qop,\nSyriac qop, & Arabic qaf ",
-            'description' => 'pharyngealized voiceless uvular stop',
-            'info_ipa' => 'qˤ',
-            'quick_transcription' => '`qh~',
-        ];
+
 
         $alphabet[] = [
             'type' => 'pharyngealized_stop',
