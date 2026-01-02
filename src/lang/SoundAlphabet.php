@@ -1444,6 +1444,19 @@ class SoundAlphabet
 
         $alphabet[] = [
             'sound_type' => 'consonant',
+            'sound_name' =>'F-pharyngealized',
+            'axiophone' => 'F',
+            'type' => 'pharyngealized_fricative',
+            'name' =>'pharyn-Faaa~',
+            'examples' => '(No examples in English)',
+            'description' => 'pharyngealized voiceless labiodental fricative',
+            'info_ipa' => 'fˤ',
+            'quick_transcription' => '`f~',
+            'phone_family' => 'F',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
             'sound_name' =>'V-axiophone',
             'axiophone' => 'V',
             'type' => 'fixed_consonant',
@@ -1478,6 +1491,19 @@ class SoundAlphabet
             'description' => '',
             'info_ipa' => 'ᵐv',
             'quick_transcription' => 'mv',
+            'phone_family' => 'V',
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'V-pharyngealized',
+            'axiophone' => 'V',
+            'type' => 'pharyngealized_fricative',
+            'name' =>'pharyn-Vaaa~',
+            'examples' => "(No examples in English)\n\n(used in Ubykh)",
+            'description' => 'pharyngealized voiced labiodental fricative',
+            'info_ipa' => 'vˤ',
+            'quick_transcription' => '`v~',
             'phone_family' => 'V',
         ];
 
@@ -2180,6 +2206,18 @@ class SoundAlphabet
             'description' => "glottal stop\n/ glottal plosive",
             'info_ipa' => 'ʔ',
             'quick_transcription' => '-ꞌ-', // <--- Using Latin Capital Letter Saltillo, not quote
+        ];
+
+        $alphabet[] = [
+            'sound_type' => 'consonant',
+            'sound_name' =>'Glottal-pharyngealized',
+            'axiophone' => 'Glottal',
+            'type' => 'pharyngealized_stop',
+            'name' =>'pharyn-Uh-Oh~',
+            'examples' => "(No examples in English)\n\n(used in Shihhi Arabic;\nallophonic in Chechen)",
+            'description' => 'pharyngealized glottal stop',
+            'info_ipa' => 'ʔˤ',
+            'quick_transcription' => '`-ꞌ-~', // <--- Using Latin Capital Letter Saltillo, not quote
         ];
 
         $alphabet[] = [
@@ -3095,34 +3133,11 @@ class SoundAlphabet
 
 
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_stop',
-            'name' =>'pharyn-Uh-Oh~',
-            'examples' => "(No examples in English)\n\n(used in Shihhi Arabic;\nallophonic in Chechen)",
-            'description' => 'pharyngealized glottal stop',
-            'info_ipa' => 'ʔˤ',
-            'quick_transcription' => '`-ꞌ-~', // <--- Using Latin Capital Letter Saltillo, not quote
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_fricative',
-            'name' =>'pharyn-Faaa~',
-            'examples' => '(No examples in English)',
-            'description' => 'pharyngealized voiceless labiodental fricative',
-            'info_ipa' => 'fˤ',
-            'quick_transcription' => '`f~',
-            'phone_family' => 'F',
-        ];
 
-        $alphabet[] = [
-            'type' => 'pharyngealized_fricative',
-            'name' =>'pharyn-Vaaa~',
-            'examples' => "(No examples in English)\n\n(used in Ubykh)",
-            'description' => 'pharyngealized voiced labiodental fricative',
-            'info_ipa' => 'vˤ',
-            'quick_transcription' => '`v~',
-            'phone_family' => 'V',
-        ];
+
+
+
 
         $alphabet[] = [
             'type' => 'pharyngealized_fricative',
